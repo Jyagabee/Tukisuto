@@ -4,10 +4,11 @@ languageName = "日本語"
 [params.author]
 name = "じゃがびぃ"
 image = "/img/icon.jpg"
-headline = "ヘッドライトらしいですこれ"
-bio = "ノリと勢いで作ろうと思ったことを後悔しています"
+headline = "スマホとかハード系のものが好きです"
+bio = "最近はc言語で色々やろうと考えています。考えるだけです。"
 links = [
 	{ twitter = "https://x.com/Jyaga_bee" }
+	{ misskey = "https://mk.tenpest-moon.uk/@Jyagabee" }
 ]
 [params]
 desplayName = "JA"
