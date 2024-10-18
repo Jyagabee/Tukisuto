@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+theme = "blowfish"
+[frontmatter]
+lastmod = [":git",":fileModTime",":default"]
+[outputs]
+home = ["HTML","RSS","JSON"]

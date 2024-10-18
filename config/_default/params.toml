@@ -1,0 +1,30 @@
+colorScheme = "blowfish"
+enableSearch = true
+defaultBackgroundImage = "img/kari.png"
+bleCodeCopy = true
+disableImageOptimization = false 
+disableImageZoom = false 
+[header]
+layout = "fixed"
+[homepage]
+layout = "background"
+homepageImage = "img/background.svg"
+showRecent = true
+showMoreLink = true
+cardView = true
+layoutBackgroundBlur = true
+[article]
+showDate = true
+showHero = true 
+heroStyle = "background"
+showDateUpdated = false 
+showReadingTime = true
+showTabletOfContent = true 
+showTaxonomies = true
+showWordCount = false
+sharingLinks = ["twitter","bluesky","telegram"]
+showAuthor = true
+
+[lists]
+showCards = true
+cardView = true

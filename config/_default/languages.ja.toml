@@ -1,0 +1,15 @@
+title = "じゃがびぃのサイト"
+languageCode = "ja"
+languageName = "日本語"
+[params.author]
+name = "じゃがびぃ"
+image = "/img/icon.jpg"
+headline = "ヘッドライトらしいですこれ"
+bio = "ノリと勢いで作ろうと思ったことを後悔しています"
+links = [
+	{ twitter = "https://x.com/Jyaga_bee" }
+]
+[params]
+desplayName = "JA"
+isoCode = "ja"
+dateFormat = "2006/01/02 15:04"
