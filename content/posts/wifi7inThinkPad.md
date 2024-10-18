@@ -1,6 +1,6 @@
 ---
 title: ThinkPadでWifi7を使えるようにしてみた話
-date: 2024-10-18T18:31:04
+date: 2024-10-18T18:02:06+09:00
 draft: false 
 description: ""
 ---
