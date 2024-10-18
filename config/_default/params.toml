@@ -6,6 +6,7 @@ disableImageOptimization = false
 disableImageZoom = false 
 [header]
 layout = "fixed"
+
 [homepage]
 layout = "background"
 homepageImage = "img/background.svg"
@@ -14,6 +15,7 @@ showMoreLink = true
 cardView = true
 layoutBackgroundBlur = true
 favicon = "img/favicon.png"
+
 [article]
 showDate = true
 showHero = true 
