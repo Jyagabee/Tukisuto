@@ -20,8 +20,11 @@ description:
 ## 改行の仕方が分からない　
 
 なんか改行できないんですけど
+<br>
 teusto  tesuto←これは半角改行2つ
+<br>
 teusto　　tesuto←これは全角改行2つ
+<br>
 tesuto `<br>tesuto←これはbr`
 
 Shift+Enterで変な改行せずに改行できることにようやっと気づきました。
