@@ -1,5 +1,5 @@
 ---
-title: "{{ThinkPadでWifi7を使えるようにしてみた話}}"
+title: "ThinkPadでWifi7を使えるようにしてみた話"
 date: {{ .Date }}
 draft: false 
 description: ""
