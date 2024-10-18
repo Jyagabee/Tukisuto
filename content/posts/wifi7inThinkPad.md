@@ -1,5 +1,5 @@
 ---
-title: "ThinkPadでWifi7を使えるようにしてみた話"
+title: ThinkPadでWifi7を使えるようにしてみた話
 date: 2024-10-18T18:31:04
 draft: false 
 description: ""
