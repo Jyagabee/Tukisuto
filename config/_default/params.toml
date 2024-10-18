@@ -23,7 +23,7 @@ showReadingTime = true
 showTabletOfContent = true 
 showTaxonomies = true
 showWordCount = false
-sharingLinks = ["twitter","bluesky","telegram"]
+sharingLinks = ["twitter","bluesky","telegram","misskey"]
 showAuthor = true
 
 [lists]
