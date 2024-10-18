@@ -9,7 +9,7 @@ layout = "fixed"
 
 [homepage]
 layout = "background"
-homepageImage = "img/background.svg"
+homepageImage = "img/kari.png"
 showRecent = true
 showMoreLink = true
 cardView = true
