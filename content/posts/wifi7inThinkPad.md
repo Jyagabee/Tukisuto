@@ -35,11 +35,11 @@ ThinkPad E16 Gen 1
 # 作業風景とか
 
 こんな感じでこじ開けます。
-![こじ開けるところ](/static//images/wifi7inThinkPad/PXL_20241018_080904481.MP.jpg)
+![こじ開けるところ](/static/images/wifi7inThinkPad/PXL_20241018_080904481.MP.jpg)
 こんな感じでこじ開けられました。
-![開けたところ](/static//images/wifi7inThinkPad/PXL_20241018_081025568.MP.jpg)
+![開けたところ](/static/images/wifi7inThinkPad/PXL_20241018_081025568.MP.jpg)
 今回入れるwifiカードはこれです
-![wifiカード](/static//images/wifi7inThinkPad/PXL_20241018_081105639.MP.jpg)
+![wifiカード](/static/images/wifi7inThinkPad/PXL_20241018_081105639.MP.jpg)
 インテルのWi-Fi7 BE200とかいうやつらしいです
 
 普通に取り換えて元に戻すだけなのでさくっと作業やると
