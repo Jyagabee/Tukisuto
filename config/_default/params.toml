@@ -13,7 +13,7 @@ showRecent = true
 showMoreLink = true
 cardView = true
 layoutBackgroundBlur = true
-favicon = img/favicon.png
+favicon = "img/favicon.png"
 [article]
 showDate = true
 showHero = true 
