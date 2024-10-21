@@ -9,9 +9,9 @@ headline = "スマホとかハード系のものが好きです"
 bio = "なんか色々触ってます"
 links = [
 	{ twitter = "https://x.com/Jyaga_bee" },
-	{ discord = "https://discord.com/users/831536477758423040 },
-	{ github = "https://github.com/Jyagabee },
-	{ threads = "https://www.threads.net/@jyagabee_ },
+	{ discord = "https://discord.com/users/831536477758423040" },
+	{ github = "https://github.com/Jyagabee" },
+	{ threads = "https://www.threads.net/@jyagabee_" },
 	{ misskey = "https://mk.tenpest-moon.uk/@Jyagabee" },
 ]
 [params]
