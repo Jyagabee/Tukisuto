@@ -12,6 +12,7 @@ links = [
 	{ discord = "https://discord.com/users/831536477758423040" },
 	{ github = "https://github.com/Jyagabee" },
 	{ threads = "https://www.threads.net/@jyagabee_" },
+	{ telegram = "https://t.me/Jyagabee" }
 	{ misskey = "https://mk.tenpest-moon.uk/@Jyagabee" },
 ]
 [params]
