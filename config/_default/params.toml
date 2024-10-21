@@ -39,3 +39,7 @@ showAuthor = true
 [lists]
 showCards = true
 cardView = true
+
+[params]
+  [params.article]
+    showTableOfContents = true
