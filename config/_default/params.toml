@@ -10,7 +10,7 @@ layout = "fixed"
 [homepage]
 layout = "background"
 homepageImage = "img/kari.png"
-showRecent = true
+showRecent = false
 showMoreLink = true
 cardView = true
 layoutBackgroundBlur = true
