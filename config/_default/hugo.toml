@@ -6,3 +6,6 @@ theme = "blowfish"
 lastmod = [":git",":fileModTime",":default"]
 [outputs]
 home = ["HTML","RSS","JSON"]
+[params]
+  [params.article]
+    showTableOfContents = true

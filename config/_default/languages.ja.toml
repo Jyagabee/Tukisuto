@@ -26,3 +26,5 @@ dateFormat = "2006/01/02 15:04"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+	  startLevel = 1 
+	  endLevel = 5
