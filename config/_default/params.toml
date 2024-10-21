@@ -14,7 +14,7 @@ showRecent = false
 showMoreLink = true
 cardView = true
 layoutBackgroundBlur = true
-favicon = "img/favicon.png"
+favicon = "img/favicon.ico"
 
 [article]
 showDate = true
