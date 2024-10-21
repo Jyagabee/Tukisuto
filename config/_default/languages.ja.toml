@@ -19,3 +19,7 @@ links = [
 desplayName = "JA"
 isoCode = "ja"
 dateFormat = "2006/01/02 15:04"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
