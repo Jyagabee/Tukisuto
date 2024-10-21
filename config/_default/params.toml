@@ -4,8 +4,16 @@ defaultBackgroundImage = "img/kari.png"
 bleCodeCopy = true
 disableImageOptimization = false 
 disableImageZoom = false 
+autoSwitchAppearance = true
 [header]
-layout = "fixed"
+layout = "basic"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
 
 [homepage]
 layout = "background"
