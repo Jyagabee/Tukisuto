@@ -24,6 +24,11 @@ cardView = true
 layoutBackgroundBlur = true
 favicon = "img/favicon.ico"
 
+[favicon]
+  icon = "favicon.png" 
+  sizes = [16, 32, 48]
+  type = "image/png"
+
 [article]
 showDate = true
 showHero = true 
