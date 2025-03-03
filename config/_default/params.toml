@@ -22,12 +22,11 @@ showRecent = true
 showMoreLink = true
 cardView = true
 layoutBackgroundBlur = true
-favicon = "img/favicon.ico"
 
 [favicon]
-  icon = "favicon.png" 
+  icon = "img/favicon.png" 
   sizes = [16, 32, 48]
-  type = "image/png"
+  type = "image/x-icon"
 
 [article]
 showDate = true
