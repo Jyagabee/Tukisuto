@@ -23,11 +23,6 @@ showMoreLink = true
 cardView = true
 layoutBackgroundBlur = true
 
-[favicon]
-  icon = "img/favicon.ico" 
-  sizes = [16, 32, 48]
-  type = "image/x-icon"
-
 [article]
 showDate = true
 showHero = true 
@@ -47,3 +42,8 @@ cardView = true
 [params]
   [params.article]
     showTableOfContents = true
+    
+  [favicon]
+  icon = "img/favicon.ico" 
+  sizes = [16, 32, 48]
+  type = "image/x-icon"
