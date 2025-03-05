@@ -5,6 +5,7 @@ bleCodeCopy = true
 disableImageOptimization = false 
 disableImageZoom = false 
 autoSwitchAppearance = true
+
 [header]
   layout = "basic"
   [header.search]
@@ -21,10 +22,12 @@ autoSwitchAppearance = true
 [homepage]
   layout = "background"
   homepageImage = "img/kari.png"
-  showRecent = true
+  showRecent = false
   showMoreLink = true
   cardView = true
   layoutBackgroundBlur = true
+  # 週報カテゴリーを最近の記事から除外
+  recentParams = { excludeCategories = ["週報"] }
 
 [article]
   showDate = true
