@@ -20,7 +20,6 @@
   url = "/posts"
   weight = 20
 
-
 [[main]]
   name = "週報"
   url = "/weekly"
