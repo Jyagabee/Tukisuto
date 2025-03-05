@@ -6,7 +6,10 @@ disableImageOptimization = false
 disableImageZoom = false 
 autoSwitchAppearance = true
 [header]
-layout = "basic"
+  layout = "basic"
+  [header.search]
+      enabled = true
+      position = "right"  # 検索ボックスの位置を右に設定
 
 [footer]
   showMenu = true
@@ -16,34 +19,34 @@ layout = "basic"
   showScrollToTop = true
 
 [homepage]
-layout = "background"
-homepageImage = "img/kari.png"
-showRecent = true
-showMoreLink = true
-cardView = true
-layoutBackgroundBlur = true
+  layout = "background"
+  homepageImage = "img/kari.png"
+  showRecent = true
+  showMoreLink = true
+  cardView = true
+  layoutBackgroundBlur = true
 
 [article]
-showDate = true
-showHero = true 
-heroStyle = "background"
-showDateUpdated = false 
-showReadingTime = true
-showTabletOfContent = true 
-showTaxonomies = true
-showWordCount = false
-sharingLinks = ["twitter","bluesky","telegram","misskey"]
-showAuthor = true
+  showDate = true
+  showHero = true 
+  heroStyle = "background"
+  showDateUpdated = false 
+  showReadingTime = true
+  showTabletOfContent = true 
+  showTaxonomies = true
+  showWordCount = false
+  sharingLinks = ["twitter","bluesky","telegram","misskey"]
+  showAuthor = true
 
 [lists]
-showCards = true
-cardView = true
+  showCards = true
+  cardView = true
 
 [params]
   [params.article]
     showTableOfContents = true
     
   [favicon]
-  icon = "img/favicon.ico" 
-  sizes = [16, 32, 48]
-  type = "image/x-icon"
+    icon = "img/favicon.ico" 
+    sizes = [16, 32, 48]
+    type = "image/x-icon"

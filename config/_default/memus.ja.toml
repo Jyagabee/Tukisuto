@@ -13,5 +13,5 @@
 [[main]]
   name = "about"
   url = "/about"
-  weight = 10
+  weight = 5
   
