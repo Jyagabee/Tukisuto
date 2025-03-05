@@ -13,5 +13,15 @@
 [[main]]
   name = "about"
   url = "/about"
-  weight = 5
-  
+  weight = 10
+
+[[main]]
+  name = "記事"
+  url = "/posts"
+  weight = 20
+
+
+[[main]]
+  name = "週報"
+  url = "/weekly"
+  weight = 20
