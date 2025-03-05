@@ -22,7 +22,7 @@ autoSwitchAppearance = true
 [homepage]
   layout = "background"
   homepageImage = "img/kari.png"
-  showRecent = false
+  showRecent = true
   showMoreLink = true
   cardView = true
   layoutBackgroundBlur = true
