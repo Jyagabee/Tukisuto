@@ -3,7 +3,7 @@ title: "1章 DDSとは何か、RTPSとは何か"
 draft: false
 featured: false
 categories: ["FastDDS_Manual"]
-tags: []
+tags: [1章]
 summary: ""
 ---
 
