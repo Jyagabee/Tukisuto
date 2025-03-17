@@ -24,3 +24,8 @@
   name = "週報"
   url = "/weekly"
   weight = 20
+
+[[main]]
+ name = "FastDDS_Manual"
+ url = "/FastDDS_Manual"
+ weight = 30 
