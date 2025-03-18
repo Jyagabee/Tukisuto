@@ -1431,7 +1431,7 @@ cmake --build .
 ./DDSHelloWorldSubscriber
 ```
 
-{{< video src="simple_pubsub.mp4" controls="true" >}}
+{{< video src="simple_pubsub.mp4" controls="true" >}}{{< /video >}}
 
 ### 1.3.10 要約
 
