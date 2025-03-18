@@ -176,13 +176,17 @@ struct HelloWorld
 - HelloWorldTypeObjectSupport.hpp:HelloWorldTypeObjectSupport.cxxのヘッダーファイル
 
 ### 1.3.7 FastDDSパブリッシャーの作成
+
 ワークスペースのsrcディレクトリから、以下のコマンドを実行してHelloWorldPublisher.cppファイルをダウンロードする。
+
 ```
 wget -O HelloWorldPublisher.cpp \
     https://raw.githubusercontent.com/eProsima/Fast-RTPS-docs/master/code/Examples/C++/DDSHelloWorld/src/HelloWorldPublisher.cpp
 
 ```
+
 これはパブリッシャーアプリケーションのc++ソースコードである。HelloWorldTopicトピックで10件のパブリケーションを送信する。
+
 ```
 // Copyright 2016 Proyectos y Sistemas de Mantenimiento SL (eProsima).
 
@@ -559,9 +563,10 @@ int main(
 }
 ```
 
-
 #### 1.3.7.1 ソースコードの検証
+
 ファイルの先頭には、Doxygen形式のコメントブロックがあり、@fileフィールドがファイル名を記述している。
+
 ```
 /**
  * @file HelloWorldPublisher.cpp
@@ -569,7 +574,9 @@ int main(
  */
 
 ```
+
 以下にc++ヘッダーのインクルードを示す。最初のものは、前のセクションで定義したデータ型のシリアライゼーションおよびデシリアライゼーション関数を含むHelloWorldPubSubTypes.hファイルをインクルードしている。
+
 ```
 #include "HelloWorldPubSubTypes.hpp"
 ```
@@ -595,19 +602,25 @@ int main(
 #include <fastdds/dds/topic/TypeSupport.hpp>
 
 ```
+
 次に、アプリケーションで使用するeProsima FastDDSのクラスと関数を含む名前空間を定義する。
+
 ```
 using namespace eprosima::fastdds::dds;
 
 ```
+
 次の行は、パブリッシャーを実装するHelloWorldPublisherクラスを作成する。
+
 ```
 class HelloWorldPublisher
 
 ```
-クラスのプライベートデータメンバーに続いて、hello_データメンバーはIDLファイルで作成したデータ型を定義するHelloWorldクラスのオブジェクトとして定義される。  
-次に参加者、パブリッシャー、トピック、DataWriter、およびデータ型をDomainParticipantに登録されるオブジェクトである。  
+
+クラスのプライベートデータメンバーに続いて、hello_データメンバーはIDLファイルで作成したデータ型を定義するHelloWorldクラスのオブジェクトとして定義される。
+次に参加者、パブリッシャー、トピック、DataWriter、およびデータ型をDomainParticipantに登録されるオブジェクトである。
 TypeSupportクラスのtype_オブジェクトは、DomainParticipantにトピックデータ型を登録するために使用されるオブジェクトである。
+
 ```
 private:
 
@@ -624,10 +637,10 @@ private:
     TypeSupport type_;
 ```
 
-次に、DataWriterListenerクラスを継承してPubListenerクラスが定義する。  
-このクラスはデフォルトのDataWriterリスナーコールバックをオーバーライドし、イベントが発生した場合にルーチンを実行することを可能にする。  
-オーバーライドされたコールバック```on_publication?mached()```により、DataWriterが発行しているトピックをリッスン(?)している新しいDataReaderが検出されたときの一連のアクションを定義することができる。  
-```info.current_count_change```は、DataWriterにマッチしたDataReaderの変更を検出する。これは、MachedStatus構造体のメンバで、サブスクリプションのステータス変更を追跡できる。  
+次に、DataWriterListenerクラスを継承してPubListenerクラスが定義する。
+このクラスはデフォルトのDataWriterリスナーコールバックをオーバーライドし、イベントが発生した場合にルーチンを実行することを可能にする。
+オーバーライドされたコールバック ``on_publication?mached()``により、DataWriterが発行しているトピックをリッスン(?)している新しいDataReaderが検出されたときの一連のアクションを定義することができる。
+``info.current_count_change``は、DataWriterにマッチしたDataReaderの変更を検出する。これは、MachedStatus構造体のメンバで、サブスクリプションのステータス変更を追跡できる。
 最後に、このクラスのlistener_オブジェクトはPubListenerのインスタンスとして定義される。
 
 ```
@@ -670,7 +683,7 @@ public:
 } listener_;
 ```
 
-HelloWorldPublisherクラスのpublucコンストラクタとデストラクタを以下に定義する。コンストラクタは、クラスのプライベート・データ・メンバをnullptrに初期化する。  
+HelloWorldPublisherクラスのpublucコンストラクタとデストラクタを以下に定義する。コンストラクタは、クラスのプライベート・データ・メンバをnullptrに初期化する。
 ただし、TypeSupportオブジェクトはHelloWorldPubSubTypeクラスのインスタンスとして初期化される。クラスのデストラクタはこれらのデータ・メンバを削除し、システムメモリを削除する。
 
 ```
@@ -700,16 +713,730 @@ virtual ~HelloWorldPublisher()
     DomainParticipantFactory::get_instance()->delete_participant(participant_);
 }
 ```
-HelloWorldPublisherクラスのパブリックメンバ関数を続行すると、次のコードスニペットはパブリックパブリッシャーの初期化メンバー関数を定義する。  
-この関数は、いくつかのアクションを実行する。
+
+HelloWorldPublisherクラスのパブリックメンバ関数を続行すると、次のコードスニペットはパブリックパブリッシャーの初期化メンバー関数を定義する。この関数は、いくつかのアクションを実行する。
 
 1. HelloWorld型のhello_構造体メンバの内容を初期化する。
-2. DomainParticipantのQoSを通じて参加者に名前を振る。
+2. DomainParticipantのQoSを通じて参加者に名前を割り当てる。
 3. DomainParticipantFactoryを使用して参加者を作成する。
 4. IDLで定義されたデータ型を登録する。
-5. パブリッシャーを作成する。
-6. 先に作成したリスナーでDataWriterを作成する。
+5. パブリケーションのトピックを作成する。
+6. パブリッシャーを作成する。
+7. 先に作成したリスナーでDataWriterを作成する。
+
+以上のように、参加者を除くすべてのエンティティのQoS構成は、デフォルト構成(PARTICIPANT_QOS_DEFAULT、PUBLISHER_QOS_DEFAULT、TOPIC_QOS_DEFAULT、DATAWRITER_QOS_DEFAULT)である。
+各DDSエンティティのデフォルト値は、DDSスタンダードで確認できる。
 
 ```
+//!Initialize the publisher
+bool init()
+{
+    hello_.index(0);
+    hello_.message("HelloWorld");
+
+    DomainParticipantQos participantQos;
+    participantQos.name("Participant_publisher");
+    participant_ = DomainParticipantFactory::get_instance()->create_participant(0, participantQos);
+
+    if (participant_ == nullptr)
+    {
+        return false;
+    }
+
+    // Register the Type
+    type_.register_type(participant_);
+
+    // Create the publications Topic
+    topic_ = participant_->create_topic("HelloWorldTopic", "HelloWorld", TOPIC_QOS_DEFAULT);
+
+    if (topic_ == nullptr)
+    {
+        return false;
+    }
+
+    // Create the Publisher
+    publisher_ = participant_->create_publisher(PUBLISHER_QOS_DEFAULT, nullptr);
+
+    if (publisher_ == nullptr)
+    {
+        return false;
+    }
+
+    // Create the DataWriter
+    writer_ = publisher_->create_datawriter(topic_, DATAWRITER_QOS_DEFAULT, &listener_);
+
+    if (writer_ == nullptr)
+    {
+        return false;
+    }
+    return true;
+}
+```
+
+パブリッシュを行うために、パブリック・メンバ関数 ``publish()``が実装されている。
+DataWriterのリスナー・コールバックでは、DataWriterが発行トピックを受け取っているDataReaderと合致したことを示すために、データ・メンバmached_が更新される。
+このデータ・メンバには、検出されたDataReaderの数が格納される。したがって、最初のDataReaderが検出されると、アプリケーションはパブリッシュを開始する。これは単にDataReaderオブジェクトによる変更の書き込みである。
 
 ```
+//!Send a publication
+bool publish()
+{
+    if (listener_.matched_ > 0)
+    {
+        hello_.index(hello_.index() + 1);
+        writer_->write(&hello_);
+        return true;
+    }
+    return false;
+}
+```
+
+public run関数は、指定された回数のパブリッシュを実行し、パブリッシュの間に1秒間待機する。
+
+```
+//!Run the Publisher
+void run(
+        uint32_t samples)
+{
+    uint32_t samples_sent = 0;
+    while (samples_sent < samples)
+    {
+        if (publish())
+        {
+            samples_sent++;
+            std::cout << "Message: " << hello_.message() << " with index: " << hello_.index()
+                        << " SENT" << std::endl;
+        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    }
+}
+```
+
+最後に、HelloWorldPublisherが初期化され、mainで実行される。
+
+```
+int main(
+        int argc,
+        char** argv)
+{
+    std::cout << "Starting publisher." << std::endl;
+    uint32_t samples = 10;
+
+    HelloWorldPublisher* mypub = new HelloWorldPublisher();
+    if(mypub->init())
+    {
+        mypub->run(samples);
+    }
+
+    delete mypub;
+    return 0;
+}
+```
+
+#### CMakeLists.txt
+
+先ほど作成したCMakeLists.txtファイルの最後に、以下のコードスニペットをインクルードする。これにより、実行ファイルのビルドに必要なすべてのソースファイルが追加され、実行ファイルとライブラリがリンクされる。
+
+```
+add_executable(DDSHelloWorldPublisher src/HelloWorldPublisher.cpp ${DDS_HELLOWORLD_SOURCES_CXX})
+target_link_libraries(DDSHelloWorldPublisher fastdds fastcdr)
+```
+
+この時点で、プロジェクトはパブリッシャーアプリケーションのビルド、コンパイル、実行の準備が整った。
+ワークスペースのビルドディレクトリから以下のコマンドを実行する。
+
+```
+cmake ..
+cmake --build .
+./DDSHelloWorldPublisher
+```
+
+### 1.3.8 FastDDSサブスクライバーの作成
+
+ワークスペースのsrcディレクトリから次のコマンドを実行して、HelloWorldSubsriber.cppファイルをダウンロードする。
+
+```
+// Copyright 2016 Proyectos y Sistemas de Mantenimiento SL (eProsima).
+
+//
+
+// Licensed under the Apache License, Version 2.0 (the "License");
+
+// you may not use this file except in compliance with the License.
+
+// You may obtain a copy of the License at
+
+//
+
+//     http://www.apache.org/licenses/LICENSE-2.0
+
+//
+
+// Unless required by applicable law or agreed to in writing, software
+
+// distributed under the License is distributed on an "AS IS" BASIS,
+
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+// See the License for the specific language governing permissions and
+
+// limitations under the License.
+
+
+/**
+
+ * @file HelloWorldSubscriber.cpp
+
+ *
+
+ */
+
+
+#include "HelloWorldPubSubTypes.hpp"
+
+
+#include <chrono>
+
+#include <thread>
+
+
+#include <fastdds/dds/domain/DomainParticipant.hpp>
+
+#include <fastdds/dds/domain/DomainParticipantFactory.hpp>
+
+#include <fastdds/dds/subscriber/DataReader.hpp>
+
+#include <fastdds/dds/subscriber/DataReaderListener.hpp>
+
+#include <fastdds/dds/subscriber/qos/DataReaderQos.hpp>
+
+#include <fastdds/dds/subscriber/SampleInfo.hpp>
+
+#include <fastdds/dds/subscriber/Subscriber.hpp>
+
+#include <fastdds/dds/topic/TypeSupport.hpp>
+
+
+using namespace eprosima::fastdds::dds;
+
+
+class HelloWorldSubscriber
+
+{
+
+private:
+
+
+    DomainParticipant* participant_;
+
+
+    Subscriber* subscriber_;
+
+
+    DataReader* reader_;
+
+
+    Topic* topic_;
+
+
+    TypeSupport type_;
+
+
+    class SubListener : public DataReaderListener
+
+    {
+
+    public:
+
+
+        SubListener()
+
+            : samples_(0)
+
+        {
+
+        }
+
+
+        ~SubListener() override
+
+        {
+
+        }
+
+
+        void on_subscription_matched(
+
+                DataReader*,
+
+                const SubscriptionMatchedStatus& info) override
+
+        {
+
+            if (info.current_count_change == 1)
+
+            {
+
+                std::cout << "Subscriber matched." << std::endl;
+
+            }
+
+            else if (info.current_count_change == -1)
+
+            {
+
+                std::cout << "Subscriber unmatched." << std::endl;
+
+            }
+
+            else
+
+            {
+
+                std::cout << info.current_count_change
+
+                          << " is not a valid value for SubscriptionMatchedStatus current count change" << std::endl;
+
+            }
+
+        }
+
+
+        void on_data_available(
+
+                DataReader* reader) override
+
+        {
+
+            SampleInfo info;
+
+            if (reader->take_next_sample(&hello_, &info) == eprosima::fastdds::dds::RETCODE_OK)
+
+            {
+
+                if (info.valid_data)
+
+                {
+
+                    samples_++;
+
+                    std::cout << "Message: " << hello_.message() << " with index: " << hello_.index()
+
+                              << " RECEIVED." << std::endl;
+
+                }
+
+            }
+
+        }
+
+
+        HelloWorld hello_;
+
+
+        std::atomic_int samples_;
+
+
+    }
+
+    listener_;
+
+
+public:
+
+
+    HelloWorldSubscriber()
+
+        : participant_(nullptr)
+
+        , subscriber_(nullptr)
+
+        , topic_(nullptr)
+
+        , reader_(nullptr)
+
+        , type_(new HelloWorldPubSubType())
+
+    {
+
+    }
+
+
+    virtual ~HelloWorldSubscriber()
+
+    {
+
+        if (reader_ != nullptr)
+
+        {
+
+            subscriber_->delete_datareader(reader_);
+
+        }
+
+        if (topic_ != nullptr)
+
+        {
+
+            participant_->delete_topic(topic_);
+
+        }
+
+        if (subscriber_ != nullptr)
+
+        {
+
+            participant_->delete_subscriber(subscriber_);
+
+        }
+
+        DomainParticipantFactory::get_instance()->delete_participant(participant_);
+
+    }
+
+
+    //!Initialize the subscriber
+
+    bool init()
+
+    {
+
+        DomainParticipantQos participantQos;
+
+        participantQos.name("Participant_subscriber");
+
+        participant_ = DomainParticipantFactory::get_instance()->create_participant(0, participantQos);
+
+
+        if (participant_ == nullptr)
+
+        {
+
+            return false;
+
+        }
+
+
+        // Register the Type
+
+        type_.register_type(participant_);
+
+
+        // Create the subscriptions Topic
+
+        topic_ = participant_->create_topic("HelloWorldTopic", "HelloWorld", TOPIC_QOS_DEFAULT);
+
+
+        if (topic_ == nullptr)
+
+        {
+
+            return false;
+
+        }
+
+
+        // Create the Subscriber
+
+        subscriber_ = participant_->create_subscriber(SUBSCRIBER_QOS_DEFAULT, nullptr);
+
+
+        if (subscriber_ == nullptr)
+
+        {
+
+            return false;
+
+        }
+
+
+        // Create the DataReader
+
+        reader_ = subscriber_->create_datareader(topic_, DATAREADER_QOS_DEFAULT, &listener_);
+
+
+        if (reader_ == nullptr)
+
+        {
+
+            return false;
+
+        }
+
+
+        return true;
+
+    }
+
+
+    //!Run the Subscriber
+
+    void run(
+
+            uint32_t samples)
+
+    {
+
+        while (listener_.samples_ < samples)
+
+        {
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
+        }
+
+    }
+
+
+};
+
+
+int main(
+
+        int argc,
+
+        char** argv)
+
+{
+
+    std::cout << "Starting subscriber." << std::endl;
+
+    uint32_t samples = 10;
+
+
+    HelloWorldSubscriber* mysub = new HelloWorldSubscriber();
+
+    if (mysub->init())
+
+    {
+
+        mysub->run(samples);
+
+    }
+
+
+    delete mysub;
+
+    return 0;
+
+}
+```
+
+#### 1.3.8.1 コードの検証
+
+パブリッシャーとサブスクライバーのアプリケーションのソースコードは、ほとんど同じであるため、このドキュメントでは、既に説明されている部分を省き、両社の主な違いに焦点を当て解説する。パブリッシャーの説明と同じ構造に従い、最初のステップはC++ヘッダーファイルのインクルードである。この中で、パブリッシャークラスをインクルードしているファイルはサブスクライバークラスに、DataWriterクラスはDataReaderくらすに置き換わっている。
+
+- ``Subscriber``.DataReaderの作成と設定を担当するオブジェクト。
+- ``DataReader``.データの実際の受信を担当するオブジェクト。読み取るデータを識別するトピック(TopicDscription)をアプリケーションに登録し、サブスクライバーが受信したデータにアクセスする。
+- ``DataReaderListener``.DataReaderに割り当てられたリスナー。
+- ``DataReaderQoS``.DataReaderのQoSを定義する構造体。
+- ``SampleInfo``.「read」または「taken」された各サンプルに付随する情報。
+
+```
+#include <fastdds/dds/domain/DomainParticipant.hpp>
+#include <fastdds/dds/domain/DomainParticipantFactory.hpp>
+#include <fastdds/dds/subscriber/DataReader.hpp>
+#include <fastdds/dds/subscriber/DataReaderListener.hpp>
+#include <fastdds/dds/subscriber/qos/DataReaderQos.hpp>
+#include <fastdds/dds/subscriber/SampleInfo.hpp>
+#include <fastdds/dds/subscriber/Subscriber.hpp>
+#include <fastdds/dds/topic/TypeSupport.hpp>
+```
+
+次の行では、サブスクライバを実装する HelloWorldSubscriber クラスを定義している。
+
+```
+class HelloWorldSubscriber
+```
+
+クラスのプライベートデータメンバから初めて、データリーダーリスナーの実装に言及する価値がある。
+クラスのプライベートメンバは、参加者、サブスクライバー、トピック、DataReader、およびデータ型になる。DataWriterの場合と同じように、リスナーはイベントが発生した場合に実行されるコールバックを実装する。
+SubListenerの最初のオーバーライドされたコールバックは ``on_subscription_mached()``であり、これはDataWriterの ``on_publication_mached()``コールバックのアナログである。
+
+```
+void on_subscription_matched(
+        DataReader*,
+        const SubscriptionMatchedStatus& info) override
+{
+    if (info.current_count_change == 1)
+    {
+        std::cout << "Subscriber matched." << std::endl;
+    }
+    else if (info.current_count_change == -1)
+    {
+        std::cout << "Subscriber unmatched." << std::endl;
+    }
+    else
+    {
+        std::cout << info.current_count_change
+                  << " is not a valid value for SubscriptionMatchedStatus current count change" << std::endl;
+    }
+}
+```
+
+2番目のオーバーライドされたコールバックは、``on_data_available()``である。このコールバックでは、DataReaderがアクセスできる次の受信したサンプルが取り込まれ、その内容が表示されるように処理される。
+ここｋで、SampleInfoクラスのオブジェクトが定義され、サンプルが既に読み込まれたか、取り込まれたかを判断する。サンプルが読み込まれるたびに、受信したサンプルのカウンタが増加する。
+
+```
+void on_data_available(
+        DataReader* reader) override
+{
+    SampleInfo info;
+    if (reader->take_next_sample(&hello_, &info) == eprosima::fastdds::dds::RETCODE_OK)
+    {
+        if (info.valid_data)
+        {
+            samples_++;
+            std::cout << "Message: " << hello_.message() << " with index: " << hello_.index()
+                      << " RECEIVED." << std::endl;
+        }
+    }
+}
+```
+
+クラスのパブリック・コンストラクタとデストラクタを以下に定義する。
+
+```
+HelloWorldSubscriber()
+    : participant_(nullptr)
+    , subscriber_(nullptr)
+    , topic_(nullptr)
+    , reader_(nullptr)
+    , type_(new HelloWorldPubSubType())
+{
+}
+
+virtual ~HelloWorldSubscriber()
+{
+    if (reader_ != nullptr)
+    {
+        subscriber_->delete_datareader(reader_);
+    }
+    if (topic_ != nullptr)
+    {
+        participant_->delete_topic(topic_);
+    }
+    if (subscriber_ != nullptr)
+    {
+        participant_->delete_subscriber(subscriber_);
+    }
+    DomainParticipantFactory::get_instance()->delete_participant(participant_);
+```
+
+次に、サブスクライバの初期化パブリックメンバ関数が来る。これは、HelloWorldPublisherで定義された初期化パブリックメンバ関数と同じである。
+参加者を除くすべてのエンティティのQoS構成は、デフォルトのQoS(``PARTICIPANT_QOS_DEFAULT``、``SUBSCRIBER_QOS_DEFAULT``、``TOPIC_QOS_DEFAULT``、``DATAREADER_QOS_DEFAULT``)である。
+各DDSエンティティのQoSデフォルト値は、DDS標準で確認できる。
+
+```
+//!Initialize the subscriber
+bool init()
+{
+    DomainParticipantQos participantQos;
+    participantQos.name("Participant_subscriber");
+    participant_ = DomainParticipantFactory::get_instance()->create_participant(0, participantQos);
+
+    if (participant_ == nullptr)
+    {
+        return false;
+    }
+
+    // Register the Type
+    type_.register_type(participant_);
+
+    // Create the subscriptions Topic
+    topic_ = participant_->create_topic("HelloWorldTopic", "HelloWorld", TOPIC_QOS_DEFAULT);
+
+    if (topic_ == nullptr)
+    {
+        return false;
+    }
+
+    // Create the Subscriber
+    subscriber_ = participant_->create_subscriber(SUBSCRIBER_QOS_DEFAULT, nullptr);
+
+    if (subscriber_ == nullptr)
+    {
+        return false;
+    }
+
+    // Create the DataReader
+    reader_ = subscriber_->create_datareader(topic_, DATAREADER_QOS_DEFAULT, &listener_);
+
+    if (reader_ == nullptr)
+    {
+        return false;
+    }
+
+    return true;
+```
+
+パブリックメンバ関数 ``run()``は、全てのサンプルが受信されるまでサブスクライバを確実に実行する。このメンバ関数は、CPUを楽にするために100msのスリープ間隔を持つサブスクライバのアクティブな待機を実装する。
+
+```
+//!Run the Subscriber
+void run(
+        uint32_t samples)
+{
+    while (listener_.samples_ < samples)
+    {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+```
+
+最後に、サブスクライバを実装する参加者が初期化され、mainで実行される。
+
+```
+};
+
+int main(
+        int argc,
+        char** argv)
+{
+    std::cout << "Starting subscriber." << std::endl;
+    uint32_t samples = 10;
+
+    HelloWorldSubscriber* mysub = new HelloWorldSubscriber();
+    if (mysub->init())
+    {
+        mysub->run(samples);
+    }
+
+    delete mysub;
+```
+
+#### 1.3.8.2 CMakeLists.txt
+
+先ほど作成したCMakeLists.txtファイルの最後に、以下のコードスニペットをインクルードする。これにより、実行ファイルのビルドに必要な全てのソースファイルが追加され、実行ファイルとライブラリがリンクされる。
+
+```
+add_executable(DDSHelloWorldSubscriber src/HelloWorldSubscriber.cpp ${DDS_HELLOWORLD_SOURCES_CXX})
+target_link_libraries(DDSHelloWorldSubscriber fastdds fastcdr)
+```
+
+この時点で、プロジェクトはサブスクライバーアプリケーションのビルド、コンパイル、および実行の準備が整った。
+ワークスペースのビルドディレクトリから、以下のコマンドを実行する。
+
+```
+cmake ..
+cmake --build .
+./DDSHelloWorldSubscriber
+```
+
+### 1.3.9 実行
+
+最後に、ビルドディレクトリから、パブリッシャーとサブスクライバーのアプリケーションを2つのターミナルから実行する。
+
+```
+./DDSHelloWorldPublisher
+./DDSHelloWorldSubscriber
+```
+
+![simple_pubsub](simple_pubsub.mp4)
+
+### 1.3.10 要約
+
+このチュートリアルでは、パブリッシャーとサブスクライバーのDDSアプリケーションを作成した。また、ソースコードをコンパイルするためのCMakeファイルのビルド方法と、FastDDSおよびFastCDRライブラリをプロジェクトにインクルードして使用する方法を学習した。
+
+### 1.3.11 次のステップ
+
+eProsima FastDDSのGithubリポジトリには、多くのユースケースやシナリオに対応したDDS通信を実装した、より複雑なサンプルがある。[こちら](https://github.com/eProsima/Fast-DDS/tree/master/examples/cpp)にある。
