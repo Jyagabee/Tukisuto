@@ -1,0 +1,14 @@
+<!-- filepath: layouts/shortcodes/video.html -->
+<video 
+  {{ with .Get "class" }}class="{{ . }}"{{ end }}
+  {{ with .Get "width" }}width="{{ . }}"{{ end }}
+  {{ with .Get "height" }}height="{{ . }}"{{ end }}
+  {{ with .Get "autoplay" }}autoplay{{ end }}
+  {{ with .Get "loop" }}loop{{ end }}
+  {{ with .Get "muted" }}muted{{ end }}
+  {{ with .Get "controls" }}controls{{ end }}
+  {{ with .Get "src" }}src="{{ . }}"{{ end }}
+  {{ with .Get "poster" }}poster="{{ . }}"{{ end }}>
+  {{ .Inner }}
+  お使いのブラウザはビデオタグをサポートしていません。
+</video>
