@@ -6,4 +6,10 @@ categories: ["FastDDS_Manual"]
 tags: [3.1章]
 summary: ""
 ---
-This module defines the infrastructure classes and types that will be used by the other ones. It contains the definition of Entity class, QoS policies, and Statuses.
+# 3.1 コア
+このモジュールでは、他のモジュールd絵使用されるインフラストラクチャクラスとタイプを定義する。  
+エンティティクラス、QoSポリシー、およびステータスの定義が含まれる。
+
+- **エンティティ**: エンティティは、ステータスを持ち、ポリシーを設定できるDDS通信オブジェクトである。
+- **ポリシー**: ポリシーは、エンティティの動作を制御する各構成オブジェクトである。
+- **ステータス**: エンティティに関連する各オブジェクトで、その値はエンティティの通信ステータスを表す。
