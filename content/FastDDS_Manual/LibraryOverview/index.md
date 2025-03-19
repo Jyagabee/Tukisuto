@@ -74,14 +74,14 @@ FastDDSは並行マルチスレッドを実装している。各DomainParticipan
 FastDDSによって生成されるスレッドの完全なセットを以下に示す。トランスポート関連のスレッド (UDP、TCP、SHM タイプとしてマークされる) は、適切なトランスポートが使用される場合にのみ作成される。
 
 
-<table>
+<table style="width: 100%; table-layout: fixed; word-break: normal;">
   <thead>
     <tr>
-      <th>名前</th>
-      <th>種類</th>
-      <th>カーディナリティ</th>
-      <th>OSスレッド名</th>
-      <th>説明</th>
+      <th style="width: 15%;">名前</th>
+      <th style="width: 10%;">種類</th>
+      <th style="width: 20%;">カーディナリティ</th>
+      <th style="width: 20%;">OSスレッド名</th>
+      <th style="width: 35%;">説明</th>
     </tr>
   </thead>
   <tbody>
