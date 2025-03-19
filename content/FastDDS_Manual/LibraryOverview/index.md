@@ -74,24 +74,131 @@ FastDDSは並行マルチスレッドを実装している。各DomainParticipan
 FastDDSによって生成されるスレッドの完全なセットを以下に示す。トランスポート関連のスレッド (UDP、TCP、SHM タイプとしてマークされる) は、適切なトランスポートが使用される場合にのみ作成される。
 
 
-| 名前 | 種類 | カーディナリティ | OSスレッド名 | 説明 |
-| --- | --- | --- | --- | --- |
-| **Event** | 一般 | ドメインパーティシパントごとに1つ | `dds.ev.<participant_id>` | 定期的およびトリガーされた時間イベントを処理する。詳細はDomainParticipantQosを参照。 |
-| **Discovery Server Event** | 一般 | ドメインパーティシパントごとに1つ | `dds.ds_ev.<participant_id>` | Discovery Serverデータベースへのアクセスを同期する。詳細はDomainParticipantQosを参照。 |
-| **Asynchronous Writer** | 一般 | 有効な非同期フローコントローラごとに1つ。最小1つ。 | `dds.asyn.<participant_id>.<async_flow_controller_index>` | 非同期書き込みを管理する。同期ライターであっても、いくつかの通信形式はバックグラウンドで開始する必要がある。詳細はDomainParticipantQosおよびFlowControllersQosを参照。 |
-| **Datasharing Listener** | 一般 | データリーダーごとに1つ | `dds.dsha.<reader_id>` | Datasharingを介して受信したメッセージを処理するリスナースレッド。詳細はDataReaderQosを参照。 |
-| **Reception (UDP)** | UDP | ポートごとに1つ | `dds.udp.<port>` | 受信したUDPメッセージを処理するリスナースレッド。詳細はTransportConfigQosおよびUDPTransportDescriptorを参照。 |
-| **Reception (TCP)** | TCP | TCP接続ごとに1つ | `dds.tcp.<port>` | 受信したTCPメッセージを処理するリスナースレッド。詳細はTCPTransportDescriptorを参照。 |
-| **Accept (TCP)** | TCP | TCPトランスポートごとに1つ | `dds.tcp_accept` | 受信したTCP接続要求を処理するスレッド。詳細はTCPTransportDescriptorを参照。 |
-| **Keep Alive (TCP)** | TCP | TCPトランスポートごとに1つ | `dds.tcp_keep` | TCP接続のためのキープアライブスレッド。詳細はTCPTransportDescriptorを参照。 |
-| **Reception (SHM)** | SHM | ポートごとに1つ | `dds.shm.<port>` | SHMセグメント経由で受信したメッセージを処理するリスナースレッド。詳細はTransportConfigQosおよびSharedMemTransportDescriptorを参照。 |
-| **Logging (SHM)** | SHM | ポートごとに1つ | `dds.shmd.<port>` | 転送されたパケットをファイルに記録・ダンプする。詳細はTransportConfigQosおよびSharedMemTransportDescriptorを参照。 |
-| **Watchdog (SHM)** | SHM | 1つ | `dds.shm.wdog` | 開いている共有メモリセグメントの状態を監視する。詳細はTransportConfigQosおよびSharedMemTransportDescriptorを参照。 |
-| **General Logging** | ログ | 1つ | `dds.log` | 消費者ログにエントリを蓄積し、適切なログに書き込む。詳細はLogging Threadを参照。 |
-| **Security Logging** | ログ | ドメインパーティシパントごとに1つ | `dds.slog.<participant_id>` | セキュリティログエントリを蓄積し、書き込む。詳細はDomainParticipantQosを参照。 |
-| **Watchdog (Filewatch)** | ファイル監視 | 1つ | `dds.fwatch` | 監視対象ファイルの変更ステータスを追跡する。詳細はDomainParticipantFactoryQosを参照。 |
-| **Callback (Filewatch)** | ファイル監視 | 1つ | `dds.fwatch.cb` | 監視対象ファイルの変更時に登録されたコールバックを実行する。詳細はDomainParticipantFactoryQosを参照。 |
-| **Reception (TypeLookup Service)** | 型ルックアップサービス | ドメインパーティシパントごとに2つ | `dds.tls.replies.<participant_id>` `dds.tls.requests.<participant_id>` | 未知のデータ型でリモートエンドポイントのディスカバリ情報を受信したときに動作する。 |
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>種類</th>
+      <th>カーディナリティ</th>
+      <th>OSスレッド名</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Event</strong></td>
+      <td>一般</td>
+      <td>ドメインパーティシパントごとに1つ</td>
+      <td><code>dds.ev.&lt;participant_id&gt;</code></td>
+      <td>定期的およびトリガーされた時間イベントを処理する。<br>詳細はDomainParticipantQosを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Discovery Server Event</strong></td>
+      <td>一般</td>
+      <td>ドメインパーティシパントごとに1つ</td>
+      <td><code>dds.ds_ev.&lt;participant_id&gt;</code></td>
+      <td>Discovery Serverデータベースへのアクセスを同期する。<br>詳細はDomainParticipantQosを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Asynchronous Writer</strong></td>
+      <td>一般</td>
+      <td>有効な非同期フローコントローラごとに1つ。最小1つ。</td>
+      <td><code>dds.asyn.&lt;participant_id&gt;.&lt;async_flow_controller_index&gt;</code></td>
+      <td>非同期書き込みを管理する。同期ライターであっても、いくつかの通信形式はバックグラウンドで開始する必要がある。<br>詳細はDomainParticipantQosおよびFlowControllersQosを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Datasharing Listener</strong></td>
+      <td>一般</td>
+      <td>データリーダーごとに1つ</td>
+      <td><code>dds.dsha.&lt;reader_id&gt;</code></td>
+      <td>Datasharingを介して受信したメッセージを処理するリスナースレッド。<br>詳細はDataReaderQosを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Reception (UDP)</strong></td>
+      <td>UDP</td>
+      <td>ポートごとに1つ</td>
+      <td><code>dds.udp.&lt;port&gt;</code></td>
+      <td>受信したUDPメッセージを処理するリスナースレッド。<br>詳細はTransportConfigQosおよびUDPTransportDescriptorを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Reception (TCP)</strong></td>
+      <td>TCP</td>
+      <td>TCP接続ごとに1つ</td>
+      <td><code>dds.tcp.&lt;port&gt;</code></td>
+      <td>受信したTCPメッセージを処理するリスナースレッド。<br>詳細はTCPTransportDescriptorを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Accept (TCP)</strong></td>
+      <td>TCP</td>
+      <td>TCPトランスポートごとに1つ</td>
+      <td><code>dds.tcp_accept</code></td>
+      <td>受信したTCP接続要求を処理するスレッド。<br>詳細はTCPTransportDescriptorを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Keep Alive (TCP)</strong></td>
+      <td>TCP</td>
+      <td>TCPトランスポートごとに1つ</td>
+      <td><code>dds.tcp_keep</code></td>
+      <td>TCP接続のためのキープアライブスレッド。<br>詳細はTCPTransportDescriptorを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Reception (SHM)</strong></td>
+      <td>SHM</td>
+      <td>ポートごとに1つ</td>
+      <td><code>dds.shm.&lt;port&gt;</code></td>
+      <td>SHMセグメント経由で受信したメッセージを処理するリスナースレッド。<br>詳細はTransportConfigQosおよびSharedMemTransportDescriptorを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Logging (SHM)</strong></td>
+      <td>SHM</td>
+      <td>ポートごとに1つ</td>
+      <td><code>dds.shmd.&lt;port&gt;</code></td>
+      <td>転送されたパケットをファイルに記録・ダンプする。<br>詳細はTransportConfigQosおよびSharedMemTransportDescriptorを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Watchdog (SHM)</strong></td>
+      <td>SHM</td>
+      <td>1つ</td>
+      <td><code>dds.shm.wdog</code></td>
+      <td>開いている共有メモリセグメントの状態を監視する。<br>詳細はTransportConfigQosおよびSharedMemTransportDescriptorを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>General Logging</strong></td>
+      <td>ログ</td>
+      <td>1つ</td>
+      <td><code>dds.log</code></td>
+      <td>消費者ログにエントリを蓄積し、適切なログに書き込む。<br>詳細はLogging Threadを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Security Logging</strong></td>
+      <td>ログ</td>
+      <td>ドメインパーティシパントごとに1つ</td>
+      <td><code>dds.slog.&lt;participant_id&gt;</code></td>
+      <td>セキュリティログエントリを蓄積し、書き込む。<br>詳細はDomainParticipantQosを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Watchdog (Filewatch)</strong></td>
+      <td>ファイル監視</td>
+      <td>1つ</td>
+      <td><code>dds.fwatch</code></td>
+      <td>監視対象ファイルの変更ステータスを追跡する。<br>詳細はDomainParticipantFactoryQosを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Callback (Filewatch)</strong></td>
+      <td>ファイル監視</td>
+      <td>1つ</td>
+      <td><code>dds.fwatch.cb</code></td>
+      <td>監視対象ファイルの変更時に登録されたコールバックを実行する。<br>詳細はDomainParticipantFactoryQosを参照。</td>
+    </tr>
+    <tr>
+      <td><strong>Reception (TypeLookup Service)</strong></td>
+      <td>型ルックアップサービス</td>
+      <td>ドメインパーティシパントごとに2つ</td>
+      <td><code>dds.tls.replies.&lt;participant_id&gt;</code><br><code>dds.tls.requests.&lt;participant_id&gt;</code></td>
+      <td>未知のデータ型でリモートエンドポイントのディスカバリ情報を受信したときに動作する。</td>
+    </tr>
+  </tbody>
+</table>
 
 これらのスレッドの中には、特定の条件が満たされたときにのみ発生するものもある：
 - Datasharingリスナースレッドは、Datasharingが使用されている場合にのみ作成される。
@@ -125,4 +232,8 @@ Fast DDSに実装されているすべてのディスカバリープロトコル
 ### 2.3.2 セキュリティ
 FastDDSは、3つのレベルでプラグイン可能なセキュリティを実装することにより、安全な通信を提供するように構成することができる。
 
-リモートDomainParticipantsの認証。 DDS:Auth:PKI-DHプラグインは、信頼できる認証局（CA）とECDSAデジタル署名アルゴリズムを使用して認証を行い、相互認証を実行する。 また、鍵合意プロトコルとして楕円曲線ディフィー・ヘルマン（ECDH）またはMODP-2048ディフィー・ヘルマン（DH）を使用して共有秘密を確立します。 エンティティのアクセス制御。 DDS:Access:Permissionsプラグインは、DDSドメインおよびトピックレベルでのDomainParticipantsへのアクセス制御を提供する。 データの暗号化。 DDS:Crypto:AES-GCM-GMACプラグインは、ガロアカウンターモード（AES-GCM）のAdvanced Encryption Standard（AES）を使用した認証暗号化を提供します。
+- リモートDomainParticipantsの認証。 ***DDS:Auth:PKI-DH***プラグインは、信頼できる認証局（CA）とECDSAデジタル署名アルゴリズムを使用して認証を行い、相互認証を実行する。 また、鍵合意プロトコルとして楕円曲線ディフィー・ヘルマン（ECDH）またはMODP-2048ディフィー・ヘルマン（DH）を使用して共有秘密を確立する。 
+- エンティティのアクセス制御。 ***DDS:Access:Permissions***プラグインは、DDSドメインおよびトピックレベルでのDomainParticipantsへのアクセス制御を提供する。 
+- データの暗号化。 **DDS:Crypto:AES-GCM-GMAC**プラグインは、ガロアカウンターモード（AES-GCM）のAdvanced Encryption Standard（AES）を使用した認証暗号化を提供する。
+
+### 2.3.3 ロギング
