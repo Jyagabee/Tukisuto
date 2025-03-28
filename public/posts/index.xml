@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>記事一覧 on じゃがびぃのサイト</title>
+    <link>/posts/</link>
+    <description>Recent content in 記事一覧 on じゃがびぃのサイト</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2025 じゃがびぃ</copyright>
+    <lastBuildDate>Mon, 03 Mar 2025 22:40:45 +0900</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Android Studio Meerkat | 2024.3.1 を日本語化した話</title>
+      <link>/posts/androidstudiolanguage/</link>
+      <pubDate>Mon, 17 Mar 2025 10:34:08 +0900</pubDate>
+      
+      <guid>/posts/androidstudiolanguage/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;はじめに 
+    &lt;div id=&#34;%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;皆さんAndroidStudioをmeerkatへアップデートしてらっしゃるでしょうか。ワイはノリと勢いで更新してしまいました。&lt;br&gt;
+アプデしてから日本語化できないことに気づき、1週間くらい我慢してたけど耐えられなくなったので日本語化しました。&lt;br&gt;
+備忘録的なアレを残しておきます&lt;/p&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;プラグインあるんじゃないの 
+    &lt;div id=&#34;%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%82%E3%82%8B%E3%82%93%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%82%E3%82%8B%E3%82%93%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;ってことですよね。ﾊｲ。laybugはあるけどmeerkatは無いです。日本語化プラグインがバージョン不一致でエラー出て使えんなりました。&lt;br&gt;
+&lt;a href=&#34;https://plugins.jetbrains.com/plugin/13964-japanese-language-pack------/versions&#34; target=&#34;_blank&#34;&gt;このプラグイン&lt;/a&gt;は更新されるかどうか分からんらしいです。&lt;br&gt;
+どうやらInteliJ IDEに日本語が内蔵されてしまった関係でメンテナンスされないらしい。&lt;del&gt;控えめに言ってクソ&lt;/del&gt;&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;日本語化する方法 
+    &lt;div id=&#34;%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;ということで解説していきます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;InteliJ IDE Comunity Editionをインストールする&lt;/li&gt;
+&lt;li&gt;pluginフォルダから日本語化プラグインを頂く&lt;/li&gt;
+&lt;li&gt;Android Studioのpluginフォルダへコピー&lt;/li&gt;
+&lt;li&gt;Appearance &amp;amp; Behavior&amp;gt;System Settings&amp;gt;Language and RegionのLanguageを日本語に変更&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;こんだけです。
+以下に注意点だけまとめておきます。&lt;/p&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;注意点 
+    &lt;div id=&#34;%E6%B3%A8%E6%84%8F%E7%82%B9&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%B3%A8%E6%84%8F%E7%82%B9&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;InteliJ IDE のpluginフォルダパス:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Claude 3.7でアプリを作った話</title>
+      <link>/posts/makeappinclaude3.7/</link>
+      <pubDate>Mon, 03 Mar 2025 22:40:45 +0900</pubDate>
+      
+      <guid>/posts/makeappinclaude3.7/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;はじめに 
+    &lt;div id=&#34;%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;今回もテスト回です。ほとんど日記。&lt;br&gt;
+真面目なものを探している人は帰ってください。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;アプリを作る経緯 
+    &lt;div id=&#34;%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%82%8B%E7%B5%8C%E7%B7%AF&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%82%8B%E7%B5%8C%E7%B7%AF&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;じゃがびぃさんが入ってるプロジェクトのえらいさんからアプリを作れと言われてしまいました。どうやら謎の大会で使用するらしいです。&lt;/p&gt;
+&lt;p&gt;bluetoothでモジュールと接続してコントローラーの値を送るだけの簡単なアプリですが、めんどくさがったじゃがびぃさんは全部丸投げすることにしました。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;丸投げするにあたって 
+    &lt;div id=&#34;%E4%B8%B8%E6%8A%95%E3%81%92%E3%81%99%E3%82%8B%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%B8%B8%E6%8A%95%E3%81%92%E3%81%99%E3%82%8B%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;kotlinなんも分からんかったので先ずは勉強することにしました。&lt;br&gt;
+kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ覚えたら終わりだったので楽でした。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;コード全部丸投げする 
+    &lt;div id=&#34;%E3%82%B3%E3%83%BC%E3%83%89%E5%85%A8%E9%83%A8%E4%B8%B8%E6%8A%95%E3%81%92%E3%81%99%E3%82%8B&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%82%B3%E3%83%BC%E3%83%89%E5%85%A8%E9%83%A8%E4%B8%B8%E6%8A%95%E3%81%92%E3%81%99%E3%82%8B&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;最初はよう分からんので、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;アレ実装したい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;って指示を出してました。&lt;br&gt;
+これだと精度が悪いということに気づいたので、&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ThinkPadでWifi7を使えるようにしてみた話</title>
+      <link>/posts/wifi7inthinkpad/</link>
+      <pubDate>Fri, 18 Oct 2024 18:02:06 +0900</pubDate>
+      
+      <guid>/posts/wifi7inthinkpad/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;はじめに 
+    &lt;div id=&#34;%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;p&gt;大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 &lt;br&gt;
+オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 &lt;br&gt;
+というわけで備忘録的な感じでつらつらと書いていきます。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;スペック 
+    &lt;div id=&#34;%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%82%B9%E3%83%9A%E3%83%83%E3%82%AF&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;うちのはLenovoの公式からカスタムしたモデルを買いました。参考程度に下にスペックを書いときます。&lt;/p&gt;
+&lt;p&gt;ThinkPad E16 Gen 1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;プロセッサー インテル® Core™ i7-13700H&lt;/li&gt;
+&lt;li&gt;OS Windows 11 Home 64bit&lt;/li&gt;
+&lt;li&gt;メモリ 32 GB DDR4-3200MHz&lt;/li&gt;
+&lt;li&gt;1stストレージ 512 GB SSD&lt;/li&gt;
+&lt;li&gt;2ndストレージ 256 GB SSD ←ubuntu入れてます&lt;/li&gt;
+&lt;li&gt;ディスプレイ 16&amp;quot; WUXGA液晶 (1920 x 1200) IPS, マルチタッチパネル&lt;/li&gt;
+&lt;li&gt;グラフィックカード インテル® Iris® Xe&lt;/li&gt;
+&lt;li&gt;内蔵カメラ 1080p FHDカメラ、マイク&lt;/li&gt;
+&lt;li&gt;指紋センサー 指紋センサー&lt;/li&gt;
+&lt;li&gt;キーボード バックライト、ブラック、数値キーパッド付 - 日本語&lt;/li&gt;
+&lt;li&gt;無線LANアダプター Wi-Fi 6対応 (IEEE 802.11ax/ac/a/b/g/n準拠) 2x2 &amp;amp; Bluetooth® (RealTek® 8852BE)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一番下以外は関係ないですね。&lt;del&gt;タッチパネルにしたのを自慢したかった&lt;/del&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>markdownの書き方に慣れてみる</title>
+      <link>/posts/test2/</link>
+      <pubDate>Fri, 18 Oct 2024 15:02:06 +0900</pubDate>
+      
+      <guid>/posts/test2/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;markdownの書き方が分からない 
+    &lt;div id=&#34;markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%8C%E5%88%86%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%8C%E5%88%86%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;p&gt;はい。ノリと勢いで始めてしまったせいで分からんなってます。&lt;/p&gt;
+&lt;p&gt;というわけでmarkdownの練習がてら色々触ってみております。自己満足なそういうアレです。&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;自分語りをしてみる 
+    &lt;div id=&#34;%E8%87%AA%E5%88%86%E8%AA%9E%E3%82%8A%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%87%AA%E5%88%86%E8%AA%9E%E3%82%8A%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;ノリと勢いでmisskeyのサーバーを運営しております。&lt;a href=&#34;mk.tenpest-moon..uk&#34;&gt;月のテンペスト&lt;/a&gt;という鯖の鯖缶やってます&lt;/p&gt;
+&lt;p&gt;中途半端な大学のちょっとしたプロジェクトに参加して毎日ﾋｰﾋｰやってます&lt;/p&gt;
+&lt;p&gt;今回作ろうと思った理由はプロジェクトでやることがないなったからです&lt;/p&gt;
+&lt;p&gt;遊び半分で作りました　　&lt;/p&gt;
+&lt;p&gt;泣きながらやったらなんかできたのでマズいことをやっている可能性が微レ存&lt;/p&gt;
+&lt;p&gt;ブログ作ったはいいものの楽に書けないと多分触らなくなるのでobsidianで書けるようにしてみました&lt;/p&gt;
+&lt;p&gt;どないなってるかよくわからんのでこれもテストです&lt;/p&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;改行の仕方が分からない　 
+    &lt;div id=&#34;%E6%94%B9%E8%A1%8C%E3%81%AE%E4%BB%95%E6%96%B9%E3%81%8C%E5%88%86%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%94%B9%E8%A1%8C%E3%81%AE%E4%BB%95%E6%96%B9%E3%81%8C%E5%88%86%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;なんか改行できないんですけど&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;teusto  tesuto←これは半角改行2つ&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;teusto　　tesuto←これは全角改行2つ&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;tesuto &lt;code&gt;&amp;lt;br&amp;gt;tesuto←これはbr&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;どんだけやっても改行されないのはなんでですか&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;あれですかhugoかparams.tomlになんか書いてないからですか&lt;/p&gt;
+&lt;p&gt;markdownの書き方が分からなくなってきたのでこれくらいにしときます。&lt;/p&gt;
+&lt;p&gt;おわり。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>/posts/test1/</link>
+      <pubDate>Fri, 18 Oct 2024 10:02:06 +0900</pubDate>
+      
+      <guid>/posts/test1/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;これはテストです 
+    &lt;div id=&#34;%E3%81%93%E3%82%8C%E3%81%AF%E3%83%86%E3%82%B9%E3%83%88%E3%81%A7%E3%81%99&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E3%81%93%E3%82%8C%E3%81%AF%E3%83%86%E3%82%B9%E3%83%88%E3%81%A7%E3%81%99&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;p&gt;はいというわけで何度目か分からない最初の記事を書いています&lt;/p&gt;
+&lt;p&gt;これどう表示されてるか分からんの怖すぎワロタ&lt;/p&gt;
+&lt;p&gt;ひとまず下書きのテンプレート？を作れたはずだけど正しいのかどうか分からない&lt;/p&gt;
+&lt;p&gt;人生何も分からない&lt;/p&gt;
+&lt;p&gt;以上。終わり。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on じゃがびぃのサイト</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on じゃがびぃのサイト</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2025 じゃがびぃ</copyright>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>1章</title>
+      <link>/tags/1%E7%AB%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/1%E7%AB%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>2章</title>
+      <link>/tags/2%E7%AB%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/2%E7%AB%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>3.1章</title>
+      <link>/tags/3.1%E7%AB%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/3.1%E7%AB%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>3章</title>
+      <link>/tags/3%E7%AB%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/3%E7%AB%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
