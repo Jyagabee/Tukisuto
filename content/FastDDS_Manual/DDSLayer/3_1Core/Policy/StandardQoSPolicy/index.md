@@ -60,7 +60,8 @@ writer_ = publisher_->create_datawriter(topic_, writer_qos);```
 </detail>
 
 <detail><summary>XML</summary>
-```<data_writer profile_name="writer_xml_conf_deadline_profile">
+```
+<data_writer profile_name="writer_xml_conf_deadline_profile">
     <qos>
         <deadline>
             <period>
@@ -78,7 +79,8 @@ writer_ = publisher_->create_datawriter(topic_, writer_qos);```
             </period>
         </deadline>
     </qos>
-</data_reader>```
+</data_reader>
+```
 </detail>
 
 #### 3.1.2.1.2 DeadlineQosPolicy
@@ -92,3 +94,14 @@ QoS Policyデータメンバ一覧：
 ##### DestinationOrderQosPolicyKind
 可能な値は2つある(```DestinationOrderQosPolicyKind```参照)：
 
+- ```BY_RECEPTION_TIMESTAMP_DESTINATIONORDER_QOS```: これは、各DataReaderでの受信時刻に基づいてデータを並べ替えることを示す。 
+- ```BY_SOURCE_TIMESTAMP_DESTINATIONORDER_QOS```：これは、メッセージが送信された時のDataWriterのタイムスタンプに基づいてデータを並べることを示す。 このオプションは最終値の一貫性を保証する。
+
+どちらのオプションもOwnershipQosPolicyとOwnershipStrengthQosPolicyの値に依存する。つまり、OwnershipがEXCLUSIVEに設定されていて、最後の値が所有権の強度が低いDataWriterから来たものであれば、それは破棄される。
+
+###### 互換性ルール
+DataReaderとDataWriterのDestinationOrderQosPolicyが異なるkind値を持つ場合の互換性を維持するために、 DataWriterのkindはDataReaderのkindより高いか等しくなければならない。 また、異なる種類の間の順序は、
+
+ ```BY_RECEPTION_TIMESTAMP_DESTINATIONORDER_QOS``` < ```BY_SOURCE_TIMESTAMP_DESTINATIONORDER_QOS ```
+
+#### 3.1.2.1.3. DurabilityQosPolicy
