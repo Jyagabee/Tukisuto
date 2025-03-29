@@ -105,3 +105,73 @@ DataReaderとDataWriterのDestinationOrderQosPolicyが異なるkind値を持つ�
  ```BY_RECEPTION_TIMESTAMP_DESTINATIONORDER_QOS``` < ```BY_SOURCE_TIMESTAMP_DESTINATIONORDER_QOS ```
 
 #### 3.1.2.1.3. DurabilityQosPolicy
+DataWriterは、ネットワーク上にDataReaderが存在しなくても、Topic全体にメッセージを送信できる。  
+DurabilityQoSPolicy は、DataReader が参加する前に Topic 上に存在していたサンプルについて、システムがどのように動作するかを定義する。 システムの動作は、DurabilityQosPolicyKind の値に依存する。  
+QoS Policy データ・メンバのリスト：
+
+|データメンバ名|型|初期値|
+|---|---|---|
+|kind|DurabilityQosPolicyKind|VOLATILE_DURABILITY_QOS for DataReaders <br> TRANSIENT_LOCAL_DURABILITY_QOS for DataWriters|
+
+##### DurabilityQosPolicyKind
+
+可能な値は4つある(DurabilityQosPolicyKind参照)：
+
+- ```TRANSIENT_LOCAL_DURABILITY_QOS```： 新しいDataReaderが参加すると、そのHistoryは過去のサンプルで満たされる。
+- ```TRANSIENT_DURABILITY_QOS```：新しいDataReaderが参加すると、そのHistoryは過去のサンプルで満たされる。
+- ```PERSISTENT_DURABILITY_QOS```：新しいDataReaderが参加すると、そのHistoryは過去のサンプルで満たされる。
+
+##### 互換性ルール
+DataReaderとDataWriterのDurabilityQosPolicyが異なる種類の値を持つ場合の互換性を維持するために、DataWriterの種類はDataReaderの種類より大きいか等しくなければならない。 また、異なる種類の間の順序は次のとおり： 
+```VOLATILE_DURABILITY_QOS``` < ```TRANSIENT_LOCAL_DURABILITY_QOS``` < ```TRANSIENT_DURABILITY_QOS``` < ```PERSISTENT_DURABILITY_QOS``` 
+
+可能な組み合わせを表に示す：
+
+|DataWriter kind|DataReader kind|Compatibility|
+|---|---|---|
+|VOLATILE_DURABILITY_QOS|VOLATILE_DURABILITY_QOS|Yes|
+|VOLATILE_DURABILITY_QOSW||TRANSIENT_LOCAL_DURABILITY_QOS|No|
+|VOLATILE_DURABILITY_QOS|TRANSIENT_DURABILITY_QOS|No|
+|TRANSIENT_LOCAL_DURABILITY_QOS|VOLATILE_DURABILITY_QOS|Yes|
+|TRANSIENT_LOCAL_DURABILITY_QOS|TRANSIENT_LOCAL_DURABILITY_QOS|Yes|
+|TRANSIENT_LOCAL_DURABILITY_QOS|TRANSIENT_DURABILITY_QOS|No|
+|TRANSIENT_DURABILITY_QOS|VOLATILE_DURABILITY_QOS|Yes|
+|TRANSIENT_DURABILITY_QOS|TRANSIENT_LOCAL_DURABILITY_QOS|Yes|
+|TRANSIENT_DURABILITY_QOS|TRANSIENT_DURABILITY_QOS|Yes|
+
+##### 例
+
+<details>
+<summary>C++</summary>
+```
+// This example uses a DataWriter, but it can also be applied to DataReader and Topic entities
+DataWriterQos writer_qos;
+// The DurabilityQosPolicy is constructed with kind = VOLATILE_DURABILITY_QOS by default
+// Change the kind to TRANSIENT_LOCAL_DURABILITY_QOS
+writer_qos.durability().kind = TRANSIENT_LOCAL_DURABILITY_QOS;
+// Use modified QoS in the creation of the corresponding entity
+writer_ = publisher_->create_datawriter(topic_, writer_qos);
+```
+</details>
+
+<details>
+<summary>XML</summary>
+```
+<data_writer profile_name="writer_xml_conf_durability_profile">
+    <qos>
+        <durability>
+            <kind>TRANSIENT_LOCAL</kind>
+         </durability>
+    </qos>
+</data_writer>
+
+<data_reader profile_name="reader_xml_conf_durability_profile">
+    <qos>
+        <durability>
+            <kind>VOLATILE</kind>
+        </durability>
+    </qos>
+</data_reader>
+```
+</details>
+
