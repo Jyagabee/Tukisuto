@@ -26,10 +26,6 @@ autoSwitchAppearance = true
   showMoreLink = true
   cardView = true
   layoutBackgroundBlur = true
-  
-  # 週報カテゴリーを最近の記事から除外
-  [homepage.recent]
-    excludeCategories = ["週報"]
 
 [article]
   showDate = true
