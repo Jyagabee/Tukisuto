@@ -32,15 +32,19 @@ summary: ""
 以下に注意点だけまとめておきます。
 
 ### 注意点
-InteliJ IDE のpluginフォルダパス:
+WindowsのInteliJ IDE のpluginフォルダパス:
 ```
 C:\Users\Users\AppData\Local\Programs\IntelliJ IDEA Community Edition\plugins  
 ```
 この中にlocalization-jaがあるのでコピー  
 
-Android Studioのpluginフォルダパス:
+WindowsのAndroid Studioのpluginフォルダパス:
 ```
 C:\Users\Users\AppData\Local\Programs\Android Studio\plugins
+```
+MacのAndroid Studio のpluginフォルダパス
+```
+'/Applications/Android Studio.app/Contents/plugins'
 ```
 先ほどコピーしてきたディレクトリごとペースト
 
