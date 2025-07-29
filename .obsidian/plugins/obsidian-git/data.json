@@ -1,9 +1,9 @@
 {
   "commitMessage": "vault backup: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
-  "autoSaveInterval": 0,
-  "autoPushInterval": 0,
-  "autoPullInterval": 0,
+  "autoSaveInterval": 10,
+  "autoPushInterval": 10,
+  "autoPullInterval": 10,
   "autoPullOnBoot": false,
   "disablePush": false,
   "pullBeforePush": true,
@@ -16,9 +16,9 @@
   "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": false,
   "treeStructure": false,
-  "refreshSourceControl": false,
-  "basePath": "",
-  "differentIntervalCommitAndPush": false,
+  "refreshSourceControl": true,
+  "basePath": "Tukisuto",
+  "differentIntervalCommitAndPush": true,
   "changedFilesInStatusBar": false,
   "showedMobileNotice": true,
   "refreshSourceControlTimer": 7000,
@@ -50,7 +50,9 @@
     },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
-    "gutterSpacingFallbackLength": 5
+    "gutterSpacingFallbackLength": 5,
+    "lastShownAuthorDisplay": "initials",
+    "lastShownDateTimeFormatOptions": "date"
   },
   "autoCommitMessage": "vault backup: {{date}}"
 }
