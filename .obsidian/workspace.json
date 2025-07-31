@@ -175,7 +175,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "omnisearch:Omnisearch": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
@@ -183,8 +182,9 @@
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
       "obsidian-git:Open Git source control": false,
+      "periodic-notes:Open today": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "ab7e8b183fe7d8b0",
