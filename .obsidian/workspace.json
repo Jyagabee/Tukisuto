@@ -11,10 +11,14 @@
             "id": "f146dc195614f0b9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Templates/無題のファイル.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "無題のファイル"
             }
           }
         ]
@@ -162,8 +166,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "アクティブでなくなったプラグイン"
             }
           }
         ],
@@ -175,6 +179,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "omnisearch:Omnisearch": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
@@ -183,12 +188,12 @@
       "command-palette:コマンドパレットを開く": false,
       "obsidian-git:Open Git source control": false,
       "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "4ccbfebc8b7dfcd7",
+  "active": "f146dc195614f0b9",
   "lastOpenFiles": [
+    "Templates/無題のファイル.md",
     "2025-W31.md",
     "2025-07-29.md",
     "box/test/test.md",
@@ -234,7 +239,6 @@
     "Tukisuto/content/weekly/20250321",
     "Tukisuto/content/weekly/20250314",
     "Tukisuto/content/posts/_index.md",
-    "Tukisuto/content/about/index.md",
     "無題のファイル.canvas"
   ]
 }
