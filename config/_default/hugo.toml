@@ -1,11 +1,53 @@
 baseURL = "/"
+title = "じゃがびぃのサイト"
 languageCode = "ja"
 defaultContentLanguage = "ja"
-theme = "blowfish"
+hasCJKLanguage = true
+theme = "stack"
+
 [frontmatter]
-lastmod = [":git",":fileModTime",":default"]
+lastmod = [":git", ":fileModTime", ":default"]
+
 [outputs]
-home = ["HTML","RSS","JSON"]
-[params]
-  [params.article]
-    showTableOfContents = true
+home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+pagerSize = 10
+
+[services.disqus]
+shortname = ""
+
+[services.googleAnalytics]
+id = ""
+
+[permalinks]
+posts = "/posts/:slug/"
+weekly = "/weekly/:slug/"
+
+[related]
+includeNewer = true
+threshold = 60
+toLower = false
+[[related.indices]]
+name = "tags"
+weight = 100
+[[related.indices]]
+name = "categories"
+weight = 200
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = true
+    startLevel = 2
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 4

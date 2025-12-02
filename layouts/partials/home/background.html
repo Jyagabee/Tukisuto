@@ -1,0 +1,11 @@
+{{ $recent := where .Site.RegularPages "Section" "posts" }}
+{{ $recent = $recent | first 9 }}
+
+{{ if .Site.Params.homepage.showRecent | default false }}
+<section>
+    {{ with .Site.Params.homepage.recentLimit }}
+        {{ $recent = $recent | first . }}
+    {{ end }}
+    {{ partial "recent-articles/main.html" (dict "context" . "recent" $recent) }}
+</section>
+{{ end }}

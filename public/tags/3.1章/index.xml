@@ -1,44 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>3.1章 on じゃがびぃのサイト</title>
-    <link>/tags/3.1%E7%AB%A0/</link>
-    <description>Recent content in 3.1章 on じゃがびぃのサイト</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <copyright>© 2025 じゃがびぃ</copyright>
-    <atom:link href="/tags/3.1%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>3章 エンティティ</title>
-      <link>/fastdds_manual/ddslayer/3_1core/entity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/fastdds_manual/ddslayer/3_1core/entity/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;3.1.1. エンティティ 
-    &lt;div id=&#34;311-%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#311-%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;エンティティは、全てのDDSエンティティの抽象ベースクラスであり、QoSポリシー、リスナー、ステータスをサポートするオブジェクトを意味する。&lt;/p&gt;
-
-
-&lt;h3 class=&#34;relative group&#34;&gt;3.1.1.1 エンティティの型 
-    &lt;div id=&#34;3111-%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3%E3%81%AE%E5%9E%8B&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#3111-%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3%E3%81%AE%E5%9E%8B&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h3&gt;
-&lt;ul&gt;
+    <channel>
+        <title>3.1章 on じゃがびぃのサイト</title>
+        <link>//localhost:1313/tags/3.1%E7%AB%A0/</link>
+        <description>Recent content in 3.1章 on じゃがびぃのサイト</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja</language><atom:link href="//localhost:1313/tags/3.1%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>3章 エンティティ</title>
+        <link>//localhost:1313/fastdds_manual/ddslayer/3_1core/entity/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/fastdds_manual/ddslayer/3_1core/entity/</guid>
+        <description>&lt;h2 id=&#34;311-エンティティ&#34;&gt;3.1.1. エンティティ
+&lt;/h2&gt;&lt;p&gt;エンティティは、全てのDDSエンティティの抽象ベースクラスであり、QoSポリシー、リスナー、ステータスをサポートするオブジェクトを意味する。&lt;/p&gt;
+&lt;h3 id=&#34;3111-エンティティの型&#34;&gt;3.1.1.1 エンティティの型
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;DomainParticipant&lt;/strong&gt;： このエンティティは、サービスのエントリ・ポイントであり、パブリッシャ、サブスクライバ、およびトピックのファクトリとして機能する。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Publisher&lt;/strong&gt;： 任意の数の DataWriters を作成できるファクトリとして動作する。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Subscriber&lt;/strong&gt; : 任意の数の DataWriters を作成できるファクトリとして動作する。&lt;/li&gt;
@@ -47,96 +23,116 @@
 &lt;li&gt;&lt;strong&gt;DataReader&lt;/strong&gt; : 受信したデータにアクセスするためのオブジェクト。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以下の図は、全てのDDSエンティティ間の階層を示している:&lt;/p&gt;
-&lt;p&gt;
-    &lt;figure&gt;
-      &lt;img
-        class=&#34;my-0 rounded-md&#34;
-        loading=&#34;lazy&#34;
-        src=&#34;/fastdds_manual/ddslayer/3_1core/entity/entity_diagram.svg&#34;
-        alt=&#34;entity_diagram&#34;
-      /&gt;
-      
-    &lt;/figure&gt;
-&lt;/p&gt;
-
-
-&lt;h4 class=&#34;relative group&#34;&gt;3.1.1.2 共通するエンティティの特徴 
-    &lt;div id=&#34;3112-%E5%85%B1%E9%80%9A%E3%81%99%E3%82%8B%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3%E3%81%AE%E7%89%B9%E5%BE%B4&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#3112-%E5%85%B1%E9%80%9A%E3%81%99%E3%82%8B%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3%E3%81%AE%E7%89%B9%E5%BE%B4&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h4&gt;
-&lt;p&gt;全てのエンティティ型には、エンティティの概念に共通するいくつかの特徴がある。以下に示す。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>3章 コア</title>
-      <link>/fastdds_manual/ddslayer/3_1core/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/fastdds_manual/ddslayer/3_1core/</guid>
-      <description>&lt;h1 class=&#34;relative group&#34;&gt;3.1 コア 
-    &lt;div id=&#34;31-%E3%82%B3%E3%82%A2&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#31-%E3%82%B3%E3%82%A2&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h1&gt;
-&lt;p&gt;このモジュールでは、他のモジュールd絵使用されるインフラストラクチャクラスとタイプを定義する。&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/fastdds_manual/ddslayer/3_1core/entity/entity_diagram.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;entity_diagram&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3112-共通するエンティティの特徴&#34;&gt;3.1.1.2 共通するエンティティの特徴
+&lt;/h4&gt;&lt;p&gt;全てのエンティティ型には、エンティティの概念に共通するいくつかの特徴がある。以下に示す。&lt;/p&gt;
+&lt;h5 id=&#34;31121-エンティティ識別子&#34;&gt;3.1.1.2.1 エンティティ識別子
+&lt;/h5&gt;&lt;p&gt;各エンティティは一意のIDで識別され、このIDはDDSエンティティおよび対応するRTPSエンティティが存在する場合はそのエンティティ間で共有される。 このIDはEntity基底クラスで宣言されたインスタンスハンドルオブジェクトに格納され、ゲッター関数&lt;code&gt;get_instance_handle()&lt;/code&gt;を使用してアクセスできる。&lt;/p&gt;
+&lt;h5 id=&#34;31122-qosポリシー&#34;&gt;3.1.1.2.2 QoSポリシー
+&lt;/h5&gt;&lt;p&gt;各エンティティの動作は、設定ポリシーのセットで設定できる。 各エンティティタイプには、対応するQoS（Quality of Service）クラスがあり、当該エンティティタイプに影響するすべてのポリシーがグループ化されている。 ユーザーは、これらのQoSクラスのインスタンスを作成し、含まれているポリシーを必要に応じて変更し、エンティティの作成時または後で、すべてのエンティティが公開している&lt;code&gt;set_qos()&lt;/code&gt;関数（&lt;code&gt;DomainParticipant::set_qos()&lt;/code&gt;、&lt;code&gt;Publisher::set_qos()&lt;/code&gt;、&lt;code&gt;Subscriber::set_qos()&lt;/code&gt;、&lt;code&gt;Topic::set_qos()&lt;/code&gt;、&lt;code&gt;DataWriter::set_qos()&lt;/code&gt;、&lt;code&gt;DataReader::set_qos()&lt;/code&gt;）を使用して、エンティティを設定するために使用できます。 QoSクラスとその中に含まれるポリシーについては、各エンティティ・タイプのドキュメントで説明されています。&lt;/p&gt;
+&lt;h5 id=&#34;31123-リスナー&#34;&gt;3.1.1.2.3 リスナー
+&lt;/h5&gt;&lt;p&gt;リスナーは、エンティティがイベントに応答して呼び出す関数を持つオブジェクトである。 したがって、リスナーは、エンティティの Status の変更をアプリケーションに通知するための非同期通知システムとして機能する。 すべてのエンティティ・タイプは、Status の変更をアプリケーションに通知するためにエンティティがトリガーするコールバック関数を含む抽象リスナー・インターフェースを定義している。 ユーザーは、これらのインタフェースを継承した独自のリスナーを実装し、アプリケーションで必要なコールバックを実装することができる。 その後、これらのリスナーを各エンティティの作成時または後で、各エンティティが公開する &lt;code&gt;set_listener()&lt;/code&gt; 関数で各エンティティにリンクできる（&lt;code&gt;DomainParticipant::set_listener()&lt;/code&gt;, &lt;code&gt;Publisher::set_listener()&lt;/code&gt;, &lt;code&gt;Subscriber::set_listener()&lt;/code&gt;, &lt;code&gt;Topic::set_listener()&lt;/code&gt;, &lt;code&gt;DataWriter::set_listener()&lt;/code&gt;, &lt;code&gt;DataReader::set_listener()&lt;/code&gt;）。 各エンティティ・タイプが持つリスナー・インターフェースとそのコールバックは、各エンティティ・タイプのドキュメントで説明されている。 イベントが発生すると、NULL でなく、StatusMask で対応するコールバックが有効になっているリスナーを持つ最下位レベルのエンティティによって処理される。
+次の図に示すように、上位レベルのリスナーは下位レベルのリスナーを継承する：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/fastdds_manual/ddslayer/3_1core/entity/listeners_inheritance_diagram.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;listeners_inheritance_diagram&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;メモ&lt;/summary&gt;
+on_data_on_readers()コールバックは、on_data_available()の前にメッセージを傍受する。 これは、DomainParticipantListenerが有効になっている場合、ユーザーはデフォルトでリスナーがStatusMask::all()を使用することを考慮する必要があることを意味する。 コールバック・エンティティの階層が保持されるので、on_data_on_readers()がこの場合に呼び出されることになる。 アプリケーションが代わりにon_data_available()を使いたい場合は、StatusMaskの対応するビットを無効にする必要がある。
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;重要&lt;/summary&gt;
+エンティティの作成時に``` StatusMask::none() ```を使用すると、DDS 標準コールバックが無効になる：
+- ```on_sample_rejected()```
+- ```on_liveliness_changed()```
+- ```on_requested_deadline_missed()```
+- ```on_requested_incompatible_qos()```
+- ```on_data_available()```
+- ```on_subscription_matched()```
+- ```on_sample_lost()```
+- ```on_offered_incompatible_qos()```
+- ```on_offered_deadline_missed()```
+- ```on_liveliness_lost()```
+- ```on_publication_matched()```
+- ```on_inconsistent_topic()```
+- ```on_data_on_readers()```
+&lt;p&gt;FastDDS固有のコールバックは常に有効：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;on_participant_discovery()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;onParticipantAuthentication()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on_data_reader_discovery()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on_data_writer_discovery()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;on_unacknowledged_sample_removed()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;注意&lt;/summary&gt;
+実装されたリスナーごとに1つのスレッドのみが作成されるため、 リスナー関数をシンプルに保ち、そのような情報の処理を適切なクラスに任せること。
+&lt;p&gt;Listener メンバ関数のスコープ内で Entity を生成または削除しないこと。 その代わりに、Listener クラスを情報チャネルとして使用し、上位の Entity クラスでそのような振る舞いをカプセル化することを推奨する。&lt;/p&gt;
+&lt;/details&gt;
+&lt;h5 id=&#34;31124-ステータス&#34;&gt;3.1.1.2.4 ステータス
+&lt;/h5&gt;&lt;p&gt;各エンティティは、そのエンティティの通信ステータスを表すステータスオブジェクトのセットに関連付けられている。 これらのステータス値の変更は、アプリケーションに非同期に通知するための適切なリスナーコールバックの呼び出しをトリガーする。 すべてのステータスオブジェクトのリストとその内容の説明は Status を参照すること。 また、どのステータスがどのエンティティタイプに適用されるかを見つけることもできる。&lt;/p&gt;
+&lt;h5 id=&#34;31125-statuscondition&#34;&gt;3.1.1.2.5 StatusCondition
+&lt;/h5&gt;&lt;p&gt;すべてのエンティティは StatusCondition を所有しており、有効なステータスが変更されるたびに通知される。StatusCondition は、エンティティと待機セット間のリンクを提供する。詳細については、「条件と待機セット」セクションを参照すること。&lt;/p&gt;
+&lt;h5 id=&#34;31126-エンティティの有効化&#34;&gt;3.1.1.2.6 エンティティの有効化
+&lt;/h5&gt;&lt;p&gt;すべてのエンティティは、有効または無効のいずれかで作成できる。 デフォルトでは、ファクトリはエンティティを有効化して作成するように構成されているが、有効化されたファクトリでEntityFactoryQosPolicyを使用して変更できる。 無効化されたファクトリは、QoS に関係なく無効化されたエンティティを作成する。 無効にされたエンティティの操作は次のものに制限される。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;エンティティの QoS ポリシーの設定/取得。&lt;/li&gt;
+&lt;li&gt;エンティティのリスナーの設定/取得。&lt;/li&gt;
+&lt;li&gt;サブエンティティの作成/削除。&lt;/li&gt;
+&lt;li&gt;エンティティのステータスの取得（変更されない場合も）。&lt;/li&gt;
+&lt;li&gt;ルックアップ操作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;この状態で呼び出された他の関数は &lt;code&gt;NOT_ENABLED&lt;/code&gt; を返す。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>3章 コア</title>
+        <link>//localhost:1313/fastdds_manual/ddslayer/3_1core/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/fastdds_manual/ddslayer/3_1core/</guid>
+        <description>&lt;h1 id=&#34;31-コア&#34;&gt;3.1 コア
+&lt;/h1&gt;&lt;p&gt;このモジュールでは、他のモジュールd絵使用されるインフラストラクチャクラスとタイプを定義する。&lt;br&gt;
 エンティティクラス、QoSポリシー、およびステータスの定義が含まれる。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;エンティティ&lt;/strong&gt;: エンティティは、ステータスを持ち、ポリシーを設定できるDDS通信オブジェクトである。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ポリシー&lt;/strong&gt;: ポリシーは、エンティティの動作を制御する各構成オブジェクトである。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ステータス&lt;/strong&gt;: エンティティに関連する各オブジェクトで、その値はエンティティの通信ステータスを表す。&lt;/li&gt;
-&lt;/ul&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>3章 ポリシー</title>
-      <link>/fastdds_manual/ddslayer/3_1core/policy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/fastdds_manual/ddslayer/3_1core/policy/</guid>
-      <description>&lt;h2 class=&#34;relative group&#34;&gt;3.1.2. ポリシー 
-    &lt;div id=&#34;312-%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#312-%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h2&gt;
-&lt;p&gt;サービス品質（QoS）はサービスの動作を指定するために使用され、ユーザーは各エンティティがどのように動作するかを定義することができる。 システムの柔軟性を高めるため、QoSは複数のQoSポリシーに分割され、それぞれ独立に設定できる。 ただし、複数のポリシーが競合する場合もある。 各Qosポリシーは、QosPolicyId_t列挙子で定義された一意のIDを持つ。 このIDは、一部のStatusインスタンスで、Statusが参照する特定のQos Policyを識別するために使用される。 QoS Policyには不変のものがあり、エンティティの作成時またはenable操作を呼び出す前にのみ指定できる。 各DSエンティティは、標準QoS Policy、XTypes拡張、およびeProsima拡張を混在させることができるQoS Policyの特定のセットを持つ。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>3章 標準的なQoSポリシー</title>
-      <link>/fastdds_manual/ddslayer/3_1core/policy/standardqospolicy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/fastdds_manual/ddslayer/3_1core/policy/standardqospolicy/</guid>
-      <description>&lt;h3 class=&#34;relative group&#34;&gt;3.1.2.1. 標準的なQoSポリシー 
-    &lt;div id=&#34;3121-%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AAqos%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#3121-%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AAqos%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h3&gt;
-&lt;p&gt;このセクションでは、DDS標準の各QoSポリシーについて説明する：&lt;/p&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>3章 ポリシー</title>
+        <link>//localhost:1313/fastdds_manual/ddslayer/3_1core/policy/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/fastdds_manual/ddslayer/3_1core/policy/</guid>
+        <description>&lt;h2 id=&#34;312-ポリシー&#34;&gt;3.1.2. ポリシー
+&lt;/h2&gt;&lt;p&gt;サービス品質（QoS）はサービスの動作を指定するために使用され、ユーザーは各エンティティがどのように動作するかを定義することができる。 システムの柔軟性を高めるため、QoSは複数のQoSポリシーに分割され、それぞれ独立に設定できる。 ただし、複数のポリシーが競合する場合もある。 各Qosポリシーは、QosPolicyId_t列挙子で定義された一意のIDを持つ。 このIDは、一部のStatusインスタンスで、Statusが参照する特定のQos Policyを識別するために使用される。 QoS Policyには不変のものがあり、エンティティの作成時またはenable操作を呼び出す前にのみ指定できる。 各DSエンティティは、標準QoS Policy、XTypes拡張、およびeProsima拡張を混在させることができるQoS Policyの特定のセットを持つ。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>3章 標準的なQoSポリシー</title>
+        <link>//localhost:1313/fastdds_manual/ddslayer/3_1core/policy/standardqospolicy/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/fastdds_manual/ddslayer/3_1core/policy/standardqospolicy/</guid>
+        <description>&lt;h3 id=&#34;3121-標準的なqosポリシー&#34;&gt;3.1.2.1. 標準的なQoSポリシー
+&lt;/h3&gt;&lt;p&gt;このセクションでは、DDS標準の各QoSポリシーについて説明する：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;DeadlineQosPolicy&lt;/li&gt;
 &lt;li&gt;DestinationOrderQosPolicy&lt;/li&gt;
@@ -161,19 +157,8 @@
 &lt;li&gt;UserDataQosPolicy&lt;/li&gt;
 &lt;li&gt;WriterDataLifecycleQosPolicy&lt;/li&gt;
 &lt;/ul&gt;
-
-
-&lt;h4 class=&#34;relative group&#34;&gt;3.1.2.1.1. DeadlineQosPolicy 
-    &lt;div id=&#34;31211-deadlineqospolicy&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#31211-deadlineqospolicy&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h4&gt;
-&lt;p&gt;このQoSポリシーは、新しいサンプルの頻度がある閾値を下回るとアラームを発する。 これは、データが定期的に更新されることが期待される場合に便利である（&lt;code&gt;DeadlineQosPolicy&lt;/code&gt;を参照）。&lt;br&gt;
+&lt;h4 id=&#34;31211-deadlineqospolicy&#34;&gt;3.1.2.1.1. DeadlineQosPolicy
+&lt;/h4&gt;&lt;p&gt;このQoSポリシーは、新しいサンプルの頻度がある閾値を下回るとアラームを発する。 これは、データが定期的に更新されることが期待される場合に便利である（&lt;code&gt;DeadlineQosPolicy&lt;/code&gt;を参照）。&lt;br&gt;
 公開側では、期限はアプリケーションが新しいサンプルを供給することが期待される最大期間を定義する。&lt;br&gt;
 キーを持つトピックの場合、このQoSはキーごとに適用される。 ある車両の位置を定期的に公開する必要があるとする。 その場合、データ型のキーとして車両のIDを設定し、期限QoSを希望する公開期間に設定することが可能である。&lt;/p&gt;
 &lt;p&gt;QoS Policyデータメンバー一覧：&lt;/p&gt;
@@ -193,21 +178,230 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-
-
-&lt;h5 class=&#34;relative group&#34;&gt;互換性ルール 
-    &lt;div id=&#34;%E4%BA%92%E6%8F%9B%E6%80%A7%E3%83%AB%E3%83%BC%E3%83%AB&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
-        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
-            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%BA%92%E6%8F%9B%E6%80%A7%E3%83%AB%E3%83%BC%E3%83%AB&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;        
-    
-&lt;/h5&gt;
-&lt;p&gt;DataReaderとDataWriterのDeadlineQosPolicy間の互換性を維持するために、（DataWriterに設定された）オファーされた期限期間は、（DataReaderに設定された）要求された期限期間以下でなければならない。&lt;/p&gt;</description>
-      
-    </item>
-    
-  </channel>
+&lt;h5 id=&#34;互換性ルール&#34;&gt;互換性ルール
+&lt;/h5&gt;&lt;p&gt;DataReaderとDataWriterのDeadlineQosPolicy間の互換性を維持するために、（DataWriterに設定された）オファーされた期限期間は、（DataReaderに設定された）要求された期限期間以下でなければならない。&lt;/p&gt;
+&lt;p&gt;DeadlineQosPolicyは TimeBasedFilterQosPolicy と一貫して設定する必要がある。つまり、期限は 期間は最小間隔以上でなければならない。&lt;/p&gt;
+&lt;h5 id=&#34;例&#34;&gt;例
+&lt;/h5&gt;&lt;p&gt;&lt;detail&gt;&lt;summary&gt;C++&lt;/summary&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;DataWriterQos&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;writer_qos&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;The&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DeadlineQosPolicy&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;constructed&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;an&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;infinite&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;period&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;by&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;default&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Change&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;period&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;second&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer_qos&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deadline&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;period&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;seconds&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer_qos&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deadline&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;period&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nanosec&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Use&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;modified&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;QoS&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;creation&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;of&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;corresponding&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;entity&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer_&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;publisher_&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create_datawriter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;topic_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;writer_qos&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;detail&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;detail&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;summary&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;XML&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;summary&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&amp;lt;data_writer profile_name=&amp;ldquo;writer_xml_conf_deadline_profile&amp;rdquo;&amp;gt;
+&lt;qos&gt;
+&lt;deadline&gt;
+&lt;period&gt;
+&lt;sec&gt;1&lt;/sec&gt;
+&lt;/period&gt;
+&lt;/deadline&gt;
+&lt;/qos&gt;
+&amp;lt;/data_writer&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;data_reader profile_name=&amp;ldquo;reader_xml_conf_deadline_profile&amp;rdquo;&amp;gt;
+&lt;qos&gt;
+&lt;deadline&gt;
+&lt;period&gt;
+&lt;sec&gt;1&lt;/sec&gt;
+&lt;/period&gt;
+&lt;/deadline&gt;
+&lt;/qos&gt;
+&amp;lt;/data_reader&amp;gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-mysql&#34; data-lang=&#34;mysql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;detail&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#### 3.1.2.1.2 DeadlineQosPolicy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;複数の&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriterが同じTopicで同じキーを使用してメッセージを送信することができ&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReader側では&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、それらのメッセージはすべてデータの同じインスタンス内に格納される（&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DestinationOrderQosPolicyを参照&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;）。この&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;QoSポリシーは&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、それらのメッセージの論理的な順序を決定するために使用される基準を制御する。システムの動作は、&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DestinationOrderQosPolicyKind&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;の値に依存する。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;QoS&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Policyデータメンバ一覧&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;データメンバ名&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;型&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;デフォルト値&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|---|---|-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;-- |
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;kind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```|```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DestinationOrderQosPolicyKind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```|```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BY_RECEPTION_TIMESTAMP_DESTINATIONORDER_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##### DestinationOrderQosPolicyKind
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;可能な値は&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;つある&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DestinationOrderQosPolicyKind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;参照&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BY_RECEPTION_TIMESTAMP_DESTINATIONORDER_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;これは、各&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaderでの受信時刻に基づいてデータを並べ替えることを示す&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BY_SOURCE_TIMESTAMP_DESTINATIONORDER_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：これは、メッセージが送信された時の&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriterのタイムスタンプに基づいてデータを並べることを示す&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;このオプションは最終値の一貫性を保証する。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;どちらのオプションも&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OwnershipQosPolicyとOwnershipStrengthQosPolicyの値に依存する&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。つまり、&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OwnershipがEXCLUSIVEに設定されていて&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、最後の値が所有権の強度が低い&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriterから来たものであれば&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、それは破棄される。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;###### 互換性ルール
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaderとDataWriterのDestinationOrderQosPolicyが異なるkind値を持つ場合の互換性を維持するために&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriterのkindはDataReaderのkindより高いか等しくなければならない&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;また、異なる種類の間の順序は、&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BY_RECEPTION_TIMESTAMP_DESTINATIONORDER_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BY_SOURCE_TIMESTAMP_DESTINATIONORDER_QOS&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#### 3.1.2.1.3. DurabilityQosPolicy
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriterは&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、ネットワーク上に&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaderが存在しなくても&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Topic全体にメッセージを送信できる&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DurabilityQoSPolicy&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;は、&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReader&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;が参加する前に&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Topic&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;上に存在していたサンプルについて、システムがどのように動作するかを定義する。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;システムの動作は、&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DurabilityQosPolicyKind&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;の値に依存する。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;QoS&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Policy&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;データ・メンバのリスト：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;データメンバ名&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;型&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;初期値&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|---|---|---|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;kind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DurabilityQosPolicyKind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaders&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriters&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##### DurabilityQosPolicyKind
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;可能な値は&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;つある&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DurabilityQosPolicyKind参照&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;新しい&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaderが参加すると&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、その&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Historyは過去のサンプルで満たされる&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：新しい&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaderが参加すると&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、その&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Historyは過去のサンプルで満たされる&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PERSISTENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：新しい&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaderが参加すると&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、その&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Historyは過去のサンプルで満たされる&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##### 互換性ルール
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReaderとDataWriterのDurabilityQosPolicyが異なる種類の値を持つ場合の互換性を維持するために&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;、&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriterの種類はDataReaderの種類より大きいか等しくなければならない&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;また、異なる種類の間の順序は次のとおり：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PERSISTENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;```&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;可能な組み合わせを表に示す：&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataWriter&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;kind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataReader&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;kind&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Compatibility&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|---|---|---|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Yes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOSW&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;||&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;No&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;No&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Yes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Yes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;No&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VOLATILE_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Yes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_LOCAL_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Yes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TRANSIENT_DURABILITY_QOS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Yes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##### 例
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;details&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;summary&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;summary&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;// This example uses a DataWriter, but it can also be applied to DataReader and Topic entities
+DataWriterQos writer_qos;
+// The DurabilityQosPolicy is constructed with kind = VOLATILE_DURABILITY_QOS by default
+// Change the kind to TRANSIENT_LOCAL_DURABILITY_QOS
+writer_qos.durability().kind = TRANSIENT_LOCAL_DURABILITY_QOS;
+// Use modified QoS in the creation of the corresponding entity
+writer_ = publisher_-&amp;gt;create_datawriter(topic_, writer_qos);&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/details&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;details&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;summary&amp;gt;XML&amp;lt;/summary&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&amp;lt;data_writer profile_name=&amp;ldquo;writer_xml_conf_durability_profile&amp;rdquo;&amp;gt;
+&lt;qos&gt;
+&lt;durability&gt;
+&lt;kind&gt;TRANSIENT_LOCAL&lt;/kind&gt;
+&lt;/durability&gt;
+&lt;/qos&gt;
+&amp;lt;/data_writer&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;data_reader profile_name=&amp;ldquo;reader_xml_conf_durability_profile&amp;rdquo;&amp;gt;
+&lt;qos&gt;
+&lt;durability&gt;
+&lt;kind&gt;VOLATILE&lt;/kind&gt;
+&lt;/durability&gt;
+&lt;/qos&gt;
+&amp;lt;/data_reader&amp;gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/details&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

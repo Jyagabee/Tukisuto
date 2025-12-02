@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>3章 on じゃがびぃのサイト</title>
-    <link>/tags/3%E7%AB%A0/</link>
-    <description>Recent content in 3章 on じゃがびぃのサイト</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <copyright>© 2025 じゃがびぃ</copyright>
-    <atom:link href="/tags/3%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>3章 DDSレイヤー</title>
-      <link>/fastdds_manual/ddslayer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/fastdds_manual/ddslayer/</guid>
-      <description>&lt;p&gt;eProsima Fast DDSは、2つの異なるAPIを公開し、異なるレベルで通信サービスと相互作用する。 メインのAPIは、Data Distribution Service (DDS) Data-Centric Publish-Subscribe (DCPS) Platform Independent Model (PIM) API、略してDDS DCPS PIMで、Fast DDSが準拠しているData Distribution Service (DDS) version 1.4仕様で定義されている。 このセクションでは、Fast DDS の下でこの API の主な特徴と使用モードについて説明し、この API が分割された 5 つのモジュールについて詳しく説明する：&lt;/p&gt;
+    <channel>
+        <title>3章 on じゃがびぃのサイト</title>
+        <link>//localhost:1313/tags/3%E7%AB%A0/</link>
+        <description>Recent content in 3章 on じゃがびぃのサイト</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja</language><atom:link href="//localhost:1313/tags/3%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>3章 DDSレイヤー</title>
+        <link>//localhost:1313/fastdds_manual/ddslayer/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/fastdds_manual/ddslayer/</guid>
+        <description>&lt;p&gt;eProsima Fast DDSは、2つの異なるAPIを公開し、異なるレベルで通信サービスと相互作用する。 メインのAPIは、Data Distribution Service (DDS) Data-Centric Publish-Subscribe (DCPS) Platform Independent Model (PIM) API、略してDDS DCPS PIMで、Fast DDSが準拠しているData Distribution Service (DDS) version 1.4仕様で定義されている。 このセクションでは、Fast DDS の下でこの API の主な特徴と使用モードについて説明し、この API が分割された 5 つのモジュールについて詳しく説明する：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;コア: 他のモジュールによって洗練される抽象クラスとインターフェースを定義する。また、QoS(Quality of Service)の定義や、ミドルウェアとの通知ベースのインタラクションスタイルのサポートも提供する。&lt;/li&gt;
 &lt;li&gt;ドメイン: &lt;code&gt;DomainParticipant&lt;/code&gt;クラスが含まれ、サービスのエントリーポイントとして、また多くのクラスのファクトリーとして機能する。DomainParticipantは、サービスを構成する他のオブジェクトのコンテナとしても機能する。&lt;/li&gt;
 &lt;li&gt;パブリッシャー: &lt;code&gt;Publisher&lt;/code&gt;クラスと&lt;code&gt;DataWriter&lt;/code&gt;クラス、&lt;code&gt;PublisherListener&lt;/code&gt;インターフェースと&lt;code&gt;DataWriterListener&lt;/code&gt;インターフェースなど、発行側で使用されるクラスについて説明する。&lt;/li&gt;
 &lt;li&gt;サブスクライバー: &lt;code&gt;Subscriber&lt;/code&gt;クラスと&lt;code&gt;DataReader&lt;/code&gt;クラス、および&lt;code&gt;SubscriberListener&lt;/code&gt;インターフェースと&lt;code&gt;DataReaderLsetener&lt;/code&gt;インターフェースなど、サブスクリプション側で使用されるクラスについて説明する。&lt;/li&gt;
 &lt;li&gt;トピック: &lt;code&gt;Topic&lt;/code&gt;と&lt;code&gt;TopicDescription&lt;/code&gt;クラスなど、通信トピックとデータ型を定義に使用されるクラスについて説明する。&lt;/li&gt;
-&lt;/ul&gt;</description>
-      
-    </item>
-    
-  </channel>
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

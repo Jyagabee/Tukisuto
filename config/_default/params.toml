@@ -1,53 +1,73 @@
-colorScheme = "blowfish"
-enableSearch = true
-defaultBackgroundImage = "img/kari.png"
-bleCodeCopy = true
-disableImageOptimization = false 
-disableImageZoom = false 
-autoSwitchAppearance = true
-
-[header]
-  layout = "basic"
-  [header.search]
-      enabled = true
-      position = "right"  # 検索ボックスの位置を右に設定
+mainSections = ["posts", "weekly"]
+featuredImageField = "image"
+rssFullContent = true
+favicon = "/favicon.ico"
 
 [footer]
-  showMenu = true
-  showCopyright = true
-  showThemeAttribution = true
-  showAppearanceSwitcher = true
-  showScrollToTop = true
+since = 2024
+customText = ""
 
-[homepage]
-  layout = "background"
-  homepageImage = "img/kari.png"
-  showRecent = true
-  showMoreLink = true
-  cardView = true
-  layoutBackgroundBlur = true
+[dateFormat]
+published = "2006/01/02"
+lastUpdated = "2006/01/02 15:04"
+
+[sidebar]
+emoji = "🥔"
+subtitle = "スマホとかハード系のものが好きです"
+[sidebar.avatar]
+enabled = true
+local = true
+src = "img/icon_j.jpg"
 
 [article]
-  showDate = true
-  showHero = true 
-  heroStyle = "background"
-  showDateUpdated = false 
-  showReadingTime = true
-  showTabletOfContent = true 
-  showTaxonomies = true
-  showWordCount = false
-  sharingLinks = ["twitter","bluesky","telegram","misskey"]
-  showAuthor = true
+math = false
+toc = true
+readingTime = true
+[article.license]
+enabled = false
+default = ""
 
-[lists]
-  showCards = true
-  cardView = true
+[comments]
+enabled = false
+provider = ""
 
-[params]
-  [params.article]
-    showTableOfContents = true
-    
-  [favicon]
-    icon = "img/favicon.ico" 
-    sizes = [16, 32, 48]
-    type = "image/x-icon"
+[widgets]
+
+[[widgets.homepage]]
+type = "search"
+
+[[widgets.homepage]]
+type = "archives"
+params = { limit = 5 }
+
+[[widgets.homepage]]
+type = "categories"
+params = { limit = 10 }
+
+[[widgets.homepage]]
+type = "tag-cloud"
+params = { limit = 10 }
+
+[[widgets.page]]
+type = "toc"
+
+[opengraph]
+[opengraph.twitter]
+site = "@Jyaga_bee"
+card = "summary_large_image"
+
+[defaultImage]
+[defaultImage.opengraph]
+enabled = false
+local = false
+src = ""
+
+[colorScheme]
+toggle = true
+default = "auto"
+
+[imageProcessing]
+[imageProcessing.cover]
+enabled = true
+[imageProcessing.content]
+enabled = true

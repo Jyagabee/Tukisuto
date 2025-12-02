@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="はじめに 大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 というわけで備忘録的な感じでつらつらと書いていきます。\n">
+<title>ThinkPadでWifi7を使えるようにしてみた話</title>
+
+<link rel='canonical' href='//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/'>
+
+<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="ThinkPadでWifi7を使えるようにしてみた話">
+<meta property='og:description' content="はじめに 大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 というわけで備忘録的な感じでつらつらと書いていきます。\n">
+<meta property='og:url' content='//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/'>
+<meta property='og:site_name' content='じゃがびぃのサイト'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2024-10-18T18:02:06&#43;09:00'/><meta property='article:modified_time' content='2024-10-21T22:37:18&#43;09:00'/>
+<meta name="twitter:site" content="@@Jyaga_bee">
+    <meta name="twitter:creator" content="@@Jyaga_bee"><meta name="twitter:title" content="ThinkPadでWifi7を使えるようにしてみた話">
+<meta name="twitter:description" content="はじめに 大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 というわけで備忘録的な感じでつらつらと書いていきます。\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/icon_j_hu_8e236aae845de07c.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🥔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="//localhost:1313/">じゃがびぃのサイト</a></h1>
+            <h2 class="site-description">スマホとかハード系のものが好きです</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/about' >
+                
+                
+                
+                <span>about</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/posts' >
+                
+                
+                
+                <span>記事</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/weekly' >
+                
+                
+                
+                <span>週報</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>検索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>アーカイブ</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>ダークモード</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目次</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#スペック">スペック</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/">ThinkPadでWifi7を使えるようにしてみた話</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2024-10-18T18:02:06&#43;09:00'>2024/10/18</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    読了時間: 2分
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="はじめに">はじめに
+</h1><p>大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 <br>
+オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 <br>
+というわけで備忘録的な感じでつらつらと書いていきます。</p>
+<h2 id="スペック">スペック
+</h2><p>うちのはLenovoの公式からカスタムしたモデルを買いました。参考程度に下にスペックを書いときます。</p>
+<p>ThinkPad E16 Gen 1</p>
+<ul>
+<li>プロセッサー インテル® Core™ i7-13700H</li>
+<li>OS Windows 11 Home 64bit</li>
+<li>メモリ 32 GB DDR4-3200MHz</li>
+<li>1stストレージ 512 GB SSD</li>
+<li>2ndストレージ 256 GB SSD ←ubuntu入れてます</li>
+<li>ディスプレイ 16&quot; WUXGA液晶 (1920 x 1200) IPS, マルチタッチパネル</li>
+<li>グラフィックカード インテル® Iris® Xe</li>
+<li>内蔵カメラ 1080p FHDカメラ、マイク</li>
+<li>指紋センサー 指紋センサー</li>
+<li>キーボード バックライト、ブラック、数値キーパッド付 - 日本語</li>
+<li>無線LANアダプター Wi-Fi 6対応 (IEEE 802.11ax/ac/a/b/g/n準拠) 2x2 &amp; Bluetooth® (RealTek® 8852BE)</li>
+</ul>
+<p>一番下以外は関係ないですね。<del>タッチパネルにしたのを自慢したかった</del></p>
+<h1 id="作業風景とか">作業風景とか
+</h1><p>こんな感じでこじ開けます。
+<img src="/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP.jpg"
+	width="4032"
+	height="2268"
+	srcset="/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_6f4d67be1f16b362.jpg 480w, /posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_feda50a13ef37240.jpg 1024w"
+	loading="lazy"
+	
+		alt="こじ開けるところ"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+>
+こんな感じでこじ開けられました。
+<img src="/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP.jpg"
+	width="4032"
+	height="2268"
+	srcset="/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_ad60f7d5674b5efe.jpg 480w, /posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_aa611d77fbe1d441.jpg 1024w"
+	loading="lazy"
+	
+		alt="開けたところ"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+>
+今回入れるwifiカードはこれです
+<img src="/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP.jpg"
+	width="2268"
+	height="4032"
+	srcset="/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_19b9209cb7a32ce9.jpg 480w, /posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_661b47ea7bdd43.jpg 1024w"
+	loading="lazy"
+	
+		alt="wifiカード"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="56"
+		data-flex-basis="135px"
+	
+>
+インテルのWi-Fi7 BE200とかいうやつらしいです</p>
+<p>普通に取り換えて元に戻すだけなのでさくっと作業やると
+<img src="/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%202024-10-18%20172343.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="繋がったところ"
+	
+	
+>
+なんとドライバー入れた瞬間に繋がりました。 <br>
+ubuntuはドライバーを入れる必要なくそのまま繋がりました。</p>
+<p>少し考えれば当たり前だと分かりますが、wifiとbluetoothの設定がほぼ全て吹き飛んでいました。<del>学内ネットに再接続するのが面倒</del></p>
+<p>私の環境にwifi7などあるはずもなく、スピードテストしようにもwifi5のルーターしかないためスピードテストは省略します。</p>
+<h1 id="おわりに">おわりに
+</h1><p>思った以上に割と簡単に接続できました。以前AX210とAX211を買い間違えて大惨事になったことがあったので覚悟していましたが、想像以上に簡単でびっくりしました。<br>
+変えれるなら変えてもいいんじゃないでしょうか。<br>
+こいつで色々実験しようと思います。</p>
+<p>おわり。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最終更新 2024/10/21 22:37
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 じゃがびぃのサイト
+    </section>
+    
+    <section class="powerby">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> で構築されています。 <br />
+        テーマ <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> は <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> によって設計されています。
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1f7319ba028b0cc6008b88f7b6d07206db74248ebd235c8b00d359a57a346b31.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
