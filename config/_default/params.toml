@@ -1,4 +1,4 @@
-mainSections = ["posts", "weekly"]
+mainSections = ["posts"]
 featuredImageField = "image"
 rssFullContent = true
 favicon = "/favicon.ico"
