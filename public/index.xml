@@ -5,6 +5,411 @@
         <link>//localhost:1313/</link>
         <description>Recent content on じゃがびぃのサイト</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>ja</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <language>ja</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>//localhost:1313/posts/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/posts/</guid>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;
+    &lt;head&gt;&lt;script src=&#34;//localhost:1313/livereload.js?mindelay=10&amp;amp;v=2&amp;amp;port=1313&amp;amp;path=livereload&#34; data-no-instant defer&gt;&lt;/script&gt;&lt;meta charset=&#39;utf-8&#39;&gt;
+&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width, initial-scale=1&#39;&gt;&lt;meta name=&#39;description&#39; content=&#34;スマホとかハード系のものが好きです&#34;&gt;
+&lt;title&gt;記事一覧&lt;/title&gt;
+
+&lt;link rel=&#39;canonical&#39; href=&#39;//localhost:1313/posts/&#39;&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;//localhost:1313/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css&#34;&gt;&lt;meta property=&#39;og:title&#39; content=&#34;記事一覧&#34;&gt;
+&lt;meta property=&#39;og:description&#39; content=&#34;スマホとかハード系のものが好きです&#34;&gt;
+&lt;meta property=&#39;og:url&#39; content=&#39;//localhost:1313/posts/&#39;&gt;
+&lt;meta property=&#39;og:site_name&#39; content=&#39;じゃがびぃのサイト&#39;&gt;
+&lt;meta property=&#39;og:type&#39; content=&#39;website&#39;&gt;&lt;meta property=&#39;og:updated_time&#39; content=&#39; 2025-12-02T15:56:59&amp;#43;09:00 &#39;/&gt;
+&lt;meta name=&#34;twitter:site&#34; content=&#34;@@Jyaga_bee&#34;&gt;
+    &lt;meta name=&#34;twitter:creator&#34; content=&#34;@@Jyaga_bee&#34;&gt;&lt;meta name=&#34;twitter:title&#34; content=&#34;記事一覧&#34;&gt;
+&lt;meta name=&#34;twitter:description&#34; content=&#34;スマホとかハード系のものが好きです&#34;&gt;&lt;link rel=&#34;alternate&#34; type=&#34;application/rss&amp;#43;xml&#34; href=&#34;//localhost:1313/posts/index.xml&#34;&gt;
+    &lt;link rel=&#34;shortcut icon&#34; href=&#34;//localhost:1313/favicon.ico&#34; /&gt;
+
+    &lt;/head&gt;
+    &lt;body class=&#34;&#34;&gt;
+    &lt;script&gt;
+        (function() {
+            const colorSchemeKey = &#39;StackColorScheme&#39;;
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, &#34;auto&#34;);
+            }
+        })();
+    &lt;/script&gt;&lt;script&gt;
+    (function() {
+        const colorSchemeKey = &#39;StackColorScheme&#39;;
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia(&#39;(prefers-color-scheme: dark)&#39;).matches === true;
+
+        if (colorSchemeItem == &#39;dark&#39; || colorSchemeItem === &#39;auto&#39; &amp;&amp; supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = &#39;dark&#39;;
+        } else {
+            document.documentElement.dataset.scheme = &#39;light&#39;;
+        }
+    })();
+&lt;/script&gt;
+&lt;div class=&#34;container main-container flex on-phone--column extended&#34;&gt;&lt;aside class=&#34;sidebar left-sidebar sticky &#34;&gt;
+    &lt;button class=&#34;hamburger hamburger--spin&#34; type=&#34;button&#34; id=&#34;toggle-menu&#34; aria-label=&#34;メニューを開く・閉じる&#34;&gt;
+        &lt;span class=&#34;hamburger-box&#34;&gt;
+            &lt;span class=&#34;hamburger-inner&#34;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/button&gt;
+
+    &lt;header&gt;
+        
+            
+            &lt;figure class=&#34;site-avatar&#34;&gt;
+                &lt;a href=&#34;//localhost:1313/&#34;&gt;
+                
+                    
+                    
+                    
+                        
+                        &lt;img src=&#34;//localhost:1313/img/icon_j_hu_8e236aae845de07c.jpg&#34; width=&#34;300&#34;
+                            height=&#34;300&#34; class=&#34;site-logo&#34; loading=&#34;lazy&#34; alt=&#34;Avatar&#34;&gt;
+                    
+                
+                &lt;/a&gt;
+                
+                    &lt;span class=&#34;emoji&#34;&gt;🥔&lt;/span&gt;
+                
+            &lt;/figure&gt;
+            
+        
+        
+        &lt;div class=&#34;site-meta&#34;&gt;
+            &lt;h1 class=&#34;site-name&#34;&gt;&lt;a href=&#34;//localhost:1313/&#34;&gt;じゃがびぃのサイト&lt;/a&gt;&lt;/h1&gt;
+            &lt;h2 class=&#34;site-description&#34;&gt;スマホとかハード系のものが好きです&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;&lt;ol class=&#34;menu&#34; id=&#34;main-menu&#34;&gt;
+        
+        
+        
+        &lt;li &gt;
+            &lt;a href=&#39;//localhost:1313/about&#39; &gt;
+                
+                
+                
+                &lt;span&gt;about&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        
+        
+        &lt;li &gt;
+            &lt;a href=&#39;//localhost:1313/posts&#39; &gt;
+                
+                
+                
+                &lt;span&gt;記事&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        
+        
+        &lt;li &gt;
+            &lt;a href=&#39;//localhost:1313/weekly&#39; &gt;
+                
+                
+                
+                &lt;span&gt;週報&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        
+        
+        &lt;li &gt;
+            &lt;a href=&#39;//localhost:1313/page/search/&#39; &gt;
+                
+                
+                
+                    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-search&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;7&#34; /&gt;
+  &lt;line x1=&#34;21&#34; y1=&#34;21&#34; x2=&#34;15&#34; y2=&#34;15&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+                
+                &lt;span&gt;検索&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        
+        
+        &lt;li &gt;
+            &lt;a href=&#39;//localhost:1313/page/archives/&#39; &gt;
+                
+                
+                
+                    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-archive&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;rect x=&#34;3&#34; y=&#34;4&#34; width=&#34;18&#34; height=&#34;4&#34; rx=&#34;2&#34; /&gt;
+  &lt;path d=&#34;M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10&#34; /&gt;
+  &lt;line x1=&#34;10&#34; y1=&#34;12&#34; x2=&#34;14&#34; y2=&#34;12&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+                
+                &lt;span&gt;アーカイブ&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&#34;menu-bottom-section&#34;&gt;
+            &lt;ol class=&#34;menu&#34;&gt;
+
+                
+                    &lt;li id=&#34;dark-mode-toggle&#34;&gt;
+                        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-toggle-left&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;circle cx=&#34;8&#34; cy=&#34;12&#34; r=&#34;2&#34; /&gt;
+  &lt;rect x=&#34;2&#34; y=&#34;6&#34; width=&#34;20&#34; height=&#34;12&#34; rx=&#34;6&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+                        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-toggle-right&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;circle cx=&#34;16&#34; cy=&#34;12&#34; r=&#34;2&#34; /&gt;
+  &lt;rect x=&#34;2&#34; y=&#34;6&#34; width=&#34;20&#34; height=&#34;12&#34; rx=&#34;6&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+                        &lt;span&gt;ダークモード&lt;/span&gt;
+                    &lt;/li&gt;
+                
+            &lt;/ol&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/aside&gt;
+
+    &lt;aside class=&#34;sidebar right-sidebar sticky&#34;&gt;
+        
+            
+                &lt;form action=&#34;//localhost:1313/page/search/&#34; class=&#34;search-form widget&#34; &gt;
+        &lt;p&gt;
+            &lt;label&gt;検索&lt;/label&gt;
+            &lt;input name=&#34;keyword&#34; required placeholder=&#34;入力...&#34; /&gt;
+        
+            &lt;button title=&#34;検索&#34;&gt;
+                &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-search&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;circle cx=&#34;10&#34; cy=&#34;10&#34; r=&#34;7&#34; /&gt;
+  &lt;line x1=&#34;21&#34; y1=&#34;21&#34; x2=&#34;15&#34; y2=&#34;15&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+            &lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+            
+        
+            
+                &lt;section class=&#34;widget archives&#34;&gt;
+        &lt;div class=&#34;widget-icon&#34;&gt;
+            &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-infinity&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;path d=&#34;M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+        &lt;/div&gt;
+        &lt;h2 class=&#34;widget-title section-title&#34;&gt;アーカイブ&lt;/h2&gt;
+
+        
+        
+        
+        
+        
+        &lt;div class=&#34;widget-archive--list&#34;&gt;
+            &lt;div class=&#34;archives-year&#34;&gt;
+                    &lt;a href=&#34;//localhost:1313/page/archives/#2025&#34;&gt;
+                        
+                            &lt;span class=&#34;year&#34;&gt;2025&lt;/span&gt;
+                            &lt;span class=&#34;count&#34;&gt;2&lt;/span&gt;
+                        
+                    &lt;/a&gt; 
+                &lt;/div&gt;
+            &lt;div class=&#34;archives-year&#34;&gt;
+                    &lt;a href=&#34;//localhost:1313/page/archives/#2024&#34;&gt;
+                        
+                            &lt;span class=&#34;year&#34;&gt;2024&lt;/span&gt;
+                            &lt;span class=&#34;count&#34;&gt;3&lt;/span&gt;
+                        
+                    &lt;/a&gt; 
+                &lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/section&gt;
+            
+        
+            
+                &lt;section class=&#34;widget tagCloud&#34;&gt;
+    &lt;div class=&#34;widget-icon&#34;&gt;
+        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-hash&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;line x1=&#34;5&#34; y1=&#34;9&#34; x2=&#34;19&#34; y2=&#34;9&#34; /&gt;
+  &lt;line x1=&#34;5&#34; y1=&#34;15&#34; x2=&#34;19&#34; y2=&#34;15&#34; /&gt;
+  &lt;line x1=&#34;11&#34; y1=&#34;4&#34; x2=&#34;7&#34; y2=&#34;20&#34; /&gt;
+  &lt;line x1=&#34;17&#34; y1=&#34;4&#34; x2=&#34;13&#34; y2=&#34;20&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+    &lt;/div&gt;
+    &lt;h2 class=&#34;widget-title section-title&#34;&gt;カテゴリ&lt;/h2&gt;
+
+    &lt;div class=&#34;tagCloud-tags&#34;&gt;
+        
+    &lt;/div&gt;
+&lt;/section&gt;
+
+            
+        
+            
+                &lt;section class=&#34;widget tagCloud&#34;&gt;
+    &lt;div class=&#34;widget-icon&#34;&gt;
+        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon icon-tabler icon-tabler-tag&#34; width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34;/&gt;
+  &lt;path d=&#34;M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4&#34; /&gt;
+  &lt;circle cx=&#34;9&#34; cy=&#34;9&#34; r=&#34;2&#34; /&gt;
+&lt;/svg&gt;
+
+
+
+    &lt;/div&gt;
+    &lt;h2 class=&#34;widget-title section-title&#34;&gt;タグ&lt;/h2&gt;
+
+    &lt;div class=&#34;tagCloud-tags&#34;&gt;
+        
+    &lt;/div&gt;
+&lt;/section&gt;
+
+            
+        
+    &lt;/aside&gt;
+
+
+            &lt;main class=&#34;main full-width&#34;&gt;
+    &lt;header&gt;
+        &lt;h3 class=&#34;section-title&#34;&gt;
+            
+                セクション
+            
+        &lt;/h3&gt;
+
+        &lt;div class=&#34;section-card&#34;&gt;
+            &lt;div class=&#34;section-details&#34;&gt;
+                &lt;h3 class=&#34;section-count&#34;&gt;5 ページ目&lt;/h3&gt;
+                &lt;h1 class=&#34;section-term&#34;&gt;記事一覧&lt;/h1&gt;
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    
+    &lt;section class=&#34;article-list--compact&#34;&gt;
+        
+            &lt;article&gt;
+    &lt;a href=&#34;//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/&#34;&gt;
+        &lt;div class=&#34;article-details&#34;&gt;
+            &lt;h2 class=&#34;article-title&#34;&gt;Android Studio Meerkat | 2024.3.1 を日本語化した話&lt;/h2&gt;
+            &lt;footer class=&#34;article-time&#34;&gt;
+                &lt;time datetime=&#39;2025-03-17T10:34:08&amp;#43;09:00&#39;&gt;2025/03/17&lt;/time&gt;
+            &lt;/footer&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/article&gt;
+        
+            &lt;article&gt;
+    &lt;a href=&#34;//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/&#34;&gt;
+        &lt;div class=&#34;article-details&#34;&gt;
+            &lt;h2 class=&#34;article-title&#34;&gt;Claude 3.7でアプリを作った話&lt;/h2&gt;
+            &lt;footer class=&#34;article-time&#34;&gt;
+                &lt;time datetime=&#39;2025-03-03T22:40:45&amp;#43;09:00&#39;&gt;2025/03/03&lt;/time&gt;
+            &lt;/footer&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/article&gt;
+        
+            &lt;article&gt;
+    &lt;a href=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/&#34;&gt;
+        &lt;div class=&#34;article-details&#34;&gt;
+            &lt;h2 class=&#34;article-title&#34;&gt;ThinkPadでWifi7を使えるようにしてみた話&lt;/h2&gt;
+            &lt;footer class=&#34;article-time&#34;&gt;
+                &lt;time datetime=&#39;2024-10-18T18:02:06&amp;#43;09:00&#39;&gt;2024/10/18&lt;/time&gt;
+            &lt;/footer&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/article&gt;
+        
+            &lt;article&gt;
+    &lt;a href=&#34;//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/&#34;&gt;
+        &lt;div class=&#34;article-details&#34;&gt;
+            &lt;h2 class=&#34;article-title&#34;&gt;markdownの書き方に慣れてみる&lt;/h2&gt;
+            &lt;footer class=&#34;article-time&#34;&gt;
+                &lt;time datetime=&#39;2024-10-18T15:02:06&amp;#43;09:00&#39;&gt;2024/10/18&lt;/time&gt;
+            &lt;/footer&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/article&gt;
+        
+            &lt;article&gt;
+    &lt;a href=&#34;//localhost:1313/posts/test/&#34;&gt;
+        &lt;div class=&#34;article-details&#34;&gt;
+            &lt;h2 class=&#34;article-title&#34;&gt;Test&lt;/h2&gt;
+            &lt;footer class=&#34;article-time&#34;&gt;
+                &lt;time datetime=&#39;2024-10-18T10:02:06&amp;#43;09:00&#39;&gt;2024/10/18&lt;/time&gt;
+            &lt;/footer&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/article&gt;
+        
+    &lt;/section&gt;
+&lt;footer class=&#34;site-footer&#34;&gt;
+    &lt;section class=&#34;copyright&#34;&gt;
+        &amp;copy; 
+        
+            2024 - 
+        
+        2025 じゃがびぃのサイト
+    &lt;/section&gt;
+    
+    &lt;section class=&#34;powerby&#34;&gt;
+        &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; で構築されています。 &lt;br /&gt;
+        テーマ &lt;b&gt;&lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; data-version=&#34;3.32.0&#34;&gt;Stack&lt;/a&gt;&lt;/b&gt; は &lt;a href=&#34;https://jimmycai.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jimmy&lt;/a&gt; によって設計されています。
+    &lt;/section&gt;
+&lt;/footer&gt;
+
+
+            &lt;/main&gt;
+        &lt;/div&gt;
+        &lt;script 
+                src=&#34;https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js&#34;integrity=&#34;sha256-awcR2jno4kI5X0zL8ex0vi2z&amp;#43;KMkF24hUW8WePSA9HM=&#34;crossorigin=&#34;anonymous&#34;
+                
+                &gt;
+            &lt;/script&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;//localhost:1313/ts/main.1f7319ba028b0cc6008b88f7b6d07206db74248ebd235c8b00d359a57a346b31.js&#34; defer&gt;&lt;/script&gt;
+&lt;script&gt;
+    (function () {
+        const customFont = document.createElement(&#39;link&#39;);
+        customFont.href = &#34;https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap&#34;;
+
+        customFont.type = &#34;text/css&#34;;
+        customFont.rel = &#34;stylesheet&#34;;
+
+        document.head.appendChild(customFont);
+    }());
+&lt;/script&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
