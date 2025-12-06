@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>じゃがびぃのサイト</title>
-        <link>//localhost:43191/</link>
+        <link>//localhost:1313/</link>
         <description>Recent content on じゃがびぃのサイト</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sat, 06 Dec 2025 16:37:56 +0900</lastBuildDate><atom:link href="//localhost:43191/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Dec 2025 20:56:59 +0900</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>20250425</title>
-        <link>//localhost:43191/weekly/20250425/</link>
+        <link>//localhost:1313/weekly/20250425/</link>
         <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>//localhost:43191/weekly/20250425/</guid>
+        <guid>//localhost:1313/weekly/20250425/</guid>
         <description>&lt;h1 id=&#34;週報&#34;&gt;週報
 &lt;/h1&gt;&lt;p&gt;お久しぶりです。じゃがびぃです。&lt;br&gt;
 あまりにも忙しすぎて更新する余裕がありませんでした。
@@ -29,10 +29,10 @@
         </item>
         <item>
         <title>20250328</title>
-        <link>//localhost:43191/weekly/20250328/</link>
+        <link>//localhost:1313/weekly/20250328/</link>
         <pubDate>Fri, 28 Mar 2025 14:58:23 +0900</pubDate>
         
-        <guid>//localhost:43191/weekly/20250328/</guid>
+        <guid>//localhost:1313/weekly/20250328/</guid>
         <description>&lt;p&gt;はい今週の週報です。&lt;br&gt;
 東京行きから帰ってきて色々してたら毛根な時間だよ早いよ時間経つの。&lt;/p&gt;
 &lt;p&gt;今週は新入生勧誘に色々動いておりました。忙しくないけど忙しいです。&lt;br&gt;
@@ -40,10 +40,10 @@
 しんどいよーーー&lt;/p&gt;
 &lt;p&gt;そういやゲーセンで新しい筐体が動き始めましたね&lt;br&gt;
 ワイは稼働日に行ってきたので写真を上げときます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250325_151700562.MP.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250325_151700562.MP.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250325_151700562.MP_hu_a16d21fd5042fdef.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250325_151700562.MP_hu_fae08a4964342c4c.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250325_151700562.MP_hu_a16d21fd5042fdef.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250325_151700562.MP_hu_fae08a4964342c4c.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;gitadora&#34;
@@ -54,10 +54,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250323_161404292.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161404292.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250323_161404292_hu_ef79a24547402378.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250323_161404292_hu_6a3053d8fd37a1b9.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161404292_hu_ef79a24547402378.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_161404292_hu_6a3053d8fd37a1b9.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;medal2&#34;
@@ -68,10 +68,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250323_161421029.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161421029.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250323_161421029_hu_d871de627d8df579.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250323_161421029_hu_67668988ccd6a3d6.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161421029_hu_d871de627d8df579.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_161421029_hu_67668988ccd6a3d6.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;medal1&#34;
@@ -82,10 +82,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250323_070704209.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_070704209.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250323_070704209_hu_74e7ecbc22d951b8.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250323_070704209_hu_2fb26c3db0014ae5.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_070704209_hu_74e7ecbc22d951b8.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_070704209_hu_2fb26c3db0014ae5.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;hannyu&#34;
@@ -96,10 +96,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt; &lt;br&gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250323_161542403.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161542403.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250323_161542403_hu_a81b0eb5609c43f.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250323_161542403_hu_9f30f056f9a2710b.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161542403_hu_a81b0eb5609c43f.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_161542403_hu_9f30f056f9a2710b.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;kadoumae&#34;
@@ -110,10 +110,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250326_000533718.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250326_000533718.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250326_000533718_hu_2ef289924686e86c.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250326_000533718_hu_38fcf9f36f328721.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250326_000533718_hu_2ef289924686e86c.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250326_000533718_hu_38fcf9f36f328721.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;kadougo&#34;
@@ -124,10 +124,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250326_002016002.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250326_002016002.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250326_002016002_hu_68669acc26a0386d.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250326_002016002_hu_929d98e0d892ad24.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250326_002016002_hu_68669acc26a0386d.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250326_002016002_hu_929d98e0d892ad24.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;livefailed&#34;
@@ -138,10 +138,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250328/PXL_20250326_001350887.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250326_001350887.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250328/PXL_20250326_001350887_hu_f1b885d8896f2b2b.jpg 480w, //localhost:43191/weekly/20250328/PXL_20250326_001350887_hu_3e5c463a44fc7bea.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250326_001350887_hu_f1b885d8896f2b2b.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250326_001350887_hu_3e5c463a44fc7bea.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;photoerror&#34;
@@ -167,18 +167,18 @@
         </item>
         <item>
         <title>20250321</title>
-        <link>//localhost:43191/weekly/20250321/</link>
+        <link>//localhost:1313/weekly/20250321/</link>
         <pubDate>Tue, 25 Mar 2025 22:03:35 +0900</pubDate>
         
-        <guid>//localhost:43191/weekly/20250321/</guid>
+        <guid>//localhost:1313/weekly/20250321/</guid>
         <description>&lt;p&gt;週報書くの完全に忘れてたわごめｗ&lt;br&gt;
 週報書くの忘れた理由としては東京出張してたからですﾊｲ。&lt;br&gt;
 今後は気を付けますわ～～～&lt;/p&gt;
 &lt;p&gt;せっかくなので東京出張した帰りに寄ったとことか写真とか載せましょうかね
-&lt;img src=&#34;//localhost:43191/weekly/20250321/PXL_20250320_000126451.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250320_000126451.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250321/PXL_20250320_000126451_hu_d89c0c2325916f49.jpg 480w, //localhost:43191/weekly/20250321/PXL_20250320_000126451_hu_15fee6985bfcccca.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250320_000126451_hu_d89c0c2325916f49.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250320_000126451_hu_15fee6985bfcccca.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;siomi&#34;
@@ -189,10 +189,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250321/PXL_20250320_225639673.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250320_225639673.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250321/PXL_20250320_225639673_hu_fe6236db5de8b96.jpg 480w, //localhost:43191/weekly/20250321/PXL_20250320_225639673_hu_ca2784b8df90c09f.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250320_225639673_hu_fe6236db5de8b96.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250320_225639673_hu_ca2784b8df90c09f.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;nazonobasyo&#34;
@@ -203,10 +203,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105623369.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105623369.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105623369_hu_820e6d5b2faec72c.jpg 480w, //localhost:43191/weekly/20250321/PXL_20250321_105623369_hu_93dc7309f3dc2c14.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105623369_hu_820e6d5b2faec72c.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105623369_hu_93dc7309f3dc2c14.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;akihabara&#34;
@@ -217,10 +217,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105627105.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105627105.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105627105_hu_6f48162e8ee0d1fb.jpg 480w, //localhost:43191/weekly/20250321/PXL_20250321_105627105_hu_b400f84e860021d0.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105627105_hu_6f48162e8ee0d1fb.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105627105_hu_b400f84e860021d0.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;right&#34;
@@ -231,10 +231,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105634656.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105634656.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105634656_hu_69c1da11ad1ce31c.jpg 480w, //localhost:43191/weekly/20250321/PXL_20250321_105634656_hu_65c422b440431274.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105634656_hu_69c1da11ad1ce31c.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105634656_hu_65c422b440431274.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;left&#34;
@@ -245,10 +245,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105802928.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105802928.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250321/PXL_20250321_105802928_hu_47487166894414d5.jpg 480w, //localhost:43191/weekly/20250321/PXL_20250321_105802928_hu_586b12bf95801bbb.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105802928_hu_47487166894414d5.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105802928_hu_586b12bf95801bbb.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;umamusume&#34;
@@ -270,10 +270,10 @@
         </item>
         <item>
         <title>Android Studio Meerkat | 2024.3.1 を日本語化した話</title>
-        <link>//localhost:43191/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</link>
+        <link>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</link>
         <pubDate>Mon, 17 Mar 2025 10:34:08 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
+        <guid>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
 &lt;/h2&gt;&lt;p&gt;皆さんAndroidStudioをmeerkatへアップデートしてらっしゃるでしょうか。ワイはノリと勢いで更新してしまいました。&lt;br&gt;
 アプデしてから日本語化できないことに気づき、1週間くらい我慢してたけど耐えられなくなったので日本語化しました。&lt;br&gt;
@@ -332,17 +332,17 @@
         </item>
         <item>
         <title>20250314</title>
-        <link>//localhost:43191/weekly/20250314/</link>
+        <link>//localhost:1313/weekly/20250314/</link>
         <pubDate>Fri, 14 Mar 2025 11:16:27 +0900</pubDate>
         
-        <guid>//localhost:43191/weekly/20250314/</guid>
+        <guid>//localhost:1313/weekly/20250314/</guid>
         <description>&lt;p&gt;今週の週報です。
 先週の週報を上げた日に名古屋へ用事があったのでお泊りで行ってきました。
 以下に画像をてけとーに貼っておきます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_051114493.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051114493.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_051114493_hu_48442fabafa7dc16.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_051114493_hu_6a78ad8b24522498.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051114493_hu_48442fabafa7dc16.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_051114493_hu_6a78ad8b24522498.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;pop’n&#34;
@@ -353,10 +353,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_081659252.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_081659252.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_081659252_hu_31733a30920daf5c.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_081659252_hu_81679bb58056dab1.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_081659252_hu_31733a30920daf5c.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_081659252_hu_81679bb58056dab1.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;pop’n2&#34;
@@ -367,10 +367,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_051901792.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051901792.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_051901792_hu_87515703cb00a185.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_051901792_hu_ba78998d1394493f.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051901792_hu_87515703cb00a185.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_051901792_hu_ba78998d1394493f.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;サ終ゲー&#34;
@@ -381,10 +381,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_071924311.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_071924311.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_071924311_hu_e0883085c7abd504.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_071924311_hu_8cb942c2505b5264.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_071924311_hu_e0883085c7abd504.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_071924311_hu_8cb942c2505b5264.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;イニシャルD&#34;
@@ -395,10 +395,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095844142.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095844142.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095844142_hu_3b4e8903f795ed0d.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_095844142_hu_c15537ecc1e8093e.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095844142_hu_3b4e8903f795ed0d.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095844142_hu_c15537ecc1e8093e.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;wacca&#34;
@@ -409,10 +409,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_100111030.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_100111030.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_100111030_hu_714484aa0e41eda.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_100111030_hu_25941cff09e77fbf.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_100111030_hu_714484aa0e41eda.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_100111030_hu_25941cff09e77fbf.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;groovecoaster&#34;
@@ -423,10 +423,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_073839910.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_073839910.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_073839910_hu_2245ade8e97cd465.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_073839910_hu_afdfde7fdc81afcc.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_073839910_hu_2245ade8e97cd465.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_073839910_hu_afdfde7fdc81afcc.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;アケマス1&#34;
@@ -437,10 +437,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095921548.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095921548.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095921548_hu_f3a1380c984f7692.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_095921548_hu_252e6dff88450d57.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095921548_hu_f3a1380c984f7692.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095921548_hu_252e6dff88450d57.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;アケマス2&#34;
@@ -451,10 +451,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095930801.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095930801.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095930801_hu_23bf17fe3b1e142c.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_095930801_hu_a8490ffeb53758ac.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095930801_hu_23bf17fe3b1e142c.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095930801_hu_a8490ffeb53758ac.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;アケマス3&#34;
@@ -465,10 +465,10 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;
-&lt;img src=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095937570.jpg&#34;
+&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095937570.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/weekly/20250314/PXL_20250309_095937570_hu_3a3a71ed2a5638c9.jpg 480w, //localhost:43191/weekly/20250314/PXL_20250309_095937570_hu_76dadba4209b2fac.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095937570_hu_3a3a71ed2a5638c9.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095937570_hu_76dadba4209b2fac.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;アケマス4&#34;
@@ -491,10 +491,10 @@
         </item>
         <item>
         <title>20250307</title>
-        <link>//localhost:43191/weekly/20250307/</link>
+        <link>//localhost:1313/weekly/20250307/</link>
         <pubDate>Fri, 07 Mar 2025 11:24:00 +0900</pubDate>
         
-        <guid>//localhost:43191/weekly/20250307/</guid>
+        <guid>//localhost:1313/weekly/20250307/</guid>
         <description>&lt;p&gt;今週の週報です。&lt;br&gt;
 20250303のやつはタダの宣言なので週報って書いてあるけど週報じゃないです。&lt;/p&gt;
 &lt;p&gt;Claude3.7のおかげでだいぶhugoのことを理解できるようになってきました。&lt;br&gt;
@@ -516,10 +516,10 @@
         </item>
         <item>
         <title>週報メモ</title>
-        <link>//localhost:43191/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</link>
+        <link>//localhost:1313/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</link>
         <pubDate>Mon, 03 Mar 2025 23:20:35 +0900</pubDate>
         
-        <guid>//localhost:43191/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</guid>
+        <guid>//localhost:1313/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</guid>
         <description>&lt;h1 id=&#34;memo&#34;&gt;memo
 &lt;/h1&gt;&lt;p&gt;個人的に忘れそうだったのでメモ&lt;/p&gt;
 &lt;h1 id=&#34;hugoで記事に画像を添付する方法&#34;&gt;Hugoで記事に画像を添付する方法
@@ -654,10 +654,10 @@
         </item>
         <item>
         <title>Claude 3.7でアプリを作った話</title>
-        <link>//localhost:43191/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</link>
+        <link>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</link>
         <pubDate>Mon, 03 Mar 2025 22:40:45 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</guid>
+        <guid>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
 &lt;/h2&gt;&lt;p&gt;今回もテスト回です。ほとんど日記。&lt;br&gt;
 真面目なものを探している人は帰ってください。&lt;/p&gt;
@@ -713,10 +713,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
         </item>
         <item>
         <title>週報20250303</title>
-        <link>//localhost:43191/weekly/%E9%80%B1%E5%A0%B120250303/</link>
+        <link>//localhost:1313/weekly/%E9%80%B1%E5%A0%B120250303/</link>
         <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
         
-        <guid>//localhost:43191/weekly/%E9%80%B1%E5%A0%B120250303/</guid>
+        <guid>//localhost:1313/weekly/%E9%80%B1%E5%A0%B120250303/</guid>
         <description>&lt;h1 id=&#34;週報&#34;&gt;週報
 &lt;/h1&gt;&lt;p&gt;お久しぶりです。じゃがびぃです。
 特にやりたいこととか全くなかったのでサボり散らかしておりました。&lt;/p&gt;
@@ -736,10 +736,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
         </item>
         <item>
         <title>ThinkPadでWifi7を使えるようにしてみた話</title>
-        <link>//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
+        <link>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
         <pubDate>Fri, 18 Oct 2024 18:02:06 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
+        <guid>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
         <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに
 &lt;/h1&gt;&lt;p&gt;大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 &lt;br&gt;
 オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 &lt;br&gt;
@@ -763,10 +763,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 &lt;p&gt;一番下以外は関係ないですね。&lt;del&gt;タッチパネルにしたのを自慢したかった&lt;/del&gt;&lt;/p&gt;
 &lt;h1 id=&#34;作業風景とか&#34;&gt;作業風景とか
 &lt;/h1&gt;&lt;p&gt;こんな感じでこじ開けます。
-&lt;img src=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP.jpg&#34;
+&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_6f4d67be1f16b362.jpg 480w, //localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_feda50a13ef37240.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_6f4d67be1f16b362.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_feda50a13ef37240.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;こじ開けるところ&#34;
@@ -778,10 +778,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 	
 &gt;
 こんな感じでこじ開けられました。
-&lt;img src=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP.jpg&#34;
+&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_ad60f7d5674b5efe.jpg 480w, //localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_aa611d77fbe1d441.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_ad60f7d5674b5efe.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_aa611d77fbe1d441.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;開けたところ&#34;
@@ -793,10 +793,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 	
 &gt;
 今回入れるwifiカードはこれです
-&lt;img src=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP.jpg&#34;
+&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_19b9209cb7a32ce9.jpg 480w, //localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_661b47ea7bdd43.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_19b9209cb7a32ce9.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_661b47ea7bdd43.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;wifiカード&#34;
@@ -809,7 +809,7 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 &gt;
 インテルのWi-Fi7 BE200とかいうやつらしいです&lt;/p&gt;
 &lt;p&gt;普通に取り換えて元に戻すだけなのでさくっと作業やると
-&lt;img src=&#34;//localhost:43191/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%202024-10-18%20172343.png&#34;
+&lt;img src=&#34;//localhost:1313/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%202024-10-18%20172343.png&#34;
 	
 	
 	
@@ -832,10 +832,10 @@ ubuntuはドライバーを入れる必要なくそのまま繋がりました�
         </item>
         <item>
         <title>markdownの書き方に慣れてみる</title>
-        <link>//localhost:43191/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+        <link>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</link>
         <pubDate>Fri, 18 Oct 2024 15:02:06 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+        <guid>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
         <description>&lt;h1 id=&#34;markdownの書き方が分からない&#34;&gt;markdownの書き方が分からない
 &lt;/h1&gt;&lt;p&gt;はい。ノリと勢いで始めてしまったせいで分からんなってます。&lt;/p&gt;
 &lt;p&gt;というわけでmarkdownの練習がてら色々触ってみております。自己満足なそういうアレです。&lt;/p&gt;
@@ -860,16 +860,42 @@ ubuntuはドライバーを入れる必要なくそのまま繋がりました�
         </item>
         <item>
         <title>Test</title>
-        <link>//localhost:43191/posts/test/</link>
+        <link>//localhost:1313/posts/test/</link>
         <pubDate>Fri, 18 Oct 2024 10:02:06 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/test/</guid>
+        <guid>//localhost:1313/posts/test/</guid>
         <description>&lt;h1 id=&#34;これはテストです&#34;&gt;これはテストです
 &lt;/h1&gt;&lt;p&gt;はいというわけで何度目か分からない最初の記事を書いています&lt;/p&gt;
 &lt;p&gt;これどう表示されてるか分からんの怖すぎワロタ&lt;/p&gt;
 &lt;p&gt;ひとまず下書きのテンプレート？を作れたはずだけど正しいのかどうか分からない&lt;/p&gt;
 &lt;p&gt;人生何も分からない&lt;/p&gt;
 &lt;p&gt;以上。終わり。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>//localhost:1313/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//localhost:1313/about/</guid>
+        <description>&lt;h1 id=&#34;about&#34;&gt;about
+&lt;/h1&gt;&lt;p&gt;じゃがびぃと申します。&lt;/p&gt;
+&lt;p&gt;特に目立って活動してるわけじゃないです。趣味でmisskeyという分散型snsとこのブログを運営しています。&lt;br&gt;
+某大学のそこそこなプロジェクトで下っ端として生きています。主にandroid触ったりwifi触ったり色んな事をさせてもろてます。&lt;br&gt;
+twitterに居たりmisskeyに居たりbskyに居たりmixi2でコーヒー垂れ流してたり色んな所でボチボチやってます。&lt;/p&gt;
+&lt;h1 id=&#34;連絡先&#34;&gt;連絡先
+&lt;/h1&gt;&lt;p&gt;以下に連絡がつきやすい垢を置いときます。何かあればDMなりで接触してください。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Twitter:&lt;a class=&#34;link&#34; href=&#34;https://x.com/Jyaga_bee&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@Jyaga_bee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Misskey:&lt;a class=&#34;link&#34; href=&#34;https://mk.tenpest-moon.uk/@Jyagabee&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jyagabee@mk.tenpest-moon.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bluesky:&lt;a class=&#34;link&#34; href=&#34;https://bsky.app/profile/jyagabee.bsky.social&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;jyagabee.bsky.social&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;作ったものない&#34;&gt;作ったもの(ない)
+&lt;/h1&gt;&lt;p&gt;なにか作ったものがあれば適当に乗せていきたい…いつになることやら&lt;/p&gt;
+&lt;p&gt;おわり。&lt;/p&gt;
 </description>
         </item>
         

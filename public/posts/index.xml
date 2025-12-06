@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on じゃがびぃのサイト</title>
-        <link>//localhost:43191/posts/</link>
+        <link>//localhost:1313/posts/</link>
         <description>Recent content in Posts on じゃがびぃのサイト</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sat, 06 Dec 2025 16:28:05 +0900</lastBuildDate><atom:link href="//localhost:43191/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Dec 2025 16:28:05 +0900</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Android Studio Meerkat | 2024.3.1 を日本語化した話</title>
-        <link>//localhost:43191/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</link>
+        <link>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</link>
         <pubDate>Mon, 17 Mar 2025 10:34:08 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
+        <guid>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
 &lt;/h2&gt;&lt;p&gt;皆さんAndroidStudioをmeerkatへアップデートしてらっしゃるでしょうか。ワイはノリと勢いで更新してしまいました。&lt;br&gt;
 アプデしてから日本語化できないことに気づき、1週間くらい我慢してたけど耐えられなくなったので日本語化しました。&lt;br&gt;
@@ -70,10 +70,10 @@
         </item>
         <item>
         <title>Claude 3.7でアプリを作った話</title>
-        <link>//localhost:43191/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</link>
+        <link>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</link>
         <pubDate>Mon, 03 Mar 2025 22:40:45 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</guid>
+        <guid>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
 &lt;/h2&gt;&lt;p&gt;今回もテスト回です。ほとんど日記。&lt;br&gt;
 真面目なものを探している人は帰ってください。&lt;/p&gt;
@@ -129,10 +129,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
         </item>
         <item>
         <title>ThinkPadでWifi7を使えるようにしてみた話</title>
-        <link>//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
+        <link>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
         <pubDate>Fri, 18 Oct 2024 18:02:06 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
+        <guid>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
         <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに
 &lt;/h1&gt;&lt;p&gt;大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 &lt;br&gt;
 オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 &lt;br&gt;
@@ -156,10 +156,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 &lt;p&gt;一番下以外は関係ないですね。&lt;del&gt;タッチパネルにしたのを自慢したかった&lt;/del&gt;&lt;/p&gt;
 &lt;h1 id=&#34;作業風景とか&#34;&gt;作業風景とか
 &lt;/h1&gt;&lt;p&gt;こんな感じでこじ開けます。
-&lt;img src=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP.jpg&#34;
+&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_6f4d67be1f16b362.jpg 480w, //localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_feda50a13ef37240.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_6f4d67be1f16b362.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_feda50a13ef37240.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;こじ開けるところ&#34;
@@ -171,10 +171,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 	
 &gt;
 こんな感じでこじ開けられました。
-&lt;img src=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP.jpg&#34;
+&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP.jpg&#34;
 	width=&#34;4032&#34;
 	height=&#34;2268&#34;
-	srcset=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_ad60f7d5674b5efe.jpg 480w, //localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_aa611d77fbe1d441.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_ad60f7d5674b5efe.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_aa611d77fbe1d441.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;開けたところ&#34;
@@ -186,10 +186,10 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 	
 &gt;
 今回入れるwifiカードはこれです
-&lt;img src=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP.jpg&#34;
+&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP.jpg&#34;
 	width=&#34;2268&#34;
 	height=&#34;4032&#34;
-	srcset=&#34;//localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_19b9209cb7a32ce9.jpg 480w, //localhost:43191/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_661b47ea7bdd43.jpg 1024w&#34;
+	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_19b9209cb7a32ce9.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_661b47ea7bdd43.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;wifiカード&#34;
@@ -202,7 +202,7 @@ kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ�
 &gt;
 インテルのWi-Fi7 BE200とかいうやつらしいです&lt;/p&gt;
 &lt;p&gt;普通に取り換えて元に戻すだけなのでさくっと作業やると
-&lt;img src=&#34;//localhost:43191/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%202024-10-18%20172343.png&#34;
+&lt;img src=&#34;//localhost:1313/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%202024-10-18%20172343.png&#34;
 	
 	
 	
@@ -225,10 +225,10 @@ ubuntuはドライバーを入れる必要なくそのまま繋がりました�
         </item>
         <item>
         <title>markdownの書き方に慣れてみる</title>
-        <link>//localhost:43191/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+        <link>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</link>
         <pubDate>Fri, 18 Oct 2024 15:02:06 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+        <guid>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
         <description>&lt;h1 id=&#34;markdownの書き方が分からない&#34;&gt;markdownの書き方が分からない
 &lt;/h1&gt;&lt;p&gt;はい。ノリと勢いで始めてしまったせいで分からんなってます。&lt;/p&gt;
 &lt;p&gt;というわけでmarkdownの練習がてら色々触ってみております。自己満足なそういうアレです。&lt;/p&gt;
@@ -253,10 +253,10 @@ ubuntuはドライバーを入れる必要なくそのまま繋がりました�
         </item>
         <item>
         <title>Test</title>
-        <link>//localhost:43191/posts/test/</link>
+        <link>//localhost:1313/posts/test/</link>
         <pubDate>Fri, 18 Oct 2024 10:02:06 +0900</pubDate>
         
-        <guid>//localhost:43191/posts/test/</guid>
+        <guid>//localhost:1313/posts/test/</guid>
         <description>&lt;h1 id=&#34;これはテストです&#34;&gt;これはテストです
 &lt;/h1&gt;&lt;p&gt;はいというわけで何度目か分からない最初の記事を書いています&lt;/p&gt;
 &lt;p&gt;これどう表示されてるか分からんの怖すぎワロタ&lt;/p&gt;
