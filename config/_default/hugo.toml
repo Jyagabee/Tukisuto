@@ -4,6 +4,8 @@ languageCode = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
 theme = "stack"
+canonifyURLs = true
+relativeURLs = false
 
 [frontmatter]
 lastmod = [":git", ":fileModTime", ":default"]

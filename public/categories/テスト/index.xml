@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>テスト on じゃがびぃのサイト</title>
+        <link>//localhost:39697/categories/%E3%83%86%E3%82%B9%E3%83%88/</link>
+        <description>Recent content in テスト on じゃがびぃのサイト</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja</language>
+        <lastBuildDate>Sat, 06 Dec 2025 16:16:51 +0900</lastBuildDate><atom:link href="//localhost:39697/categories/%E3%83%86%E3%82%B9%E3%83%88/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>テスト記事</title>
+        <link>//localhost:39697/posts/%E3%83%86%E3%82%B9%E3%83%88%E8%A8%98%E4%BA%8B/</link>
+        <pubDate>Tue, 02 Dec 2025 16:37:34 +0900</pubDate>
+        
+        <guid>//localhost:39697/posts/%E3%83%86%E3%82%B9%E3%83%88%E8%A8%98%E4%BA%8B/</guid>
+        <description>&lt;h2 id=&#34;テスト記事へようこそ&#34;&gt;テスト記事へようこそ
+&lt;/h2&gt;&lt;p&gt;これは &lt;code&gt;content/posts/&lt;/code&gt; に配置されたテスト記事です。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;layouts/index.html&lt;/code&gt; の設定により、ルートページ（/）には &lt;strong&gt;posts セクションの記事だけ&lt;/strong&gt; が表示されます。&lt;/p&gt;
+&lt;h3 id=&#34;確認ポイント&#34;&gt;確認ポイント
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;✅ この記事がルートページに表示される&lt;/li&gt;
+&lt;li&gt;✅ weekly セクションの記事は表示されない&lt;/li&gt;
+&lt;li&gt;✅ 日付順（新しい順）で並ぶ&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

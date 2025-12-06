@@ -1,7 +1,9 @@
 {{ define "main" }}
     {{/* トップページには posts セクションの記事だけを出す */}}
     {{ $posts := where .Site.RegularPages "Section" "posts" }}
-    {{ $notHidden := where $posts "Params.hidden" "!=" true }}
+    {{/* HTMLファイルを除外（Markdownファイルのみを表示） */}}
+    {{ $markdownOnly := where $posts ".File.Ext" "ne" "html" }}
+    {{ $notHidden := where $markdownOnly "Params.hidden" "!=" true }}
     {{ $sorted := $notHidden.ByDate.Reverse }}
     {{ $pag := .Paginate $sorted }}
 
