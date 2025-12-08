@@ -1,5 +1,5 @@
 ---
-title: "Advent2025"
+title: "ゼロ・トルクの感想"
 date: 2025-12-08T23:16:41+09:00
 draft: false
 featured: false
