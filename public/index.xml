@@ -1,903 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>じゃがびぃのサイト</title>
-        <link>//localhost:1313/</link>
-        <description>Recent content on じゃがびぃのサイト</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>ja</language>
-        <lastBuildDate>Sat, 06 Dec 2025 20:56:59 +0900</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>20250425</title>
-        <link>//localhost:1313/weekly/20250425/</link>
-        <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
-        
-        <guid>//localhost:1313/weekly/20250425/</guid>
-        <description>&lt;h1 id=&#34;週報&#34;&gt;週報
-&lt;/h1&gt;&lt;p&gt;お久しぶりです。じゃがびぃです。&lt;br&gt;
-あまりにも忙しすぎて更新する余裕がありませんでした。
-ちょっと余裕ができたので振り返りでもしつつ書いていこうと思います。&lt;/p&gt;
-&lt;p&gt;うちのプロジェクトは万年後継者不足なので今年度は勧誘を頑張ろうの会ができました。ワイは何もやってなかったんですけどね。&lt;br&gt;
-おかげでそれなりに人が来てくれました。まあまあそこそこなことができるんじゃないかレベルの人が来てくれました。
-そして人も減っていきましたね。悲しいですワイは。何がダメだったんでしょうかね。&lt;/p&gt;
-&lt;p&gt;ということがありつつ気づいたら4月おわりかけてますよ。怖すぎる。&lt;br&gt;
-ワイはこのままでいいんだろうかという気持ちがありつつ、このまま頑張ればいいんじゃないかという気持ちもありつつ過ごしております。頑張るってなんだろう。&lt;/p&gt;
-&lt;p&gt;あ、あとmacbook air m4買いました。素敵ですこの子。&lt;br&gt;
-今まで使ってたthinkpadちゃんはlinuxとwindows兼用で運用してこの子を頑張って使いこなしていこうかなと考えたり考えなかったり。&lt;br&gt;
-この子に入れたらいいツールとかソフトとかその他諸々あれば教えてください。azookeyは入れた。&lt;/p&gt;
-&lt;p&gt;終わり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>20250328</title>
-        <link>//localhost:1313/weekly/20250328/</link>
-        <pubDate>Fri, 28 Mar 2025 14:58:23 +0900</pubDate>
-        
-        <guid>//localhost:1313/weekly/20250328/</guid>
-        <description>&lt;p&gt;はい今週の週報です。&lt;br&gt;
-東京行きから帰ってきて色々してたら毛根な時間だよ早いよ時間経つの。&lt;/p&gt;
-&lt;p&gt;今週は新入生勧誘に色々動いておりました。忙しくないけど忙しいです。&lt;br&gt;
-なんせ人がいないとか人が消えたとか何とかで動かんなん。&lt;br&gt;
-しんどいよーーー&lt;/p&gt;
-&lt;p&gt;そういやゲーセンで新しい筐体が動き始めましたね&lt;br&gt;
-ワイは稼働日に行ってきたので写真を上げときます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250325_151700562.MP.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250325_151700562.MP_hu_a16d21fd5042fdef.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250325_151700562.MP_hu_fae08a4964342c4c.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;gitadora&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161404292.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161404292_hu_ef79a24547402378.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_161404292_hu_6a3053d8fd37a1b9.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;medal2&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161421029.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161421029_hu_d871de627d8df579.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_161421029_hu_67668988ccd6a3d6.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;medal1&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_070704209.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_070704209_hu_74e7ecbc22d951b8.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_070704209_hu_2fb26c3db0014ae5.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;hannyu&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt; &lt;br&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161542403.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250323_161542403_hu_a81b0eb5609c43f.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250323_161542403_hu_9f30f056f9a2710b.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;kadoumae&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250326_000533718.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250326_000533718_hu_2ef289924686e86c.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250326_000533718_hu_38fcf9f36f328721.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;kadougo&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250326_002016002.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250326_002016002_hu_68669acc26a0386d.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250326_002016002_hu_929d98e0d892ad24.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;livefailed&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250328/PXL_20250326_001350887.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250328/PXL_20250326_001350887_hu_f1b885d8896f2b2b.jpg 480w, //localhost:1313/weekly/20250328/PXL_20250326_001350887_hu_3e5c463a44fc7bea.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;photoerror&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;最近のゲーセン、だいぶゲーセンでしかできないことを考えようとしている気がしてて良い&lt;br&gt;
-クレーンゲームに侵食される前に頑張ってゲーム機残ってほしいわね&lt;/p&gt;
-&lt;p&gt;今回のギタドラはかなり低音つよつよでプレイしてて楽しい&lt;br&gt;
-個人的にかなり刺さりましたわ&lt;br&gt;
-ドラムマニアの譜面が見やすくなってて良かった&lt;br&gt;
-ギターの方も譜面を長めにしてほしかったなあ…&lt;/p&gt;
-&lt;p&gt;けどツアマスはすぐサ終すると思うの&lt;br&gt;
-あまりにもファンゲー過ぎてアレ&lt;br&gt;
-初心者が入る余地が無さすぎてなんか……&lt;br&gt;
-あーいうタイプのゲームはPSとかソシャゲで出すべきであってアーケードゲーで出すべきじゃない&lt;/p&gt;
-&lt;p&gt;おわり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>20250321</title>
-        <link>//localhost:1313/weekly/20250321/</link>
-        <pubDate>Tue, 25 Mar 2025 22:03:35 +0900</pubDate>
-        
-        <guid>//localhost:1313/weekly/20250321/</guid>
-        <description>&lt;p&gt;週報書くの完全に忘れてたわごめｗ&lt;br&gt;
-週報書くの忘れた理由としては東京出張してたからですﾊｲ。&lt;br&gt;
-今後は気を付けますわ～～～&lt;/p&gt;
-&lt;p&gt;せっかくなので東京出張した帰りに寄ったとことか写真とか載せましょうかね
-&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250320_000126451.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250320_000126451_hu_d89c0c2325916f49.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250320_000126451_hu_15fee6985bfcccca.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;siomi&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250320_225639673.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250320_225639673_hu_fe6236db5de8b96.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250320_225639673_hu_ca2784b8df90c09f.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;nazonobasyo&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105623369.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105623369_hu_820e6d5b2faec72c.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105623369_hu_93dc7309f3dc2c14.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;akihabara&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105627105.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105627105_hu_6f48162e8ee0d1fb.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105627105_hu_b400f84e860021d0.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;right&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105634656.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105634656_hu_69c1da11ad1ce31c.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105634656_hu_65c422b440431274.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;left&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105802928.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105802928_hu_47487166894414d5.jpg 480w, //localhost:1313/weekly/20250321/PXL_20250321_105802928_hu_586b12bf95801bbb.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umamusume&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;大変だったけど楽しかったです。&lt;br&gt;
-出張内容にはかなり不満ですけども。。。まあ今更ウダウダ言っても仕方ないじゃんね。&lt;br&gt;
-これを糧にして生きていこうと思います。&lt;/p&gt;
-&lt;p&gt;それはそれとして、&lt;a class=&#34;link&#34; href=&#34;https://x.com/Jyaga_bee/status/1903118197307650191&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ワイのツイート&lt;/a&gt;に出張のために作ったアプリがあるのでよかったらいいねしてってください。&lt;br&gt;
-ほぼ誰にも頑張ったねって言ってもらえなくて悲しいので…&lt;/p&gt;
-&lt;p&gt;おわり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Android Studio Meerkat | 2024.3.1 を日本語化した話</title>
-        <link>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</link>
-        <pubDate>Mon, 17 Mar 2025 10:34:08 +0900</pubDate>
-        
-        <guid>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
-        <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
-&lt;/h2&gt;&lt;p&gt;皆さんAndroidStudioをmeerkatへアップデートしてらっしゃるでしょうか。ワイはノリと勢いで更新してしまいました。&lt;br&gt;
-アプデしてから日本語化できないことに気づき、1週間くらい我慢してたけど耐えられなくなったので日本語化しました。&lt;br&gt;
-備忘録的なアレを残しておきます&lt;/p&gt;
-&lt;h3 id=&#34;プラグインあるんじゃないの&#34;&gt;プラグインあるんじゃないの
-&lt;/h3&gt;&lt;p&gt;ってことですよね。ﾊｲ。laybugはあるけどmeerkatは無いです。日本語化プラグインがバージョン不一致でエラー出て使えんなりました。&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://plugins.jetbrains.com/plugin/13964-japanese-language-pack------/versions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;このプラグイン&lt;/a&gt;は更新されるかどうか分からんらしいです。&lt;br&gt;
-どうやらInteliJ IDEに日本語が内蔵されてしまった関係でメンテナンスされないらしい。&lt;del&gt;控えめに言ってクソ&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;日本語化する方法&#34;&gt;日本語化する方法
-&lt;/h2&gt;&lt;p&gt;ということで解説していきます。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;InteliJ IDE Comunity Editionをインストールする&lt;/li&gt;
-&lt;li&gt;pluginフォルダから日本語化プラグインを頂く&lt;/li&gt;
-&lt;li&gt;Android Studioのpluginフォルダへコピー&lt;/li&gt;
-&lt;li&gt;Appearance &amp;amp; Behavior&amp;gt;System Settings&amp;gt;Language and RegionのLanguageを日本語に変更&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;こんだけです。
-以下に注意点だけまとめておきます。&lt;/p&gt;
-&lt;h3 id=&#34;注意点&#34;&gt;注意点
-&lt;/h3&gt;&lt;p&gt;WindowsのInteliJ IDE のpluginフォルダパス:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\Users\Users\AppData\Local\Programs\IntelliJ IDEA Community Edition\plugins  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;この中にlocalization-jaがあるのでコピー&lt;/p&gt;
-&lt;p&gt;WindowsのAndroid Studioのpluginフォルダパス:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\Users\Users\AppData\Local\Programs\Android Studio\plugins
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;MacのAndroid Studio のpluginフォルダパス&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#39;/Applications/Android Studio.app/Contents/plugins&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;先ほどコピーしてきたディレクトリごとペースト&lt;/p&gt;
-&lt;p&gt;linuxは知らない。いずれはやらんとあかんねえ…&lt;/p&gt;
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに
-&lt;/h2&gt;&lt;p&gt;以上です。備忘録なので信頼性等々求めてる人はよそ様の記事なりchatgptなりに聞いてください。&lt;br&gt;
-日本語化する気あるのかないのか分からんの何とかしちくり～～～～&lt;/p&gt;
-&lt;p&gt;おわり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>20250314</title>
-        <link>//localhost:1313/weekly/20250314/</link>
-        <pubDate>Fri, 14 Mar 2025 11:16:27 +0900</pubDate>
-        
-        <guid>//localhost:1313/weekly/20250314/</guid>
-        <description>&lt;p&gt;今週の週報です。
-先週の週報を上げた日に名古屋へ用事があったのでお泊りで行ってきました。
-以下に画像をてけとーに貼っておきます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051114493.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051114493_hu_48442fabafa7dc16.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_051114493_hu_6a78ad8b24522498.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;pop’n&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_081659252.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_081659252_hu_31733a30920daf5c.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_081659252_hu_81679bb58056dab1.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;pop’n2&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051901792.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051901792_hu_87515703cb00a185.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_051901792_hu_ba78998d1394493f.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;サ終ゲー&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_071924311.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_071924311_hu_e0883085c7abd504.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_071924311_hu_8cb942c2505b5264.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;イニシャルD&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095844142.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095844142_hu_3b4e8903f795ed0d.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095844142_hu_c15537ecc1e8093e.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;wacca&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_100111030.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_100111030_hu_714484aa0e41eda.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_100111030_hu_25941cff09e77fbf.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;groovecoaster&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_073839910.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_073839910_hu_2245ade8e97cd465.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_073839910_hu_afdfde7fdc81afcc.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;アケマス1&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095921548.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095921548_hu_f3a1380c984f7692.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095921548_hu_252e6dff88450d57.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;アケマス2&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095930801.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095930801_hu_23bf17fe3b1e142c.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095930801_hu_a8490ffeb53758ac.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;アケマス3&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095937570.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095937570_hu_3a3a71ed2a5638c9.jpg 480w, //localhost:1313/weekly/20250314/PXL_20250309_095937570_hu_76dadba4209b2fac.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;アケマス4&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;色々忙しかったんですけど、ゲーセン巡りができたので良かったと思います。&lt;br&gt;
-レトロゲー置いてるゲーセン多くて思ったより楽しめたじゃんね。&lt;br&gt;
-マッピーちゃんが置いてあったゲーセンあったけど、先客がめっちゃ遊んでてプレイできなかったのが悲しかったです。&lt;/p&gt;
-&lt;p&gt;あとアケマスがもう置いてあってびっくらこいた。こっちじゃ考えられねーじゃんね。&lt;br&gt;
-ラウワンとかなら稼働前でも置いてるのかしら。置いてないだろうなあ……&lt;/p&gt;
-&lt;p&gt;まあこんなもんですかね。&lt;br&gt;
-忙しくて書く内容が無いようｗ&lt;/p&gt;
-&lt;p&gt;終わり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>20250307</title>
-        <link>//localhost:1313/weekly/20250307/</link>
-        <pubDate>Fri, 07 Mar 2025 11:24:00 +0900</pubDate>
-        
-        <guid>//localhost:1313/weekly/20250307/</guid>
-        <description>&lt;p&gt;今週の週報です。&lt;br&gt;
-20250303のやつはタダの宣言なので週報って書いてあるけど週報じゃないです。&lt;/p&gt;
-&lt;p&gt;Claude3.7のおかげでだいぶhugoのことを理解できるようになってきました。&lt;br&gt;
-このファイルもコマンドで生成できるようになりました。素晴らしい。&lt;br&gt;
-改行だけめんどくさいけどClaudeくん曰くmarkdownのお作法らしいので我慢します。&lt;/p&gt;
-&lt;p&gt;今週やったことねえ…家のデスクトップに入れたAndroid Studioだと何故かビルドできなくてｺﾞﾆｮｺﾞﾆｮしてたくらい？&lt;br&gt;
-この問題よう分からんのですよ。どうやらfastddsのlibs.so(だっけ？)か何かのファイルが必要だけどディレクトリに存在しないって怒られるんですよね&lt;br&gt;
-ビルドする前に全部インポートしたはずなんだけどなあ…&lt;br&gt;
-別環境のwindowsとかlinuxとか使うとビルドできるから、多分何か入れ忘れてるんだろうけど思いつかない。&lt;br&gt;
-誰か助けてー&lt;br&gt;
-そもそもkotlinでc++使うこと自体間違ってるのかな…&lt;/p&gt;
-&lt;p&gt;あと最近、レンチンでご飯を炊き始めました。&lt;br&gt;
-作り始めたときは芯が残ってしまってたけど、だいぶマシなものを錬成できるようになりました。&lt;br&gt;
-吸水の時間は大事。偉大。&lt;/p&gt;
-&lt;p&gt;こんなもんですかね。週報で書く中身のテンプレ作らないとしんどすぎてアカンですね。&lt;br&gt;
-来週のやつまでに作れたら作ってみよかな&lt;/p&gt;
-&lt;p&gt;終わり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>週報メモ</title>
-        <link>//localhost:1313/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</link>
-        <pubDate>Mon, 03 Mar 2025 23:20:35 +0900</pubDate>
-        
-        <guid>//localhost:1313/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</guid>
-        <description>&lt;h1 id=&#34;memo&#34;&gt;memo
-&lt;/h1&gt;&lt;p&gt;個人的に忘れそうだったのでメモ&lt;/p&gt;
-&lt;h1 id=&#34;hugoで記事に画像を添付する方法&#34;&gt;Hugoで記事に画像を添付する方法
-&lt;/h1&gt;&lt;p&gt;Hugoで記事に画像を添付するには、主に2つの方法があります：&lt;/p&gt;
-&lt;h2 id=&#34;1-page-bundle方式推奨&#34;&gt;1. Page Bundle方式（推奨）
-&lt;/h2&gt;&lt;p&gt;記事と画像を同じフォルダに配置する方法です。これが最も管理しやすい方法です：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;content/
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── posts/
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    └── my-post/
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ├── index.md  # 記事本文
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ├── image1.jpg  # 画像ファイル
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        └── image2.png  # 画像ファイル
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;手順&#34;&gt;手順
-&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;まず記事用のディレクトリを作成
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new content/posts/my-post/index.md
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;同じディレクトリ内に画像を配置&lt;/li&gt;
-&lt;li&gt;Markdown内で相対パスで参照&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;本文&#34;&gt;本文
-&lt;/h2&gt;&lt;p&gt;以下は画像です：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![画像の説明](image1.jpg &amp;#34;画像のタイトル&amp;#34;)  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;サイズ指定もできます：
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![画像の説明](image2.png &amp;#34;画像のタイトル&amp;#34;){width=300px}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;2-静的ファイル方式&#34;&gt;2. 静的ファイル方式
-&lt;/h2&gt;&lt;p&gt;共通で使いたい画像を &lt;a class=&#34;link&#34; href=&#34;vscode-file://vscode-app/c:/Users/ameri/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html&#34; &gt;static&lt;/a&gt; ディレクトリに配置する方法：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# static/images/ ディレクトリに画像を配置
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Markdown内での参照：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![画像の説明](/images/sample.jpg &amp;#34;画像のタイトル&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;注意事項&#34;&gt;注意事項
-&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;画像ファイル名には日本語や特殊文字を避け、英数字とハイフンを使用するのが安全です&lt;/li&gt;
-&lt;li&gt;大きな画像は最適化してからアップロードしましょう&lt;/li&gt;
-&lt;li&gt;常に代替テキスト（alt属性）を設定しましょう&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Blowfishテーマでは、Page Bundle方式が特に推奨されており、画像処理機能なども利用できます。&lt;/p&gt;
-&lt;h1 id=&#34;ディレクトリへテンプレートを使用して記事を作成するコマンド&#34;&gt;ディレクトリへテンプレートを使用して記事を作成するコマンド
-&lt;/h1&gt;&lt;p&gt;週報用のテンプレート（アーキタイプ）を使って ディレクトリに新しい記事を作成するには、以下のコマンドを使用します：&lt;/p&gt;
-&lt;p&gt;**hugo new **&amp;ndash;&lt;strong&gt;kind テンプレ ディレクトリ&lt;/strong&gt;/&lt;strong&gt;記事タイトル&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;例えば、「2025年3月第1週」という週報を作成したい場合：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new --kind weekly weekly/2025年3月第1週
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;このコマンドを実行すると、content/weekly/2025年3月第1週/index.mdが作成されます。&lt;/p&gt;
-&lt;p&gt;&amp;ndash;kindオプションは「どのテンプレート（アーキタイプ）を使用するか」を指定するためのフラグです。&lt;/p&gt;
-&lt;h2 id=&#34;詳細説明&#34;&gt;詳細説明
-&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;アーキタイプの選択&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;ndash;kind weekly は weekly フォルダ内のテンプレートを使用する&lt;/li&gt;
-&lt;li&gt;&amp;ndash;kind posts は posts フォルダ内のテンプレートを使用する&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;ディレクトリ構造の作成&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;単にファイルだけでなく、ディレクトリ構造も含めた複雑なテンプレートを適用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;テンプレートの優先順位&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;ndash;kind を指定しない場合、デフォルトテンプレート（archetypes/default.md）が使用される&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;普通の記事を作成したい場合&#34;&gt;普通の記事を作成したい場合
-&lt;/h2&gt;&lt;p&gt;hugo new content post/AndroidStudioLanguageというコマンドは正しくありません。以下のように修正してください：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new post/AndroidStudioLanguage.md
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;「content」という単語は不要で、ファイル拡張子（.md）を追加する必要があります。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Claude 3.7でアプリを作った話</title>
-        <link>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</link>
-        <pubDate>Mon, 03 Mar 2025 22:40:45 +0900</pubDate>
-        
-        <guid>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</guid>
-        <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
-&lt;/h2&gt;&lt;p&gt;今回もテスト回です。ほとんど日記。&lt;br&gt;
-真面目なものを探している人は帰ってください。&lt;/p&gt;
-&lt;h2 id=&#34;アプリを作る経緯&#34;&gt;アプリを作る経緯
-&lt;/h2&gt;&lt;p&gt;じゃがびぃさんが入ってるプロジェクトのえらいさんからアプリを作れと言われてしまいました。どうやら謎の大会で使用するらしいです。&lt;/p&gt;
-&lt;p&gt;bluetoothでモジュールと接続してコントローラーの値を送るだけの簡単なアプリですが、めんどくさがったじゃがびぃさんは全部丸投げすることにしました。&lt;/p&gt;
-&lt;h2 id=&#34;丸投げするにあたって&#34;&gt;丸投げするにあたって
-&lt;/h2&gt;&lt;p&gt;kotlinなんも分からんかったので先ずは勉強することにしました。&lt;br&gt;
-kotlinはjavaとほぼ同じで、かつjetpack compose関係のコードだけ覚えたら終わりだったので楽でした。&lt;/p&gt;
-&lt;h2 id=&#34;コード全部丸投げする&#34;&gt;コード全部丸投げする
-&lt;/h2&gt;&lt;p&gt;最初はよう分からんので、&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;アレ実装したい&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;って指示を出してました。&lt;br&gt;
-これだと精度が悪いということに気づいたので、&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;これ実装した。これを使ってアレやって。&lt;/li&gt;
-&lt;li&gt;エラー出た。以下にエラー文書くから原因と修正方法を出して。&lt;/li&gt;
-&lt;li&gt;これ実装したい。このコード使って出して。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ってやったら使い物になるようなコードを出力するようになりました。&lt;/p&gt;
-&lt;p&gt;後半になると、&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;6時間で新規アプリの作成&lt;/li&gt;
-&lt;li&gt;旧アプリと新規アプリの機能追加&lt;/li&gt;
-&lt;li&gt;旧アプリと新規アプリの通信&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;までできるようになりました。&lt;/p&gt;
-&lt;h2 id=&#34;得たこと&#34;&gt;得たこと
-&lt;/h2&gt;&lt;p&gt;なんもないです。&lt;br&gt;
-&lt;del&gt;むしろプログラミングの授業でAI使ったのバレて落単ギリギリまで点数引かれた&lt;/del&gt;&lt;br&gt;
-時間だけは節約できたかな。&lt;/p&gt;
-&lt;h2 id=&#34;感じたこと&#34;&gt;感じたこと
-&lt;/h2&gt;&lt;p&gt;ワイみたいなど素人がこんなもん使えるようになっちゃったら、もうダメになると思いました。&lt;br&gt;
-ダメになると感じた理由として、&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;コードの良し悪しが分からない&lt;/li&gt;
-&lt;li&gt;オフラインでコードの修正ができない&lt;/li&gt;
-&lt;li&gt;コードがめっちゃ長くなる&lt;/li&gt;
-&lt;li&gt;コードが学習されてしまう&lt;/li&gt;
-&lt;li&gt;視認性が悪くなる&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;…などなど。&lt;br&gt;
-ほぼほぼど素人がこれだけのものを短時間で作れる時代になったのはかなり脅威だと思います。&lt;br&gt;
-これからのプログラマーは、想定外のエラーやその他諸々が出た時にオフラインでコード書けないと存在意義が無いなと思いました。現段階でワイは存在意義が無いです。&lt;br&gt;
-もうちょい地に足付けて生きようと思いました。&lt;/p&gt;
-&lt;h2 id=&#34;おわりに&#34;&gt;おわりに
-&lt;/h2&gt;&lt;p&gt;言ってはいけないことがあまりにも多すぎて抽象的になってしまいました。本当に申し訳ない。&lt;br&gt;
-この経験、いい意味でも悪い意味でもすごく刺激になりました。真面目に勉強しようと思います。&lt;/p&gt;
-&lt;p&gt;おわり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>週報20250303</title>
-        <link>//localhost:1313/weekly/%E9%80%B1%E5%A0%B120250303/</link>
-        <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-        
-        <guid>//localhost:1313/weekly/%E9%80%B1%E5%A0%B120250303/</guid>
-        <description>&lt;h1 id=&#34;週報&#34;&gt;週報
-&lt;/h1&gt;&lt;p&gt;お久しぶりです。じゃがびぃです。
-特にやりたいこととか全くなかったのでサボり散らかしておりました。&lt;/p&gt;
-&lt;p&gt;流石にもったいないお化けが出そうだったので、ちょいちょい動かしていこうと思います。&lt;/p&gt;
-&lt;p&gt;週報なので1週間の終わりの金曜日になんか更新するということで触っていこうかなと思います。&lt;/p&gt;
-&lt;h2 id=&#34;claude-37がすごい&#34;&gt;Claude 3.7がすごい
-&lt;/h2&gt;&lt;p&gt;こいつのおかげで今書けています。
-誰かに質問攻めにするより気が楽&amp;amp;答えをすぐ出してくれる。素晴らしい。
-ワイみたいな知識がない人間こそ使ってはいけない代物だと思いますﾊｲ。
-脳が冷える感覚がする。明らか頭が悪くなったと感じております。
-やっぱ自分で考えなきゃダメだと思うの。
-努力します。&lt;/p&gt;
-&lt;p&gt;こんなもんでええですかね。
-今回はテスト兼ねてますので雑にちゃちゃっと終わらせます。&lt;/p&gt;
-&lt;p&gt;終わり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>ThinkPadでWifi7を使えるようにしてみた話</title>
-        <link>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
-        <pubDate>Fri, 18 Oct 2024 18:02:06 +0900</pubDate>
-        
-        <guid>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
-        <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに
-&lt;/h1&gt;&lt;p&gt;大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 &lt;br&gt;
-オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 &lt;br&gt;
-というわけで備忘録的な感じでつらつらと書いていきます。&lt;/p&gt;
-&lt;h2 id=&#34;スペック&#34;&gt;スペック
-&lt;/h2&gt;&lt;p&gt;うちのはLenovoの公式からカスタムしたモデルを買いました。参考程度に下にスペックを書いときます。&lt;/p&gt;
-&lt;p&gt;ThinkPad E16 Gen 1&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;プロセッサー インテル® Core™ i7-13700H&lt;/li&gt;
-&lt;li&gt;OS Windows 11 Home 64bit&lt;/li&gt;
-&lt;li&gt;メモリ 32 GB DDR4-3200MHz&lt;/li&gt;
-&lt;li&gt;1stストレージ 512 GB SSD&lt;/li&gt;
-&lt;li&gt;2ndストレージ 256 GB SSD ←ubuntu入れてます&lt;/li&gt;
-&lt;li&gt;ディスプレイ 16&amp;quot; WUXGA液晶 (1920 x 1200) IPS, マルチタッチパネル&lt;/li&gt;
-&lt;li&gt;グラフィックカード インテル® Iris® Xe&lt;/li&gt;
-&lt;li&gt;内蔵カメラ 1080p FHDカメラ、マイク&lt;/li&gt;
-&lt;li&gt;指紋センサー 指紋センサー&lt;/li&gt;
-&lt;li&gt;キーボード バックライト、ブラック、数値キーパッド付 - 日本語&lt;/li&gt;
-&lt;li&gt;無線LANアダプター Wi-Fi 6対応 (IEEE 802.11ax/ac/a/b/g/n準拠) 2x2 &amp;amp; Bluetooth® (RealTek® 8852BE)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;一番下以外は関係ないですね。&lt;del&gt;タッチパネルにしたのを自慢したかった&lt;/del&gt;&lt;/p&gt;
-&lt;h1 id=&#34;作業風景とか&#34;&gt;作業風景とか
-&lt;/h1&gt;&lt;p&gt;こんな感じでこじ開けます。
-&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_6f4d67be1f16b362.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_080904481.MP_hu_feda50a13ef37240.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;こじ開けるところ&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-こんな感じでこじ開けられました。
-&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP.jpg&#34;
-	width=&#34;4032&#34;
-	height=&#34;2268&#34;
-	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_ad60f7d5674b5efe.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081025568.MP_hu_aa611d77fbe1d441.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;開けたところ&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;
-今回入れるwifiカードはこれです
-&lt;img src=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP.jpg&#34;
-	width=&#34;2268&#34;
-	height=&#34;4032&#34;
-	srcset=&#34;//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_19b9209cb7a32ce9.jpg 480w, //localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/PXL_20241018_081105639.MP_hu_661b47ea7bdd43.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;wifiカード&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;
-インテルのWi-Fi7 BE200とかいうやつらしいです&lt;/p&gt;
-&lt;p&gt;普通に取り換えて元に戻すだけなのでさくっと作業やると
-&lt;img src=&#34;//localhost:1313/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%202024-10-18%20172343.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;繋がったところ&#34;
-	
-	
-&gt;
-なんとドライバー入れた瞬間に繋がりました。 &lt;br&gt;
-ubuntuはドライバーを入れる必要なくそのまま繋がりました。&lt;/p&gt;
-&lt;p&gt;少し考えれば当たり前だと分かりますが、wifiとbluetoothの設定がほぼ全て吹き飛んでいました。&lt;del&gt;学内ネットに再接続するのが面倒&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;私の環境にwifi7などあるはずもなく、スピードテストしようにもwifi5のルーターしかないためスピードテストは省略します。&lt;/p&gt;
-&lt;h1 id=&#34;おわりに&#34;&gt;おわりに
-&lt;/h1&gt;&lt;p&gt;思った以上に割と簡単に接続できました。以前AX210とAX211を買い間違えて大惨事になったことがあったので覚悟していましたが、想像以上に簡単でびっくりしました。&lt;br&gt;
-変えれるなら変えてもいいんじゃないでしょうか。&lt;br&gt;
-こいつで色々実験しようと思います。&lt;/p&gt;
-&lt;p&gt;おわり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>markdownの書き方に慣れてみる</title>
-        <link>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</link>
-        <pubDate>Fri, 18 Oct 2024 15:02:06 +0900</pubDate>
-        
-        <guid>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-        <description>&lt;h1 id=&#34;markdownの書き方が分からない&#34;&gt;markdownの書き方が分からない
-&lt;/h1&gt;&lt;p&gt;はい。ノリと勢いで始めてしまったせいで分からんなってます。&lt;/p&gt;
-&lt;p&gt;というわけでmarkdownの練習がてら色々触ってみております。自己満足なそういうアレです。&lt;/p&gt;
-&lt;h2 id=&#34;自分語りをしてみる&#34;&gt;自分語りをしてみる
-&lt;/h2&gt;&lt;p&gt;ノリと勢いでmisskeyのサーバーを運営しております。&lt;a class=&#34;link&#34; href=&#34;mk.tenpest-moon..uk&#34; &gt;月のテンペスト&lt;/a&gt;という鯖の鯖缶やってます&lt;/p&gt;
-&lt;p&gt;中途半端な大学のちょっとしたプロジェクトに参加して毎日ﾋｰﾋｰやってます&lt;/p&gt;
-&lt;p&gt;今回作ろうと思った理由はプロジェクトでやることがないなったからです&lt;/p&gt;
-&lt;p&gt;遊び半分で作りました　　&lt;/p&gt;
-&lt;p&gt;泣きながらやったらなんかできたのでマズいことをやっている可能性が微レ存&lt;/p&gt;
-&lt;p&gt;ブログ作ったはいいものの楽に書けないと多分触らなくなるのでobsidianで書けるようにしてみました&lt;/p&gt;
-&lt;p&gt;どないなってるかよくわからんのでこれもテストです&lt;/p&gt;
-&lt;h2 id=&#34;改行の仕方が分からない&#34;&gt;改行の仕方が分からない　
-&lt;/h2&gt;&lt;p&gt;なんか改行できないんですけど&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;teusto  tesuto←これは半角改行2つ&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;teusto　　tesuto←これは全角改行2つ&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;tesuto &lt;code&gt;&amp;lt;br&amp;gt;tesuto←これはbr&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;どんだけやっても改行されないのはなんでですか&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;あれですかhugoかparams.tomlになんか書いてないからですか&lt;/p&gt;
-&lt;p&gt;markdownの書き方が分からなくなってきたのでこれくらいにしときます。&lt;/p&gt;
-&lt;p&gt;おわり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Test</title>
-        <link>//localhost:1313/posts/test/</link>
-        <pubDate>Fri, 18 Oct 2024 10:02:06 +0900</pubDate>
-        
-        <guid>//localhost:1313/posts/test/</guid>
-        <description>&lt;h1 id=&#34;これはテストです&#34;&gt;これはテストです
-&lt;/h1&gt;&lt;p&gt;はいというわけで何度目か分からない最初の記事を書いています&lt;/p&gt;
-&lt;p&gt;これどう表示されてるか分からんの怖すぎワロタ&lt;/p&gt;
-&lt;p&gt;ひとまず下書きのテンプレート？を作れたはずだけど正しいのかどうか分からない&lt;/p&gt;
-&lt;p&gt;人生何も分からない&lt;/p&gt;
-&lt;p&gt;以上。終わり。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title></title>
-        <link>//localhost:1313/about/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>//localhost:1313/about/</guid>
-        <description>&lt;h1 id=&#34;about&#34;&gt;about
-&lt;/h1&gt;&lt;p&gt;じゃがびぃと申します。&lt;/p&gt;
-&lt;p&gt;特に目立って活動してるわけじゃないです。趣味でmisskeyという分散型snsとこのブログを運営しています。&lt;br&gt;
-某大学のそこそこなプロジェクトで下っ端として生きています。主にandroid触ったりwifi触ったり色んな事をさせてもろてます。&lt;br&gt;
-twitterに居たりmisskeyに居たりbskyに居たりmixi2でコーヒー垂れ流してたり色んな所でボチボチやってます。&lt;/p&gt;
-&lt;h1 id=&#34;連絡先&#34;&gt;連絡先
-&lt;/h1&gt;&lt;p&gt;以下に連絡がつきやすい垢を置いときます。何かあればDMなりで接触してください。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Twitter:&lt;a class=&#34;link&#34; href=&#34;https://x.com/Jyaga_bee&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;@Jyaga_bee&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Misskey:&lt;a class=&#34;link&#34; href=&#34;https://mk.tenpest-moon.uk/@Jyagabee&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Jyagabee@mk.tenpest-moon.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;bluesky:&lt;a class=&#34;link&#34; href=&#34;https://bsky.app/profile/jyagabee.bsky.social&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;jyagabee.bsky.social&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;作ったものない&#34;&gt;作ったもの(ない)
-&lt;/h1&gt;&lt;p&gt;なにか作ったものがあれば適当に乗せていきたい…いつになることやら&lt;/p&gt;
-&lt;p&gt;おわり。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>じゃがびぃのサイト</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on じゃがびぃのサイト</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 08 Dec 2025 23:21:49 +0900</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advent2025</title>
+      <link>//localhost:1313/posts/advent2025/</link>
+      <pubDate>Mon, 08 Dec 2025 23:16:41 +0900</pubDate>
+      <guid>//localhost:1313/posts/advent2025/</guid>
+      <description>&lt;p&gt;この記事は&lt;a href=&#34;https://adventar.org/calendars/11624&#34;&gt;架空アニメ Advent Calendar 2025&lt;/a&gt;の8日目の記事です。&lt;/p&gt;&#xA;&lt;p&gt;ご無沙汰しておりました。じゃがびぃです。なんか最近忙しくて気がついたらアドベントカレンダーですってよ。早いですね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>20250425</title>
+      <link>//localhost:1313/weekly/20250425/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/weekly/20250425/</guid>
+      <description>&lt;h1 id=&#34;週報&#34;&gt;週報&lt;/h1&gt;&#xA;&lt;p&gt;お久しぶりです。じゃがびぃです。&lt;br&gt;&#xA;あまりにも忙しすぎて更新する余裕がありませんでした。&#xA;ちょっと余裕ができたので振り返りでもしつつ書いていこうと思います。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>20250328</title>
+      <link>//localhost:1313/weekly/20250328/</link>
+      <pubDate>Fri, 28 Mar 2025 14:58:23 +0900</pubDate>
+      <guid>//localhost:1313/weekly/20250328/</guid>
+      <description>&lt;p&gt;はい今週の週報です。&lt;br&gt;&#xA;東京行きから帰ってきて色々してたら毛根な時間だよ早いよ時間経つの。&lt;/p&gt;&#xA;&lt;p&gt;今週は新入生勧誘に色々動いておりました。忙しくないけど忙しいです。&lt;br&gt;&#xA;なんせ人がいないとか人が消えたとか何とかで動かんなん。&lt;br&gt;&#xA;しんどいよーーー&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>20250321</title>
+      <link>//localhost:1313/weekly/20250321/</link>
+      <pubDate>Tue, 25 Mar 2025 22:03:35 +0900</pubDate>
+      <guid>//localhost:1313/weekly/20250321/</guid>
+      <description>&lt;p&gt;週報書くの完全に忘れてたわごめｗ&lt;br&gt;&#xA;週報書くの忘れた理由としては東京出張してたからですﾊｲ。&lt;br&gt;&#xA;今後は気を付けますわ～～～&lt;/p&gt;&#xA;&lt;p&gt;せっかくなので東京出張した帰りに寄ったとことか写真とか載せましょうかね&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250320_000126451.jpg&#34; alt=&#34;siomi&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250320_225639673.jpg&#34; alt=&#34;nazonobasyo&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105623369.jpg&#34; alt=&#34;akihabara&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105627105.jpg&#34; alt=&#34;right&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105634656.jpg&#34; alt=&#34;left&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250321/PXL_20250321_105802928.jpg&#34; alt=&#34;umamusume&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Android Studio Meerkat | 2024.3.1 を日本語化した話</title>
+      <link>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</link>
+      <pubDate>Mon, 17 Mar 2025 10:34:08 +0900</pubDate>
+      <guid>//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆さんAndroidStudioをmeerkatへアップデートしてらっしゃるでしょうか。ワイはノリと勢いで更新してしまいました。&lt;br&gt;&#xA;アプデしてから日本語化できないことに気づき、1週間くらい我慢してたけど耐えられなくなったので日本語化しました。&lt;br&gt;&#xA;備忘録的なアレを残しておきます&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>20250314</title>
+      <link>//localhost:1313/weekly/20250314/</link>
+      <pubDate>Fri, 14 Mar 2025 11:16:27 +0900</pubDate>
+      <guid>//localhost:1313/weekly/20250314/</guid>
+      <description>&lt;p&gt;今週の週報です。&#xA;先週の週報を上げた日に名古屋へ用事があったのでお泊りで行ってきました。&#xA;以下に画像をてけとーに貼っておきます。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051114493.jpg&#34; alt=&#34;pop’n&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_081659252.jpg&#34; alt=&#34;pop’n2&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_051901792.jpg&#34; alt=&#34;サ終ゲー&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_071924311.jpg&#34; alt=&#34;イニシャルD&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095844142.jpg&#34; alt=&#34;wacca&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_100111030.jpg&#34; alt=&#34;groovecoaster&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_073839910.jpg&#34; alt=&#34;アケマス1&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095921548.jpg&#34; alt=&#34;アケマス2&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095930801.jpg&#34; alt=&#34;アケマス3&#34;&gt;&#xA;&lt;img src=&#34;//localhost:1313/weekly/20250314/PXL_20250309_095937570.jpg&#34; alt=&#34;アケマス4&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;色々忙しかったんですけど、ゲーセン巡りができたので良かったと思います。&lt;br&gt;&#xA;レトロゲー置いてるゲーセン多くて思ったより楽しめたじゃんね。&lt;br&gt;&#xA;マッピーちゃんが置いてあったゲーセンあったけど、先客がめっちゃ遊んでてプレイできなかったのが悲しかったです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>20250307</title>
+      <link>//localhost:1313/weekly/20250307/</link>
+      <pubDate>Fri, 07 Mar 2025 11:24:00 +0900</pubDate>
+      <guid>//localhost:1313/weekly/20250307/</guid>
+      <description>&lt;p&gt;今週の週報です。&lt;br&gt;&#xA;20250303のやつはタダの宣言なので週報って書いてあるけど週報じゃないです。&lt;/p&gt;&#xA;&lt;p&gt;Claude3.7のおかげでだいぶhugoのことを理解できるようになってきました。&lt;br&gt;&#xA;このファイルもコマンドで生成できるようになりました。素晴らしい。&lt;br&gt;&#xA;改行だけめんどくさいけどClaudeくん曰くmarkdownのお作法らしいので我慢します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>週報メモ</title>
+      <link>//localhost:1313/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</link>
+      <pubDate>Mon, 03 Mar 2025 23:20:35 +0900</pubDate>
+      <guid>//localhost:1313/weekly/%E9%80%B1%E5%A0%B1%E3%83%A1%E3%83%A2/</guid>
+      <description>&lt;h1 id=&#34;memo&#34;&gt;memo&lt;/h1&gt;&#xA;&lt;p&gt;個人的に忘れそうだったのでメモ&lt;/p&gt;&#xA;&lt;h1 id=&#34;hugoで記事に画像を添付する方法&#34;&gt;Hugoで記事に画像を添付する方法&lt;/h1&gt;&#xA;&lt;p&gt;Hugoで記事に画像を添付するには、主に2つの方法があります：&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-page-bundle方式推奨&#34;&gt;1. Page Bundle方式（推奨）&lt;/h2&gt;&#xA;&lt;p&gt;記事と画像を同じフォルダに配置する方法です。これが最も管理しやすい方法です：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claude 3.7でアプリを作った話</title>
+      <link>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</link>
+      <pubDate>Mon, 03 Mar 2025 22:40:45 +0900</pubDate>
+      <guid>//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;今回もテスト回です。ほとんど日記。&lt;br&gt;&#xA;真面目なものを探している人は帰ってください。&lt;/p&gt;&#xA;&lt;h2 id=&#34;アプリを作る経緯&#34;&gt;アプリを作る経緯&lt;/h2&gt;&#xA;&lt;p&gt;じゃがびぃさんが入ってるプロジェクトのえらいさんからアプリを作れと言われてしまいました。どうやら謎の大会で使用するらしいです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>週報20250303</title>
+      <link>//localhost:1313/weekly/%E9%80%B1%E5%A0%B120250303/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/weekly/%E9%80%B1%E5%A0%B120250303/</guid>
+      <description>&lt;h1 id=&#34;週報&#34;&gt;週報&lt;/h1&gt;&#xA;&lt;p&gt;お久しぶりです。じゃがびぃです。&#xA;特にやりたいこととか全くなかったのでサボり散らかしておりました。&lt;/p&gt;&#xA;&lt;p&gt;流石にもったいないお化けが出そうだったので、ちょいちょい動かしていこうと思います。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ThinkPadでWifi7を使えるようにしてみた話</title>
+      <link>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
+      <pubDate>Fri, 18 Oct 2024 18:02:06 +0900</pubDate>
+      <guid>//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 &lt;br&gt;&#xA;オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 &lt;br&gt;&#xA;というわけで備忘録的な感じでつらつらと書いていきます。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>markdownの書き方に慣れてみる</title>
+      <link>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+      <pubDate>Fri, 18 Oct 2024 15:02:06 +0900</pubDate>
+      <guid>//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <description>&lt;h1 id=&#34;markdownの書き方が分からない&#34;&gt;markdownの書き方が分からない&lt;/h1&gt;&#xA;&lt;p&gt;はい。ノリと勢いで始めてしまったせいで分からんなってます。&lt;/p&gt;&#xA;&lt;p&gt;というわけでmarkdownの練習がてら色々触ってみております。自己満足なそういうアレです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>//localhost:1313/posts/test/</link>
+      <pubDate>Fri, 18 Oct 2024 10:02:06 +0900</pubDate>
+      <guid>//localhost:1313/posts/test/</guid>
+      <description>&lt;h1 id=&#34;これはテストです&#34;&gt;これはテストです&lt;/h1&gt;&#xA;&lt;p&gt;はいというわけで何度目か分からない最初の記事を書いています&lt;/p&gt;&#xA;&lt;p&gt;これどう表示されてるか分からんの怖すぎワロタ&lt;/p&gt;&#xA;&lt;p&gt;ひとまず下書きのテンプレート？を作れたはずだけど正しいのかどうか分からない&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about&#34;&gt;about&lt;/h1&gt;&#xA;&lt;p&gt;じゃがびぃと申します。&lt;/p&gt;&#xA;&lt;p&gt;特に目立って活動してるわけじゃないです。趣味でmisskeyという分散型snsとこのブログを運営しています。&lt;br&gt;&#xA;某大学のそこそこなプロジェクトで下っ端として生きています。主にandroid触ったりwifi触ったり色んな事をさせてもろてます。&lt;br&gt;&#xA;twitterに居たりmisskeyに居たりbskyに居たりmixi2でコーヒー垂れ流してたり色んな所でボチボチやってます。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>
