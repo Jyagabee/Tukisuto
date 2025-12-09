@@ -1,13 +1,3 @@
-{{/* 
-  Local override for Stack theme's Google Analytics partial.
-  Cloudflare Pages でビルド時に "partial \"google_analytics.html\" not found"
-  となるのを防ぐためのダミー実装です。
-
-  実際に GA を使いたい場合は、config でトラッキング ID を設定して
-  下のコメントアウトされたスニペットを有効化してください。
-*/}}
-
-{{/* 
 {{- with site.GoogleAnalytics -}}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
@@ -17,6 +7,5 @@
   gtag('config', '{{ . }}');
 </script>
 {{- end -}}
-*/}}
 
 

@@ -20,7 +20,7 @@ pagerSize = 10
 shortname = ""
 
 [services.googleAnalytics]
-id = ""
+id = "G-3FGTMKYNHZ"
 
 [permalinks]
 posts = "/posts/:slug/"
