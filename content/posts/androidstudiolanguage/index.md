@@ -46,9 +46,12 @@ MacのAndroid Studio のpluginフォルダパス
 ```
 '/Applications/Android Studio.app/Contents/plugins'
 ```
-先ほどコピーしてきたディレクトリごとペースト
+Linux(ubuntu)のAndroid Studioのpluginフォルダパス
+```
+/home/Users/.local/share/Google/AndroidStudio{バージョン名}/
+```
 
-linuxは知らない。いずれはやらんとあかんねえ…
+先ほどコピーしてきたディレクトリごとペースト
 
 ## おわりに
 以上です。備忘録なので信頼性等々求めてる人はよそ様の記事なりchatgptなりに聞いてください。  
