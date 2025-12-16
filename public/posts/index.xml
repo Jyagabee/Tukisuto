@@ -6,8 +6,15 @@
     <description>Recent content in Posts on じゃがびぃのサイト</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 08 Dec 2025 23:26:07 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 22:18:15 +0900</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Macbook_to_ros2</title>
+      <link>//localhost:1313/posts/macbook_to_ros2/</link>
+      <pubDate>Tue, 16 Dec 2025 22:17:55 +0900</pubDate>
+      <guid>//localhost:1313/posts/macbook_to_ros2/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！&lt;/p&gt;&#xA;&lt;h2 id=&#34;前提知識&#34;&gt;前提知識&lt;/h2&gt;&#xA;&lt;p&gt;ros2は、サポートされるTierがある。以下にtierを記述する。&lt;/p&gt;&#xA;&lt;h3 id=&#34;公式サポートtierrep-2000による定義&#34;&gt;公式サポートTier（REP 2000による定義）&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;リリース&lt;/th&gt;&#xA;          &lt;th&gt;macOSサポート&lt;/th&gt;&#xA;          &lt;th&gt;バイナリ提供&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Foxy以前&lt;/td&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Tier 1&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;あり&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Galactic〜&lt;/td&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Tier 3&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;なし&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Jazzy/Kilted (現行)&lt;/td&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Tier 3&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;なし&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていた&lt;a href=&#34;https://discourse.openrobotics.org/t/macos-support-in-ros-2-galactic-and-beyond/17891&#34;&gt;Openrobotics&lt;/a&gt;。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;apple-silicon-m1m2m3-対応状況&#34;&gt;Apple Silicon (M1/M2/M3) 対応状況&lt;/h3&gt;&#xA;&lt;p&gt;公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 &lt;a href=&#34;https://discourse.openrobotics.org/t/ros-2-kilted-running-natively-on-macos-apple-silicon-first-demo/51335&#34;&gt;Openrobotics&lt;/a&gt;しました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>ゼロ・トルクの感想</title>
       <link>//localhost:1313/posts/%E3%82%BC%E3%83%AD%E3%83%88%E3%83%AB%E3%82%AF%E3%81%AE%E6%84%9F%E6%83%B3/</link>
