@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ja" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Macbookでros2を使う | じゃがびぃのサイト</title>
+<meta name="keywords" content="">
+<meta name="description" content="はじめに
+そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！
+前提知識
+ros2は、サポートされるTierがある。以下にtierを記述する。
+公式サポートTier（REP 2000による定義）
+
+  
+      
+          リリース
+          macOSサポート
+          バイナリ提供
+      
+  
+  
+      
+          Foxy以前
+          Tier 1
+          あり
+      
+      
+          Galactic〜
+          Tier 3
+          なし
+      
+      
+          Jazzy/Kilted (現行)
+          Tier 3
+          なし
+      
+      
+          Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていたOpenrobotics。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。
+          
+          
+      
+  
+
+Apple Silicon (M1/M2/M3) 対応状況
+公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 Openroboticsしました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。">
+<meta name="author" content="じゃがびぃ">
+<link rel="canonical" href="//localhost:1313/posts/macbook%E3%81%A7ros2%E3%82%92%E4%BD%BF%E3%81%86/">
+<meta name="google-site-verification" content="G-3FGTMKYNHZ">
+<link crossorigin="anonymous" href="//localhost:1313/assets/css/stylesheet.46bcc841663a3172131a14575f421621d4c0581e74dcb887f9bb0c5ab1ad1829.css" integrity="sha256-RrzIQWY6MXITGhRXX0IWIdTAWB503LiH&#43;bsMWrGtGCk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ja" href="//localhost:1313/posts/macbook%E3%81%A7ros2%E3%82%92%E4%BD%BF%E3%81%86/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FGTMKYNHZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-3FGTMKYNHZ');
+        }
+      </script><meta property="og:url" content="//localhost:1313/posts/macbook%E3%81%A7ros2%E3%82%92%E4%BD%BF%E3%81%86/">
+  <meta property="og:site_name" content="じゃがびぃのサイト">
+  <meta property="og:title" content="Macbookでros2を使う">
+  <meta property="og:description" content="はじめに そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！
+前提知識 ros2は、サポートされるTierがある。以下にtierを記述する。
+公式サポートTier（REP 2000による定義） リリース macOSサポート バイナリ提供 Foxy以前 Tier 1 あり Galactic〜 Tier 3 なし Jazzy/Kilted (現行) Tier 3 なし Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていたOpenrobotics。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。 Apple Silicon (M1/M2/M3) 対応状況 公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 Openroboticsしました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-16T22:17:55+09:00">
+    <meta property="article:modified_time" content="2026-02-13T15:49:43+09:00">
+      <meta property="og:image" content="//localhost:1313/img/icon_j.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//localhost:1313/img/icon_j.jpg">
+<meta name="twitter:title" content="Macbookでros2を使う">
+<meta name="twitter:description" content="はじめに
+そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！
+前提知識
+ros2は、サポートされるTierがある。以下にtierを記述する。
+公式サポートTier（REP 2000による定義）
+
+  
+      
+          リリース
+          macOSサポート
+          バイナリ提供
+      
+  
+  
+      
+          Foxy以前
+          Tier 1
+          あり
+      
+      
+          Galactic〜
+          Tier 3
+          なし
+      
+      
+          Jazzy/Kilted (現行)
+          Tier 3
+          なし
+      
+      
+          Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていたOpenrobotics。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。
+          
+          
+      
+  
+
+Apple Silicon (M1/M2/M3) 対応状況
+公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 Openroboticsしました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Macbookでros2を使う",
+      "item": "//localhost:1313/posts/macbook%E3%81%A7ros2%E3%82%92%E4%BD%BF%E3%81%86/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Macbookでros2を使う",
+  "name": "Macbookでros2を使う",
+  "description": "はじめに そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！\n前提知識 ros2は、サポートされるTierがある。以下にtierを記述する。\n公式サポートTier（REP 2000による定義） リリース macOSサポート バイナリ提供 Foxy以前 Tier 1 あり Galactic〜 Tier 3 なし Jazzy/Kilted (現行) Tier 3 なし Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていたOpenrobotics。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。 Apple Silicon (M1/M2/M3) 対応状況 公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 Openroboticsしました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "はじめに そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！\n前提知識 ros2は、サポートされるTierがある。以下にtierを記述する。\n公式サポートTier（REP 2000による定義） リリース macOSサポート バイナリ提供 Foxy以前 Tier 1 あり Galactic〜 Tier 3 なし Jazzy/Kilted (現行) Tier 3 なし Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていたOpenrobotics。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。 Apple Silicon (M1/M2/M3) 対応状況 公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 Openroboticsしました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。\nが、通信関係がクソ怖いのと、諸々インストールせねばならないのでネイティブで動作させるのは諦めましょう デモを見る限り諸々をpythonでインスコしている。筆者はpythonが好きではないのでやらない。物好きだけやってくれ\n今回のキモ UDP通信を行うためには、macで受信した通信をそのままubuntuに渡す必要がある。 そのため、ブリッジモードが存在する仮想化ソフトを使用する必要がある。 今回は、UTMを使用する。\n環境 項目 内容 モデル MacBook Air (M4, 2024) OS macOS 26.2 (Build 25C56) チップ Apple M4 (10コア: 4高性能 + 6高効率) メモリ 24 GB アーキテクチャ arm64 インストール方法 1.仮想マシンの作成 UTMを起動します。 起動時の画面で「新規仮想マシンを作成」を選択します。 「仮想化」を選択します。 今回はubuntuを起動するので「Linux」を選択します。 先ほどダウロードしたUbuntuのイメージを選択します。 仮想マシンに割り当てるメモリとCPUコア数を指定します。 今回はメモリ4096, CPUコア数4としています。 仮想マシンに割り当てるストレージを指定します。 今回は後ほどDesktop版をインストールする予定なので32GBを割り当てています。 仮想マシンの名前を付けて保存します。 保存が完了すると作成した仮想マシンが一覧に表示されます。 起動ボタンを押します。 2. Ubuntuのインストール Ubuntuのインストールは通常のインストールと同じ手順で実施します。\nOSの設定後Rebootを行います。 この際、UTMのランチャー画面でCD/DVDのプルダウンから削除を選択します。 その後、再度ubuntuを起動します。 今回はUbuntu Desktop版が必要だったので以下のコマンドでインストールを行いました。\n1 $ sudo apt install ubuntu-desktop 無事にインストールすることができました。\n3. ネットワーク設定（ブリッジ接続） UTM で対象の Ubuntu VM を右クリック →「編集」\n「デバイス」→「ネットワーク」を選択\nネットワークモードをブリッジ（詳細） に変更する\n同一ネットワーク上から直接アクセス可能にするため 4. Ubuntu 22.04 の日本語化 日本語ロケール・日本語入力環境を設定 1 2 3 4 5 6 7 8 9 ### 日本語言語パック、フォント、入力メソッドなどをインストール sudo apt update sudo apt install -y task-japanese-gnome-desktop language-pack-gnome-ja-base language-pack-gnome-ja fonts-noto-cjk-extra # ロケールを日本語に設定 sudo localectl set-locale LANG=ja_JP.UTF-8 LANGUAGE=\"ja_JP:ja\" # タイムゾーンを日本時間に設定 sudo timedatectl set-timezone Asia/Tokyo デスクトップ環境導入後に日本語化する想定 やり方忘れた　各自ググってくれ 5.ROS 2 Humble のインストール Ubuntu 22.04 向けの ROS 2 Humble をインストール 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 # universeリポジトリを有効化 sudo apt install software-properties-common sudo add-apt-repository universe # ROS 2 GPGキーを追加 sudo apt update \u0026\u0026 sudo apt install curl sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg # ソースリストにROS 2リポジトリを追加 echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release \u0026\u0026 echo $UBUNTU_CODENAME) main\" | sudo tee /etc/apt/sources.list.d/ros2.list \u003e /dev/null # インストール sudo apt update sudo apt upgrade sudo apt install ros-humble-desktop # 環境設定 echo \"source /opt/ros/humble/setup.bash\" \u003e\u003e ~/.bashrc あとは各ノードで使用しているツールをaptでちまちま追加したら良い 6. Git の初期設定 ユーザー名・メールアドレスを設定 git config --global user.name \"Your Name\" git config --global user.email \"your@email\"\n7. VS Code のインストール Ubuntu 向け VS Code をインストール 1 sudo snap install code --classic 8. bashrc の移植 既存の Ubuntu 22.04 環境から .bashrc をコピー ROS 環境変数やエイリアスを再利用 9. 動作確認 ターミナル起動・日本語入力・ROS 2 ノード起動などを確認 問題なければ環境構築完了 お疲れ様でした あとがき orbstack使いたかったけど、ブリッジ機能がないので環境消した。どうやらブリッジ機能追加のやつが異臭に投げられてるらしいがガン無視されてるらしい。 UTM以外にも、vmwareやらparallelsやらvirtualboxでも動くと思う。知らんけど。まあ好きなの使えばいいと思いますよ\nubuntu起動時は以下くらいの使用率 ros2起動したら以下くらいの使用率 GUIなのでクソあちーです せっかく軽いのに持てへんや内科医\n林檎ちゃんの良いところ 美しい 軽い 画面が綺麗 スピーカーの音質がずば抜けている イヤホンジャックの音質がかなり良い brewで全部インストールできる zshが標準で使える 何もインストールしなくてもadbが使える androidのエミュレータがネイティブに動作する andoridのビルドが爆速 トラックパッドの使い勝手が直感的 スクロールぬるぬる バッテリー持ちがエグい 普通にフタ閉じてたら1週間持つ なんとなくモチベ上がる 林檎ちゃんの良くないところ androidを物理的に繋げてもファイル転送できない androidを物理的に繋げてテザリングできない pixelならいける。テザリングのプロトコルが他スマホと違うらしい 学内ネットに繋げた際に900sの認証で強制切断される 学内ネットに繋げてもプリンターにアクセスできない←これ一番クソ トラックポイントがない トラックパッドの文字選択がクソ linux,windowsにRDPで繋げた際に右のcommand邪魔 高い！！！！！！！！！こんなん買うやつアホか信者かイキり野郎しかおらん 高くて使いたおすのに心理的負担がある ポートが少ない USB-Aが無い HDMIが無い 総合的に使い勝手はクソです。学内ネット強切断、プリンター使えない、トラックポイントがないのが致命的 普通にThinkPad買って、2スロット目にubuntu入れるのがいっちゃん楽です。\nmac買ってもユーザーが知識なくてカスならmacの性能はフルに使用できません。←これ重要\n",
+  "wordCount" : "2573",
+  "inLanguage": "ja",
+  "image": "//localhost:1313/img/icon_j.jpg","datePublished": "2025-12-16T22:17:55+09:00",
+  "dateModified": "2026-02-13T15:49:43.865082659+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "じゃがびぃ"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "//localhost:1313/posts/macbook%E3%81%A7ros2%E3%82%92%E4%BD%BF%E3%81%86/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "じゃがびぃのサイト",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "//localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="じゃがびぃのサイト (Alt + H)">
+                        
+                    <img src="//localhost:1313/img/icon_j_hu_34944da5141affba.jpg" alt="" aria-label="logo"
+                        height="35">じゃがびぃのサイト</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/about" title="about">
+                    <span>about</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts" title="記事">
+                    <span>記事</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/weekly" title="週報">
+                    <span>週報</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="//localhost:1313/">ホーム</a>&nbsp;»&nbsp;<a href="//localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Macbookでros2を使う
+    </h1>
+    <div class="post-meta"><span title='2025-12-16 22:17:55 +0900 JST'>2025年12月16日</span>&nbsp;·&nbsp;<span>6 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目次</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e3%81%af%e3%81%98%e3%82%81%e3%81%ab" aria-label="はじめに">はじめに</a><ul>
+                        
+                <li>
+                    <a href="#%e5%89%8d%e6%8f%90%e7%9f%a5%e8%ad%98" aria-label="前提知識">前提知識</a><ul>
+                        
+                <li>
+                    <a href="#%e5%85%ac%e5%bc%8f%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88tierrep-2000%e3%81%ab%e3%82%88%e3%82%8b%e5%ae%9a%e7%be%a9" aria-label="公式サポートTier（REP 2000による定義）">公式サポートTier（REP 2000による定義）</a></li>
+                <li>
+                    <a href="#apple-silicon-m1m2m3-%e5%af%be%e5%bf%9c%e7%8a%b6%e6%b3%81" aria-label="Apple Silicon (M1/M2/M3) 対応状況">Apple Silicon (M1/M2/M3) 対応状況</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%bb%8a%e5%9b%9e%e3%81%ae%e3%82%ad%e3%83%a2" aria-label="今回のキモ">今回のキモ</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%92%b0%e5%a2%83" aria-label="環境">環境</a></li>
+                <li>
+                    <a href="#%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e6%96%b9%e6%b3%95" aria-label="インストール方法">インストール方法</a><ul>
+                        
+                <li>
+                    <a href="#1%e4%bb%ae%e6%83%b3%e3%83%9e%e3%82%b7%e3%83%b3%e3%81%ae%e4%bd%9c%e6%88%90" aria-label="1.仮想マシンの作成">1.仮想マシンの作成</a></li>
+                <li>
+                    <a href="#2-ubuntu%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" aria-label="2. Ubuntuのインストール">2. Ubuntuのインストール</a></li>
+                <li>
+                    <a href="#3-%e3%83%8d%e3%83%83%e3%83%88%e3%83%af%e3%83%bc%e3%82%af%e8%a8%ad%e5%ae%9a%e3%83%96%e3%83%aa%e3%83%83%e3%82%b8%e6%8e%a5%e7%b6%9a" aria-label="3. ネットワーク設定（ブリッジ接続）">3. ネットワーク設定（ブリッジ接続）</a></li>
+                <li>
+                    <a href="#4-ubuntu-2204-%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%8c%96" aria-label="4. Ubuntu 22.04 の日本語化">4. Ubuntu 22.04 の日本語化</a></li>
+                <li>
+                    <a href="#5ros-2-humble-%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" aria-label="5.ROS 2 Humble のインストール">5.ROS 2 Humble のインストール</a></li>
+                <li>
+                    <a href="#6-git-%e3%81%ae%e5%88%9d%e6%9c%9f%e8%a8%ad%e5%ae%9a" aria-label="6. Git の初期設定">6. Git の初期設定</a></li>
+                <li>
+                    <a href="#7-vs-code-%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" aria-label="7. VS Code のインストール">7. VS Code のインストール</a></li>
+                <li>
+                    <a href="#8-bashrc-%e3%81%ae%e7%a7%bb%e6%a4%8d" aria-label="8. bashrc の移植">8. bashrc の移植</a></li>
+                <li>
+                    <a href="#9-%e5%8b%95%e4%bd%9c%e7%a2%ba%e8%aa%8d" aria-label="9. 動作確認">9. 動作確認</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e3%81%82%e3%81%a8%e3%81%8c%e3%81%8d" aria-label="あとがき">あとがき</a><ul>
+                        
+                <li>
+                    <a href="#%e6%9e%97%e6%aa%8e%e3%81%a1%e3%82%83%e3%82%93%e3%81%ae%e8%89%af%e3%81%84%e3%81%a8%e3%81%93%e3%82%8d" aria-label="林檎ちゃんの良いところ">林檎ちゃんの良いところ</a></li>
+                <li>
+                    <a href="#%e6%9e%97%e6%aa%8e%e3%81%a1%e3%82%83%e3%82%93%e3%81%ae%e8%89%af%e3%81%8f%e3%81%aa%e3%81%84%e3%81%a8%e3%81%93%e3%82%8d" aria-label="林檎ちゃんの良くないところ">林檎ちゃんの良くないところ</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="はじめに">はじめに<a hidden class="anchor" aria-hidden="true" href="#はじめに">#</a></h1>
+<p>そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！</p>
+<h2 id="前提知識">前提知識<a hidden class="anchor" aria-hidden="true" href="#前提知識">#</a></h2>
+<p>ros2は、サポートされるTierがある。以下にtierを記述する。</p>
+<h3 id="公式サポートtierrep-2000による定義">公式サポートTier（REP 2000による定義）<a hidden class="anchor" aria-hidden="true" href="#公式サポートtierrep-2000による定義">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>リリース</th>
+          <th>macOSサポート</th>
+          <th>バイナリ提供</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Foxy以前</td>
+          <td><strong>Tier 1</strong></td>
+          <td>あり</td>
+      </tr>
+      <tr>
+          <td>Galactic〜</td>
+          <td><strong>Tier 3</strong></td>
+          <td>なし</td>
+      </tr>
+      <tr>
+          <td>Jazzy/Kilted (現行)</td>
+          <td><strong>Tier 3</strong></td>
+          <td>なし</td>
+      </tr>
+      <tr>
+          <td>Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていた<a href="https://discourse.openrobotics.org/t/macos-support-in-ros-2-galactic-and-beyond/17891">Openrobotics</a>。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="apple-silicon-m1m2m3-対応状況">Apple Silicon (M1/M2/M3) 対応状況<a hidden class="anchor" aria-hidden="true" href="#apple-silicon-m1m2m3-対応状況">#</a></h3>
+<p>公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 <a href="https://discourse.openrobotics.org/t/ros-2-kilted-running-natively-on-macos-apple-silicon-first-demo/51335">Openrobotics</a>しました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。</p>
+<p>が、通信関係がクソ怖いのと、諸々インストールせねばならないのでネイティブで動作させるのは諦めましょう
+デモを見る限り諸々をpythonでインスコしている。筆者はpythonが好きではないのでやらない。物好きだけやってくれ</p>
+<h2 id="今回のキモ">今回のキモ<a hidden class="anchor" aria-hidden="true" href="#今回のキモ">#</a></h2>
+<p>UDP通信を行うためには、macで受信した通信をそのままubuntuに渡す必要がある。
+そのため、ブリッジモードが存在する仮想化ソフトを使用する必要がある。
+今回は、UTMを使用する。</p>
+<h1 id="環境">環境<a hidden class="anchor" aria-hidden="true" href="#環境">#</a></h1>
+<table>
+  <thead>
+      <tr>
+          <th>項目</th>
+          <th>内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>モデル</td>
+          <td>MacBook Air (M4, 2024)</td>
+      </tr>
+      <tr>
+          <td>OS</td>
+          <td>macOS 26.2 (Build 25C56)</td>
+      </tr>
+      <tr>
+          <td>チップ</td>
+          <td>Apple M4 (10コア: 4高性能 + 6高効率)</td>
+      </tr>
+      <tr>
+          <td>メモリ</td>
+          <td>24 GB</td>
+      </tr>
+      <tr>
+          <td>アーキテクチャ</td>
+          <td>arm64</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="インストール方法">インストール方法<a hidden class="anchor" aria-hidden="true" href="#インストール方法">#</a></h1>
+<h2 id="1仮想マシンの作成">1.仮想マシンの作成<a hidden class="anchor" aria-hidden="true" href="#1仮想マシンの作成">#</a></h2>
+<p>UTMを起動します。
+起動時の画面で「新規仮想マシンを作成」を選択します。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-55-640x483.png"></p>
+<p>「仮想化」を選択します。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-54-640x483.png"></p>
+<p>今回はubuntuを起動するので「Linux」を選択します。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-53-640x483.png"></p>
+<p>先ほどダウロードしたUbuntuのイメージを選択します。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-56-640x483.png"></p>
+<p>仮想マシンに割り当てるメモリとCPUコア数を指定します。
+今回はメモリ4096, CPUコア数4としています。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-57-640x483.png"></p>
+<p>仮想マシンに割り当てるストレージを指定します。
+今回は後ほどDesktop版をインストールする予定なので32GBを割り当てています。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-58-640x483.png"></p>
+<p>仮想マシンの名前を付けて保存します。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-59-640x483.png"></p>
+<p>保存が完了すると作成した仮想マシンが一覧に表示されます。
+起動ボタンを押します。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-51-640x483.png"></p>
+<h2 id="2-ubuntuのインストール">2. Ubuntuのインストール<a hidden class="anchor" aria-hidden="true" href="#2-ubuntuのインストール">#</a></h2>
+<p>Ubuntuのインストールは通常のインストールと同じ手順で実施します。</p>
+<p>OSの設定後Rebootを行います。
+この際、UTMのランチャー画面でCD/DVDのプルダウンから削除を選択します。
+その後、再度ubuntuを起動します。
+<img loading="lazy" src="https://devio2023-media.developers.io/wp-content/uploads/2024/01/Group-50-640x495.png"></p>
+<p>今回はUbuntu Desktop版が必要だったので以下のコマンドでインストールを行いました。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt install ubuntu-desktop
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>無事にインストールすることができました。</p>
+<h2 id="3-ネットワーク設定ブリッジ接続">3. ネットワーク設定（ブリッジ接続）<a hidden class="anchor" aria-hidden="true" href="#3-ネットワーク設定ブリッジ接続">#</a></h2>
+<ul>
+<li>
+<p>UTM で対象の Ubuntu VM を右クリック →「編集」</p>
+</li>
+<li>
+<p>「デバイス」→「ネットワーク」を選択</p>
+</li>
+<li>
+<p>ネットワークモードを<strong>ブリッジ（詳細）</strong> に変更する</p>
+<ul>
+<li>同一ネットワーク上から直接アクセス可能にするため</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="4-ubuntu-2204-の日本語化">4. Ubuntu 22.04 の日本語化<a hidden class="anchor" aria-hidden="true" href="#4-ubuntu-2204-の日本語化">#</a></h2>
+<ul>
+<li>日本語ロケール・日本語入力環境を設定</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">### 日本語言語パック、フォント、入力メソッドなどをインストール</span>
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install -y task-japanese-gnome-desktop language-pack-gnome-ja-base language-pack-gnome-ja fonts-noto-cjk-extra
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ロケールを日本語に設定</span>
+</span></span><span class="line"><span class="cl">sudo localectl set-locale <span class="nv">LANG</span><span class="o">=</span>ja_JP.UTF-8 <span class="nv">LANGUAGE</span><span class="o">=</span><span class="s2">&#34;ja_JP:ja&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># タイムゾーンを日本時間に設定</span>
+</span></span><span class="line"><span class="cl">sudo timedatectl set-timezone Asia/Tokyo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>デスクトップ環境導入後に日本語化する想定
+<ul>
+<li>やり方忘れた　各自ググってくれ</li>
+</ul>
+</li>
+</ul>
+<h2 id="5ros-2-humble-のインストール">5.ROS 2 Humble のインストール<a hidden class="anchor" aria-hidden="true" href="#5ros-2-humble-のインストール">#</a></h2>
+<ul>
+<li>Ubuntu 22.04 向けの ROS 2 Humble をインストール</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># universeリポジトリを有効化</span>
+</span></span><span class="line"><span class="cl">sudo apt install software-properties-common
+</span></span><span class="line"><span class="cl">sudo add-apt-repository universe
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ROS 2 GPGキーを追加</span>
+</span></span><span class="line"><span class="cl">sudo apt update <span class="o">&amp;&amp;</span> sudo apt install curl
+</span></span><span class="line"><span class="cl">sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ソースリストにROS 2リポジトリを追加</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2"> signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu </span><span class="k">$(</span>. /etc/os-release <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$UBUNTU_CODENAME</span><span class="k">)</span><span class="s2"> main&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/ros2.list &gt; /dev/null
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># インストール</span>
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt upgrade
+</span></span><span class="line"><span class="cl">sudo apt install ros-humble-desktop
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 環境設定</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;source /opt/ros/humble/setup.bash&#34;</span> &gt;&gt; ~/.bashrc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>あとは各ノードで使用しているツールをaptでちまちま追加したら良い</li>
+</ul>
+<hr>
+<h2 id="6-git-の初期設定">6. Git の初期設定<a hidden class="anchor" aria-hidden="true" href="#6-git-の初期設定">#</a></h2>
+<ul>
+<li>ユーザー名・メールアドレスを設定</li>
+</ul>
+<p><code>git config --global user.name &quot;Your Name&quot;</code>
+<code>git config --global user.email &quot;your@email&quot;</code></p>
+<hr>
+<h2 id="7-vs-code-のインストール">7. VS Code のインストール<a hidden class="anchor" aria-hidden="true" href="#7-vs-code-のインストール">#</a></h2>
+<ul>
+<li>Ubuntu 向け VS Code をインストール</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo snap install code --classic
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="8-bashrc-の移植">8. bashrc の移植<a hidden class="anchor" aria-hidden="true" href="#8-bashrc-の移植">#</a></h2>
+<ul>
+<li>既存の Ubuntu 22.04 環境から <code>.bashrc</code> をコピー</li>
+<li>ROS 環境変数やエイリアスを再利用</li>
+</ul>
+<hr>
+<h2 id="9-動作確認">9. 動作確認<a hidden class="anchor" aria-hidden="true" href="#9-動作確認">#</a></h2>
+<ul>
+<li>ターミナル起動・日本語入力・ROS 2 ノード起動などを確認</li>
+<li>問題なければ環境構築完了 お疲れ様でした</li>
+</ul>
+<h1 id="あとがき">あとがき<a hidden class="anchor" aria-hidden="true" href="#あとがき">#</a></h1>
+<p>orbstack使いたかったけど、ブリッジ機能がないので環境消した。どうやらブリッジ機能追加のやつが異臭に投げられてるらしいがガン無視されてるらしい。
+UTM以外にも、vmwareやらparallelsやらvirtualboxでも動くと思う。知らんけど。まあ好きなの使えばいいと思いますよ</p>
+<p>ubuntu起動時は以下くらいの使用率
+<img alt="image.png" loading="lazy" src="//localhost:1313/attachment/694152d87a944b7056e5664c">
+<img alt="image.png" loading="lazy" src="//localhost:1313/attachment/694152ed7a944b7056e5669b"></p>
+<p>ros2起動したら以下くらいの使用率
+<img alt="image.png" loading="lazy" src="//localhost:1313/attachment/6941532c7a944b7056e566f3">
+<img alt="image.png" loading="lazy" src="//localhost:1313/attachment/694153417a944b7056e56743"></p>
+<p>GUIなのでクソあちーです
+せっかく軽いのに持てへんや内科医</p>
+<h2 id="林檎ちゃんの良いところ">林檎ちゃんの良いところ<a hidden class="anchor" aria-hidden="true" href="#林檎ちゃんの良いところ">#</a></h2>
+<ul>
+<li>美しい</li>
+<li>軽い</li>
+<li>画面が綺麗</li>
+<li>スピーカーの音質がずば抜けている</li>
+<li>イヤホンジャックの音質がかなり良い</li>
+<li>brewで全部インストールできる</li>
+<li>zshが標準で使える</li>
+<li>何もインストールしなくてもadbが使える</li>
+<li>androidのエミュレータがネイティブに動作する</li>
+<li>andoridのビルドが爆速</li>
+<li>トラックパッドの使い勝手が直感的
+<ul>
+<li>スクロールぬるぬる</li>
+</ul>
+</li>
+<li>バッテリー持ちがエグい
+<ul>
+<li>普通にフタ閉じてたら1週間持つ</li>
+</ul>
+</li>
+<li>なんとなくモチベ上がる</li>
+</ul>
+<h2 id="林檎ちゃんの良くないところ">林檎ちゃんの良くないところ<a hidden class="anchor" aria-hidden="true" href="#林檎ちゃんの良くないところ">#</a></h2>
+<ul>
+<li>androidを物理的に繋げてもファイル転送できない</li>
+<li>androidを物理的に繋げてテザリングできない
+<ul>
+<li>pixelならいける。テザリングのプロトコルが他スマホと違うらしい</li>
+</ul>
+</li>
+<li>学内ネットに繋げた際に900sの認証で強制切断される</li>
+<li>学内ネットに繋げてもプリンターにアクセスできない←これ一番クソ</li>
+<li>トラックポイントがない</li>
+<li>トラックパッドの文字選択がクソ</li>
+<li>linux,windowsにRDPで繋げた際に右のcommand邪魔</li>
+<li>高い！！！！！！！！！こんなん買うやつアホか信者かイキり野郎しかおらん</li>
+<li>高くて使いたおすのに心理的負担がある</li>
+<li>ポートが少ない
+<ul>
+<li>USB-Aが無い</li>
+<li>HDMIが無い</li>
+</ul>
+</li>
+</ul>
+<p>総合的に使い勝手はクソです。学内ネット強切断、プリンター使えない、トラックポイントがないのが致命的
+普通にThinkPad買って、2スロット目にubuntu入れるのがいっちゃん楽です。</p>
+<p>mac買ってもユーザーが知識なくてカスならmacの性能はフルに使用できません。←これ重要</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="//localhost:1313/posts/redmi-note-11%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">
+    <span class="title">« 前へ</span>
+    <br>
+    <span>Redmi Note 11について</span>
+  </a>
+  <a class="next" href="//localhost:1313/posts/%E3%82%BC%E3%83%AD%E3%83%88%E3%83%AB%E3%82%AF%E3%81%AE%E6%84%9F%E6%83%B3/">
+    <span class="title">次へ »</span>
+    <br>
+    <span>ゼロ・トルクの感想</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Macbookでros2を使う on x"
+            href="https://x.com/intent/tweet/?text=Macbook%e3%81%a7ros2%e3%82%92%e4%bd%bf%e3%81%86&amp;url=%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f&amp;hashtags=">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Macbookでros2を使う on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f&amp;title=Macbook%e3%81%a7ros2%e3%82%92%e4%bd%bf%e3%81%86&amp;summary=Macbook%e3%81%a7ros2%e3%82%92%e4%bd%bf%e3%81%86&amp;source=%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Macbookでros2を使う on reddit"
+            href="https://reddit.com/submit?url=%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f&title=Macbook%e3%81%a7ros2%e3%82%92%e4%bd%bf%e3%81%86">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Macbookでros2を使う on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Macbookでros2を使う on whatsapp"
+            href="https://api.whatsapp.com/send?text=Macbook%e3%81%a7ros2%e3%82%92%e4%bd%bf%e3%81%86%20-%20%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Macbookでros2を使う on telegram"
+            href="https://telegram.me/share/url?text=Macbook%e3%81%a7ros2%e3%82%92%e4%bd%bf%e3%81%86&amp;url=%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Macbookでros2を使う on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Macbook%e3%81%a7ros2%e3%82%92%e4%bd%bf%e3%81%86&u=%2f%2flocalhost%3a1313%2fposts%2fmacbook%25E3%2581%25A7ros2%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="//localhost:1313/">じゃがびぃのサイト</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'コピー';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'コピーされました!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'コピー';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

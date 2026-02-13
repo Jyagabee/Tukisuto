@@ -1,73 +1,68 @@
-mainSections = ["posts"]
-featuredImageField = "image"
-rssFullContent = true
-favicon = "/favicon.ico"
+# PaperMod テーマの設定
 
-[footer]
-since = 2024
-customText = ""
+# 基本設定
+env = "production"
+description = "じゃがびぃのサイト - スマホとかハード系のものが好きです"
+author = "じゃがびぃ"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowAllPagesInArchive = true
+ShowPageNums = true
+ShowToc = true
+comments = false
+images = ["/img/icon_j.jpg"]
 
-[dateFormat]
-published = "2006/01/02"
-lastUpdated = "2006/01/02 15:04"
+# ホームページ設定
+[homeInfoParams]
+Title = "じゃがびぃのサイトへようこそ 🥔"
+Content = "スマホとかハード系のものが好きです"
 
-[sidebar]
-emoji = "🥔"
-subtitle = "スマホとかハード系のものが好きです"
-[sidebar.avatar]
-enabled = true
-local = true
-src = "img/icon_j.jpg"
-
-[article]
-math = false
-toc = true
-readingTime = true
-[article.license]
+# プロフィール設定
+[profileMode]
 enabled = false
-default = ""
 
-[comments]
-enabled = false
-provider = ""
+# ソーシャルアイコン
+[[socialIcons]]
+name = "twitter"
+title = "Twitter"
+url = "https://twitter.com/Jyaga_bee"
 
-[widgets]
+[[socialIcons]]
+name = "github"
+title = "GitHub"
+url = "https://github.com/Jyagabee"
 
-[[widgets.homepage]]
-type = "search"
+# 検索設定
+[fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+limit = 10
+keys = ["title", "permalink", "summary", "content"]
 
-[[widgets.homepage]]
-type = "archives"
-params = { limit = 5 }
+# ラベル
+[label]
+text = "じゃがびぃのサイト"
+icon = "/img/icon_j.jpg"
+iconHeight = 35
 
-[[widgets.homepage]]
-type = "categories"
-params = { limit = 10 }
+# カバー画像設定
+[cover]
+linkFullImages = true
+hidden = false
+hiddenInList = false
+hiddenInSingle = false
+responsiveImages = true
 
-[[widgets.homepage]]
-type = "tag-cloud"
-params = { limit = 10 }
-
-[[widgets.page]]
-type = "toc"
-
-[opengraph]
-[opengraph.twitter]
-site = "@Jyaga_bee"
-card = "summary_large_image"
-
-[defaultImage]
-[defaultImage.opengraph]
-enabled = false
-local = false
-src = ""
-
-[colorScheme]
-toggle = true
-default = "auto"
-
-[imageProcessing]
-[imageProcessing.cover]
-enabled = true
-[imageProcessing.content]
-enabled = true
+# Google Analytics
+[analytics.google]
+SiteVerificationTag = "G-3FGTMKYNHZ"

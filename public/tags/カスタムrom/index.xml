@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>カスタムROM on じゃがびぃのサイト</title>
+    <link>//localhost:1313/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/</link>
+    <description>Recent content in カスタムROM on じゃがびぃのサイト</description>
+    <image>
+      <title>じゃがびぃのサイト</title>
+      <url>//localhost:1313/img/icon_j.jpg</url>
+      <link>//localhost:1313/img/icon_j.jpg</link>
+    </image>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Feb 2026 16:09:53 +0900</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>あんどろいどのお話</title>
+      <link>//localhost:1313/posts/%E3%81%82%E3%82%93%E3%81%A9%E3%82%8D%E3%81%84%E3%81%A9%E3%81%AE%E3%81%8A%E8%A9%B1/</link>
+      <pubDate>Fri, 13 Feb 2026 16:02:27 +0900</pubDate>
+      <guid>//localhost:1313/posts/%E3%81%82%E3%82%93%E3%81%A9%E3%82%8D%E3%81%84%E3%81%A9%E3%81%AE%E3%81%8A%E8%A9%B1/</guid>
+      <description>iOS開発者向けAndroid入門ガイド。AndroidとiOSの違い、アプリ構造、ライフサイクル、バージョン別の変更点、特有の「癖」について詳しく解説。</description>
+    </item>
+    <item>
+      <title>Redmi Note 11について</title>
+      <link>//localhost:1313/posts/redmi-note-11%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+      <pubDate>Fri, 13 Feb 2026 15:50:00 +0900</pubDate>
+      <guid>//localhost:1313/posts/redmi-note-11%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
+      <description>Redmi Note 11にカスタムROM（crDroid）を焼いた話。MIUIの問題点、Bootloader Unlockの手順、カスタムROMの選び方と注意点について解説。</description>
+    </item>
+  </channel>
+</rss>

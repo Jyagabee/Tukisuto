@@ -1,315 +1,385 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="スマホとかハード系のものが好きです">
-<title>Posts</title>
+<html lang="ja" dir="auto" data-theme="auto">
 
-<link rel='canonical' href='//localhost:1313/posts/'>
-
-<link rel="stylesheet" href="//localhost:1313/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="Posts">
-<meta property='og:description' content="スマホとかハード系のものが好きです">
-<meta property='og:url' content='//localhost:1313/posts/'>
-<meta property='og:site_name' content='じゃがびぃのサイト'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content='2025-12-06T20:56:59&#43;09:00'/>
-<meta name="twitter:site" content="@@Jyaga_bee">
-    <meta name="twitter:creator" content="@@Jyaga_bee"><meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="スマホとかハード系のものが好きです"><link rel="alternate" type="application/rss&#43;xml" href="//localhost:1313/posts/index.xml">
-    <link rel="shortcut icon" href="//localhost:1313/favicon.ico" />
-
-
-
-
-
-
-    </head>
-    <body class="">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Posts | じゃがびぃのサイト</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - じゃがびぃのサイト">
+<meta name="author" content="じゃがびぃ">
+<link rel="canonical" href="//localhost:1313/posts/">
+<meta name="google-site-verification" content="G-3FGTMKYNHZ">
+<link crossorigin="anonymous" href="//localhost:1313/assets/css/stylesheet.46bcc841663a3172131a14575f421621d4c0581e74dcb887f9bb0c5ab1ad1829.css" integrity="sha256-RrzIQWY6MXITGhRXX0IWIdTAWB503LiH&#43;bsMWrGtGCk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/posts/index.xml" title="rss">
+<link rel="alternate" hreflang="ja" href="//localhost:1313/posts/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
         }
-    })();
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
 </script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FGTMKYNHZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-3FGTMKYNHZ');
+        }
+      </script><meta property="og:url" content="//localhost:1313/posts/">
+  <meta property="og:site_name" content="じゃがびぃのサイト">
+  <meta property="og:title" content="Posts">
+  <meta property="og:description" content="じゃがびぃのサイト - スマホとかハード系のものが好きです">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="//localhost:1313/img/icon_j.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//localhost:1313/img/icon_j.jpg">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="じゃがびぃのサイト - スマホとかハード系のものが好きです">
 
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="//localhost:1313/">
-                
-                    
-                    
-                    
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "//localhost:1313/posts/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="じゃがびぃのサイト (Alt + H)">
                         
-                        <img src="//localhost:1313/img/icon_j_hu_8e236aae845de07c.jpg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-                    <span class="emoji">🥔</span>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="//localhost:1313/">じゃがびぃのサイト</a></h1>
-            <h2 class="site-description">スマホとかハード系のものが好きです</h2>
-        </div>
-    </header><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='//localhost:1313/about' >
-                
-                
-                
-                <span>about</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='//localhost:1313/posts' >
-                
-                
-                
-                <span>記事</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='//localhost:1313/weekly' >
-                
-                
-                
-                <span>週報</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>ダークモード</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-            
-        
-            
-                
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">カテゴリ</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="//localhost:1313/categories/%E9%80%B1%E5%A0%B1/" class="font_size_8">
-                週報
-            </a>
-        
-    </div>
-</section>
-
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">タグ</h2>
-
-    <div class="tagCloud-tags">
-        
-    </div>
-</section>
-
-            
-        
-    </aside>
-
-
-            <main class="main full-width">
-    <header>
-        <h3 class="section-title">
-            
-                セクション
-            
-        </h3>
-
-        <div class="section-card">
-            <div class="section-details">
-                <h3 class="section-count">5 ページ目</h3>
-                <h1 class="section-term">Posts</h1>
-                
+                    <img src="//localhost:1313/img/icon_j_hu_34944da5141affba.jpg" alt="" aria-label="logo"
+                        height="35">じゃがびぃのサイト</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
-    </header>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/about" title="about">
+                    <span>about</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/posts" title="記事">
+                    <span class="active">記事</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/weekly" title="週報">
+                    <span>週報</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="//localhost:1313/">ホーム</a></div>
+  <h1>
+    Posts
+    <a href="//localhost:1313/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">あんどろいどのお話
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>iOS開発者向けAndroid入門ガイド。AndroidとiOSの違い、アプリ構造、ライフサイクル、バージョン別の変更点、特有の「癖」について詳しく解説。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-13 16:02:27 +0900 JST'>2026年2月13日</span>&nbsp;·&nbsp;<span>33 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to あんどろいどのお話" href="//localhost:1313/posts/%E3%81%82%E3%82%93%E3%81%A9%E3%82%8D%E3%81%84%E3%81%A9%E3%81%AE%E3%81%8A%E8%A9%B1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Redmi Note 11について
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Redmi Note 11にカスタムROM（crDroid）を焼いた話。MIUIの問題点、Bootloader Unlockの手順、カスタムROMの選び方と注意点について解説。</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-13 15:50:00 +0900 JST'>2026年2月13日</span>&nbsp;·&nbsp;<span>8 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to Redmi Note 11について" href="//localhost:1313/posts/redmi-note-11%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Macbookでros2を使う
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>はじめに そんなもん入れるな！！！！！macなんて使うな！！！！！！！！！！
+前提知識 ros2は、サポートされるTierがある。以下にtierを記述する。
+公式サポートTier（REP 2000による定義） リリース macOSサポート バイナリ提供 Foxy以前 Tier 1 あり Galactic〜 Tier 3 なし Jazzy/Kilted (現行) Tier 3 なし Foxy Fitzroyまでは、macOSはTier 1プラットフォームとして扱われていたOpenrobotics。しかしGalactic以降、macOSは正式サポートから外れ、現在はTier 3となっている。 Apple Silicon (M1/M2/M3) 対応状況 公式にはサポートされていないが、コミュニティメンバーがROS 2 KiltedをmacOS Apple Siliconでネイティブ動作させたデモを公開 Openroboticsしました。このデモでは、Gazebo Ionic、ros2_control、MoveIt 2、Navigation2が動作している。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-16 22:17:55 +0900 JST'>2025年12月16日</span>&nbsp;·&nbsp;<span>6 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to Macbookでros2を使う" href="//localhost:1313/posts/macbook%E3%81%A7ros2%E3%82%92%E4%BD%BF%E3%81%86/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ゼロ・トルクの感想
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>この記事は架空アニメ Advent Calendar 2025の8日目の記事です。
+ご無沙汰しておりました。じゃがびぃです。なんか最近忙しくて気がついたらアドベントカレンダーですってよ。早いですね。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-08 23:16:41 +0900 JST'>2025年12月8日</span>&nbsp;·&nbsp;<span>3 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to ゼロ・トルクの感想" href="//localhost:1313/posts/%E3%82%BC%E3%83%AD%E3%83%88%E3%83%AB%E3%82%AF%E3%81%AE%E6%84%9F%E6%83%B3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Android Studio Meerkat | 2024.3.1 を日本語化した話
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>はじめに 皆さんAndroidStudioをmeerkatへアップデートしてらっしゃるでしょうか。ワイはノリと勢いで更新してしまいました。
+アプデしてから日本語化できないことに気づき、1週間くらい我慢してたけど耐えられなくなったので日本語化しました。
+備忘録的なアレを残しておきます
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-17 10:34:08 +0900 JST'>2025年3月17日</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to Android Studio Meerkat | 2024.3.1 を日本語化した話" href="//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Claude 3.7でアプリを作った話
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>はじめに 今回もテスト回です。ほとんど日記。
+真面目なものを探している人は帰ってください。
+アプリを作る経緯 じゃがびぃさんが入ってるプロジェクトのえらいさんからアプリを作れと言われてしまいました。どうやら謎の大会で使用するらしいです。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-03 22:40:45 +0900 JST'>2025年3月3日</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to Claude 3.7でアプリを作った話" href="//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ThinkPadでWifi7を使えるようにしてみた話
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>はじめに 大学へ行くことになったので買ったうちのThinkPadには元々RealTekのwifi 6対応のやつが載ってました。それで不便だと感じたことは全くないです。うちのルーターはwifi 5しか出せないし。 オーバースペックな気がするのに何で買ったかってのはロマンです。冗談はさておき、買う必要が出てしまったから買いました。 というわけで備忘録的な感じでつらつらと書いていきます。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-18 18:02:06 +0900 JST'>2024年10月18日</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to ThinkPadでWifi7を使えるようにしてみた話" href="//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">markdownの書き方に慣れてみる
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>markdownの書き方が分からない はい。ノリと勢いで始めてしまったせいで分からんなってます。
+というわけでmarkdownの練習がてら色々触ってみております。自己満足なそういうアレです。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-18 15:02:06 +0900 JST'>2024年10月18日</span>&nbsp;·&nbsp;<span>2 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to markdownの書き方に慣れてみる" href="//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Test
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>これはテストです はいというわけで何度目か分からない最初の記事を書いています
+これどう表示されてるか分からんの怖すぎワロタ
+ひとまず下書きのテンプレート？を作れたはずだけど正しいのかどうか分からない
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-18 10:02:06 +0900 JST'>2024年10月18日</span>&nbsp;·&nbsp;<span>1 分</span>&nbsp;·&nbsp;<span>じゃがびぃ</span></footer>
+  <a class="entry-link" aria-label="post link to Test" href="//localhost:1313/posts/test/"></a>
+</article>
+    </main>
     
-    <section class="article-list--compact">
-        
-            <article>
-    <a href="//localhost:1313/posts/android-studio-meerkat-2024.3.1-%E3%82%92%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96%E3%81%97%E3%81%9F%E8%A9%B1/">
-        <div class="article-details">
-            <h2 class="article-title">Android Studio Meerkat | 2024.3.1 を日本語化した話</h2>
-            <footer class="article-time">
-                <time datetime='2025-03-17T10:34:08&#43;09:00'>2025/03/17</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="//localhost:1313/posts/claude-3.7%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1/">
-        <div class="article-details">
-            <h2 class="article-title">Claude 3.7でアプリを作った話</h2>
-            <footer class="article-time">
-                <time datetime='2025-03-03T22:40:45&#43;09:00'>2025/03/03</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="//localhost:1313/posts/thinkpad%E3%81%A7wifi7%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/">
-        <div class="article-details">
-            <h2 class="article-title">ThinkPadでWifi7を使えるようにしてみた話</h2>
-            <footer class="article-time">
-                <time datetime='2024-10-18T18:02:06&#43;09:00'>2024/10/18</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="//localhost:1313/posts/markdown%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%81%AB%E6%85%A3%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/">
-        <div class="article-details">
-            <h2 class="article-title">markdownの書き方に慣れてみる</h2>
-            <footer class="article-time">
-                <time datetime='2024-10-18T15:02:06&#43;09:00'>2024/10/18</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="//localhost:1313/posts/test/">
-        <div class="article-details">
-            <h2 class="article-title">Test</h2>
-            <footer class="article-time">
-                <time datetime='2024-10-18T10:02:06&#43;09:00'>2024/10/18</time>
-            </footer>
-        </div>
-    </a>
-</article>
-        
-    </section>
-<footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2024 - 
-        
-        2025 じゃがびぃのサイト
-    </section>
-    
-    <section class="powerby">
-        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> で構築されています。 <br />
-        テーマ <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> は <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> によって設計されています。
-    </section>
+<footer class="footer">
+        <span>&copy; 2026 <a href="//localhost:1313/">じゃがびぃのサイト</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="//localhost:1313/ts/main.c63d8e4afab4d0135b8e0bf2827f93cc726f5a0ad0bd4a3f4f690d135441329c.js" defer></script>
 <script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
-        document.head.appendChild(customFont);
-    }());
 </script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-    </body>
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>
