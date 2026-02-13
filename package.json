@@ -1,0 +1,23 @@
+{
+  "name": "tukisuto",
+  "version": "1.0.0",
+  "description": "じゃがびぃのサイト - Hugo blog with PaperMod theme",
+  "private": true,
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo --gc --minify",
+    "clean": "rm -rf public resources"
+  },
+  "keywords": [
+    "hugo",
+    "blog",
+    "static-site"
+  ],
+  "author": "じゃがびぃ",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0"
+  }
+}
