@@ -1,7 +1,29 @@
-title = "じゃがびぃのサイト"
+languageName = "Japanese"
 languageCode = "ja"
-languageName = "日本語"
+contentDir = "content"
 weight = 1
 
 [params]
-isoCode = "ja"
+sitename = "じゃがびぃのサイト"
+defaultColor = "auto"
+description = "じゃがびぃのサイト - スマホとかハード系のものが好きです"
+mainSections = ["posts"]
+toc = true
+tocOpen = false
+goToTop = true
+dateFormat = "2006年01月02日"
+rssFeedDescription = "summary"
+
+[params.author]
+name = "じゃがびぃ"
+intro = "じゃがびぃのサイト"
+description = "スマホとかハード系のものが好きです"
+avatar = "img/icon_j.jpg"
+
+[params.webmanifest]
+name = "じゃがびぃのサイト"
+short_name = "じゃがびぃ"
+start_url = "/"
+theme_color = "#434648"
+background_color = "#fff"
+display = "standalone"

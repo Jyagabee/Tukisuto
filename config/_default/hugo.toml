@@ -3,24 +3,21 @@ title = "じゃがびぃのサイト"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
-theme = "PaperMod"
+theme = "hugo-blog-awesome"
 canonifyURLs = true
-relativeURLs = false
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+ignoreErrors = ["additional-script-loading-error"]
 
 [frontmatter]
 lastmod = [":git", ":fileModTime", ":default"]
 
-[outputs]
-home = ["HTML", "RSS", "JSON"]
-
-[pagination]
-pagerSize = 10
-
-[services.disqus]
-shortname = ""
-
 [services.googleAnalytics]
 id = "G-3FGTMKYNHZ"
+
+[outputs]
+home = ["HTML", "RSS"]
 
 [permalinks]
 posts = "/posts/:slug/"
@@ -38,18 +35,15 @@ name = "categories"
 weight = 200
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-  [markup.tableOfContents]
-    endLevel = 4
-    ordered = true
-    startLevel = 2
   [markup.highlight]
     noClasses = false
     codeFences = true
-    guessSyntax = true
-    lineNoStart = 1
-    lineNos = true
+    lineNos = false
     lineNumbersInTable = true
     tabWidth = 4
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
