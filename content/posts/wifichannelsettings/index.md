@@ -1,5 +1,5 @@
 ---
-title: "Wifichannelsettings"
+title: "wifiチャンネル設定方法"
 date: 2026-03-12T11:12:39+09:00
 draft: false
 featured: false
