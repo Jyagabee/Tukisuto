@@ -14,8 +14,13 @@ twitterに居たりmisskeyに居たりbskyに居たりmixi2でコーヒー垂れ
 - Misskey:[Jyagabee@mk.tenpest-moon.uk](https://mk.tenpest-moon.uk/@Jyagabee)
 - bluesky:[jyagabee.bsky.social](https://bsky.app/profile/jyagabee.bsky.social)
 
-# 作ったもの(ない)
+# 作ったもの
+以下に作成したものを書いときます。実用性皆無
 
-なにか作ったものがあれば適当に乗せていきたい…いつになることやら
+- [自分用android GBエミュレータ](https://github.com/Miyabi0619/KotlinAndroidGameBoy)
+- [自分用Subsonic クライアント](https://github.com/Miyabi0619/SubsonicClient)
+
+# 持ってる端末
+持ってる端末は[こちら](devices/)
 
 おわり。
