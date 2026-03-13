@@ -1,4 +1,7 @@
-# about
+---
+title: "about"
+layout: "single"
+---
 
 じゃがびぃと申します。
 
