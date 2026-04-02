@@ -14,7 +14,7 @@ twitterに居たりmisskeyに居たりbskyに居たりmixi2でコーヒー垂れ
 
 - Twitter:[@Jyaga_bee](https://x.com/Jyaga_bee)
 - Misskey:[Jyagabee@mk.tenpest-moon.uk](https://mk.tenpest-moon.uk/@Jyagabee)
-- bluesky:[jyagabee.bsky.social](https://bsky.app/profile/jyagabee.bsky.social)
+- bluesky:[jyagabee.bsky.social](https://bsky.app/profile/jyagabee.bsky.social) 
 
 # 作ったもの
 
@@ -26,5 +26,7 @@ twitterに居たりmisskeyに居たりbskyに居たりmixi2でコーヒー垂れ
 # 持ってる端末
 
 持ってる端末は[こちら](devices/)
+
+干し芋のリストは[こちら](https://www.amazon.co.jp/hz/wishlist/dl/invite/AQICAHhDBWrEJWth7k-AcrISvDKHpy2ebo4D1ABU2NvF1pg_ZQHbm8RAMX7kz5NLgjeZgWICAAAAkTCBjgYJKoZIhvcNAQcGoIGAMH4CAQAweQYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAxGuT-6h5lOvWjD4mACARCATLZfXEhPyJhnWW1JuKIvsEz4qARUCbnNONNlm8Y_sKmlHbtHwhrrFBeE-zMzklZ0Nf77DsIcQ9RSjOWG5bSHvky61wk3zhV0vb6U3n0?ref_=wl_share)
 
 おわり。
