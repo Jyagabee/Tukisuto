@@ -7,6 +7,14 @@ name = "github"
 url = "https://github.com/Jyagabee"
 
 [[socialIcons]]
+name = "misskey"
+url = "https://mk.tenpest-moon.uk/@Jyagabee"
+
+[[socialIcons]]
+name = "bluesky"
+url = "https://bsky.app/profile/jyagabee.bsky.social" 
+
+[[socialIcons]]
 name = "Rss"
 url = "/index.xml"
 
