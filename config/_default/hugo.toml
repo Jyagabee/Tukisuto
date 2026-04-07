@@ -20,8 +20,8 @@ id = "G-3FGTMKYNHZ"
 home = ["HTML", "RSS"]
 
 [permalinks]
-posts = "/posts/:filename/"
-weekly = "/weekly/:filename/"
+posts = "/posts/:contentbasename/"
+weekly = "/weekly/:contentbasename/"
 
 [related]
 includeNewer = true
