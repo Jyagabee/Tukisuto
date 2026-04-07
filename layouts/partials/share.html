@@ -1,0 +1,66 @@
+<div class="post-share">
+    <div class="post-share-title">この記事をシェアする</div>
+    {{- $shareUrl := .Permalink -}}
+    {{- if hasPrefix $shareUrl "//" -}}
+        {{- $shareUrl = printf "https:%s" $shareUrl -}}
+    {{- end -}}
+    <div class="post-share-links">
+        <a href="https://twitter.com/intent/tweet?text={{ printf "%s\n%s" .Title $shareUrl | urlquery }}" target="_blank" rel="noopener noreferrer" title="X (Twitter)でシェア">
+            {{ partial "svgs/svgs.html" (dict "name" "twitter") }}
+        </a>
+        <a href="https://bsky.app/intent/compose?text={{ printf "%s\n%s" .Title $shareUrl | urlquery }}" target="_blank" rel="noopener noreferrer" title="Blueskyでシェア">
+            {{ partial "svgs/svgs.html" (dict "name" "bluesky") }}
+        </a>
+        <a href="https://misskey-hub.net/share/?text={{ printf "%s\n%s" .Title $shareUrl | urlquery }}" target="_blank" rel="noopener noreferrer" title="Misskeyでシェア">
+            {{- if templates.Exists "partials/custom_svgs/misskey.html" -}}
+                {{ partial "custom_svgs/misskey.html" . }}
+            {{- else -}}
+                {{ partial "svgs/svgs.html" (dict "name" "misskey") }}
+            {{- end -}}
+        </a>
+    </div>
+</div>
+
+<style>
+.post-share {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.post-share-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+.post-share-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.post-share-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    transition: all 0.2s ease;
+    opacity: 0.8;
+}
+.post-share-links a:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+    border-color: currentColor;
+}
+.post-share-links svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+</style>

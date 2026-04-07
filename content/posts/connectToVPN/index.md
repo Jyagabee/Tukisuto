@@ -25,7 +25,7 @@ sudo apt install openfortivpn
 `vim /etc/openfortivpn/config`
 ```
 host = URL
-port = ポーtー番号
+port = ポート番号
 username = a学籍番号
 ```
 ```bash
