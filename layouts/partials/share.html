@@ -1,17 +1,13 @@
 <div class="post-share">
     <div class="post-share-title">この記事をシェアする</div>
-    {{- $shareUrl := .Permalink -}}
-    {{- if hasPrefix $shareUrl "//" -}}
-        {{- $shareUrl = printf "https:%s" $shareUrl -}}
-    {{- end -}}
     <div class="post-share-links">
-        <a href="https://twitter.com/intent/tweet?text={{ printf "%s\n%s" .Title $shareUrl | urlquery }}" target="_blank" rel="noopener noreferrer" title="X (Twitter)でシェア">
+        <a data-href-template="https://twitter.com/intent/tweet?text={{ .Title | urlquery }}%0A__URL__" href="#" target="_blank" rel="noopener noreferrer" title="X (Twitter)でシェア">
             {{ partial "svgs/svgs.html" (dict "name" "twitter") }}
         </a>
-        <a href="https://bsky.app/intent/compose?text={{ printf "%s\n%s" .Title $shareUrl | urlquery }}" target="_blank" rel="noopener noreferrer" title="Blueskyでシェア">
+        <a data-href-template="https://bsky.app/intent/compose?text={{ .Title | urlquery }}%0A__URL__" href="#" target="_blank" rel="noopener noreferrer" title="Blueskyでシェア">
             {{ partial "svgs/svgs.html" (dict "name" "bluesky") }}
         </a>
-        <a href="https://misskey-hub.net/share/?text={{ printf "%s\n%s" .Title $shareUrl | urlquery }}" target="_blank" rel="noopener noreferrer" title="Misskeyでシェア">
+        <a data-href-template="https://misskey-hub.net/share/?text={{ .Title | urlquery }}%0A__URL__" href="#" target="_blank" rel="noopener noreferrer" title="Misskeyでシェア">
             {{- if templates.Exists "partials/custom_svgs/misskey.html" -}}
                 {{ partial "custom_svgs/misskey.html" . }}
             {{- else -}}
@@ -20,6 +16,18 @@
         </a>
     </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var shareLinks = document.querySelectorAll('.post-share-links a[data-href-template]');
+    var encodedUrl = encodeURIComponent(window.location.href);
+    
+    shareLinks.forEach(function(link) {
+        var template = link.getAttribute('data-href-template');
+        link.href = template.replace('__URL__', encodedUrl);
+    });
+});
+</script>
 
 <style>
 .post-share {
