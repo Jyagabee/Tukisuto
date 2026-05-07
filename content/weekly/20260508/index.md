@@ -1,7 +1,7 @@
 ---
 title: "20260508"
 date: 2026-05-07T22:01:53+09:00
-draft:　false
+draft: false
 featured: false
 showHero: false  # ヒーロー画像を表示するか
 heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
