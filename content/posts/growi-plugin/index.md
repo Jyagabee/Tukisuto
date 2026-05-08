@@ -12,7 +12,7 @@ tags: []
 summary: ""
 ---
 # GROWI page age warning plugin notes
-ツレに、`robowikiにもqiitaみたいな最終更新日時による警告実装できないかな`って言われたんで gpt-5.5 high にシコシコ書かせました。  
+ツレに、`growiにもqiitaみたいな最終更新日時による警告実装できないかな`って言われたんで gpt-5.5 high にシコシコ書かせました。  
 
 とりま以下に作らせた生成物が入ってるリポジトリ貼っておきます  
 https://github.com/Miyabi0619/growi-plugin-page-age-warning  
