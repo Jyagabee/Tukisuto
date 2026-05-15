@@ -184,7 +184,7 @@ tailscale netcheck
 ### 相手端末への疎通確認
 
 ```powershell
-tailscale ping st170e
+tailscale ping ******
 ```
 
 ### 自分のTailscale IP確認
@@ -201,7 +201,7 @@ tailscale ip -6
 Exit Nodeを使う場合は、以下のように指定する。
 
 ```powershell
-tailscale up --exit-node=st170e --exit-node-allow-lan-access
+tailscale up --exit-node=****** --exit-node-allow-lan-access
 ```
 
 Tailscale IPで直接指定してもよい。
@@ -289,10 +289,10 @@ tailscale ping ******
 最初はDERP経由だった。
 
 ```text
-pong from st170e via DERP(tok) in 36ms
-pong from st170e via DERP(tok) in 34ms
-pong from st170e via DERP(tok) in 32ms
-pong from st170e via DERP(tok) in 28ms
+pong from ****** via DERP(tok) in 36ms
+pong from ****** via DERP(tok) in 34ms
+pong from ****** via DERP(tok) in 32ms
+pong from ****** via DERP(tok) in 28ms
 ```
 
 しかし、その後に直接接続へ切り替わった。
@@ -364,7 +364,7 @@ tailscale netcheck
 ### 疎通確認
 
 ```bash
-tailscale ping st170e
+tailscale ping ******
 ```
 
 ### 自分のTailscale IP確認
@@ -474,7 +474,7 @@ tailscale ip -6
 ### Exit Nodeを指定
 
 ```bash
-sudo tailscale up --exit-node=st170e --exit-node-allow-lan-access
+sudo tailscale up --exit-node=****** --exit-node-allow-lan-access
 ```
 
 ### Exit Nodeを解除
@@ -556,7 +556,7 @@ NoState?
       │
       └─ No
           ↓
-          tailscale ping st170e
+          tailscale ping ******
           ↓
           via DERP?
           ├─ Yes
@@ -624,7 +624,7 @@ Linuxでは、`tailscale ping` を1回だけ見るのではなく、数回流し
 ```bash
 tailscale status
 tailscale netcheck
-tailscale ping st170e
+tailscale ping ******
 ```
 
 を見ればよい。
@@ -664,7 +664,7 @@ sudo tailscale up
 sudo tailscale down
 tailscale status
 tailscale netcheck
-tailscale ping st170e
+tailscale ping ******
 
 sudo tailscale up --exit-node=****** --exit-node-allow-lan-access
 sudo tailscale up --exit-node=
