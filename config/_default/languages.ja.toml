@@ -1,5 +1,5 @@
-languageName = "Japanese"
-languageCode = "ja"
+label = "Japanese"
+locale = "ja"
 contentDir = "content"
 weight = 1
 

@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "じゃがびぃのサイト"
-languageCode = "ja"
+locale = "ja"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
 theme = "hugo-blog-awesome"

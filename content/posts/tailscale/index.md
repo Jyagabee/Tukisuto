@@ -3,13 +3,12 @@ title: "学内ネットワークでTailscaleを使うときの備忘録"
 date: 2026-05-15T19:50:24+09:00
 draft: false
 featured: false
-showHero: true  # ヒーロー画像を表示するか
+showHero: false  # ヒーロー画像を表示するか
 heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
 heroImage: "hero.jpg"  # 記事のメイン画像
 thumbnail: "thumbnail.jpg"  # 一覧表示用画像
 tags: ["Tailscale", "学内ネットワーク", "VPN", "Windows", "Linux", "macOS", "Exit Node", "DNS"]
 summary: "学内ネットワークからTailscaleを使うときに遭遇したNoState、DERP経由、Exit Node、DNSまわりの挙動をOS別に整理した備忘録。"
-summary: ""
 ---
 # 学内ネットワークでTailscaleを使うときの備忘録
 
