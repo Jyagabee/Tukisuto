@@ -56,7 +56,7 @@ DERP mapは、Tailscaleが中継サーバーを使うための情報。これが
 例：
 
 ```bash
-tailscale ping st170e
+tailscale ping ******
 ```
 
 表示の意味は以下。
@@ -70,16 +70,16 @@ tailscale ping st170e
 今回Linux側では、最初はDERP経由だった。
 
 ```text
-pong from st170e via DERP(tok) in 36ms
-pong from st170e via DERP(tok) in 34ms
-pong from st170e via DERP(tok) in 32ms
-pong from st170e via DERP(tok) in 28ms
+pong from ****** via DERP(tok) in 36ms
+pong from ****** via DERP(tok) in 34ms
+pong from ****** via DERP(tok) in 32ms
+pong from ****** via DERP(tok) in 28ms
 ```
 
 その後、直接接続に切り替わった。
 
 ```text
-pong from st170e via 172.26.160.101:41641 in 8ms
+pong from ****** via 172.26.160.101:41641 in 8ms
 ```
 
 この状態はかなり良い。
