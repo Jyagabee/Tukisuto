@@ -1,5 +1,5 @@
 ---
-title: "Buffalo Wifi Ch"
+title: "Buffalのwifiルーター使ってて痛い目を見た話"
 date: 2026-06-02T15:03:40+09:00
 draft: false
 featured: false
