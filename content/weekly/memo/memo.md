@@ -78,7 +78,7 @@ Blowfishテーマでは、Page Bundle方式が特に推奨されており、画�
 例えば、「2025年3月第1週」という週報を作成したい場合：
 
 ```
-hugo new --kind weekly weekly/2025年3月第1週
+hugo new --kind weekly weekly/yyyymmdd
 ```
 
 このコマンドを実行すると、content/weekly/2025年3月第1週/index.mdが作成されます。
