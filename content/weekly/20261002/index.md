@@ -1,6 +1,6 @@
 ---
 title: "20261002"
-date: 2026-10-01T10:51:16+09:00
+date: 2026-10-02T10:51:16+09:00
 draft: false
 featured: false
 showHero: false  # ヒーロー画像を表示するか
