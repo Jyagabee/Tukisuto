@@ -7,7 +7,7 @@ This file provides guidance to Claude Code when working with this Hugo-based blo
 **じゃがびぃのサイト** (Jyagabee's Site) - A Japanese tech blog focused on smartphones, hardware, and technology topics, built with Hugo and deployed on Cloudflare Pages.
 
 - **Framework**: Hugo v0.155.3 (extended)
-- **Theme**: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+- **Theme**: [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome)
 - **Language**: Japanese (ja)
 - **Deployment**: Cloudflare Pages
 - **Analytics**: Google Analytics (G-3FGTMKYNHZ)
@@ -37,7 +37,7 @@ This file provides guidance to Claude Code when working with this Hugo-based blo
 │   ├── Blowfish_article.md
 │   └── WeeklyReport.md
 ├── themes/              # Hugo themes (git submodule)
-│   └── PaperMod/        # PaperMod theme
+│   └── hugo-blog-awesome/  # hugo-blog-awesome theme
 └── public/              # Generated site (build output)
 ```
 
@@ -71,14 +71,14 @@ HUGO_VERSION = 0.155.3
 
 ### Git Submodules
 
-The PaperMod theme is managed as a git submodule:
+The hugo-blog-awesome theme is managed as a git submodule:
 
 ```bash
 # Initialize submodules
 git submodule update --init --recursive
 
 # Update theme to latest version
-git submodule update --remote themes/PaperMod
+git submodule update --remote themes/hugo-blog-awesome
 ```
 
 ## Content Management
@@ -116,21 +116,22 @@ description: "記事の説明"
 
 ## Theme Configuration
 
-The PaperMod theme is configured in `config/_default/params.toml`. Key features enabled:
-
-- Dark/Light/Auto theme switching
-- Reading time display
-- Breadcrumbs navigation
-- Code copy buttons
-- Table of contents (TOC)
-- Social sharing buttons
-- Full-text search (Fuse.js)
+The hugo-blog-awesome theme is configured in `config/_default/params.toml`.
 
 ### Customization
 
 - Custom layouts: Place in `layouts/` to override theme templates
-- Custom CSS/SCSS: Place in `assets/`
 - Custom shortcodes: Place in `layouts/shortcodes/`
+- Custom styles: Write them in `assets/sass/_custom.scss`. The theme's `main.scss`
+  ends with `@import "custom"`, which resolves to `sass/_custom.scss`, and a file
+  of the same path in the project overrides the theme's empty one. Do not edit
+  files under `themes/`.
+- Layout widths (`$narrow-size` 720px, `$wide-size` 890px) are hardcoded in the
+  theme's SCSS and cannot be changed by variables, so override `.wrapper` /
+  `.navbar` in `_custom.scss` instead.
+- `assets/scss/custom.scss` (note: `scss`, not `sass`) is NOT imported by the
+  theme, so it has no effect. `assets/css/extended/` is a PaperMod convention
+  and is not loaded either.
 
 ## Common Tasks
 
@@ -152,11 +153,9 @@ The PaperMod theme is configured in `config/_default/params.toml`. Key features 
 ### Theme Updates
 
 ```bash
-cd themes/PaperMod
-git pull origin master
-cd ../..
-git add themes/PaperMod
-git commit -m "chore: Update PaperMod theme"
+git submodule update --remote themes/hugo-blog-awesome
+git add themes/hugo-blog-awesome
+git commit -m "chore: Update hugo-blog-awesome theme"
 ```
 
 ## Troubleshooting
@@ -175,7 +174,7 @@ git commit -m "chore: Update PaperMod theme"
 
 ### Theme Not Found
 
-**Symptom**: `Error: module "PaperMod" not found`
+**Symptom**: `Error: module "hugo-blog-awesome" not found`
 
 **Solution**:
 ```bash
