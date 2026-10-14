@@ -1,7 +1,7 @@
 ---
 title: "azooKeyでGboard風のキーボードを作った話"
 date: 2026-10-09T12:00:00+09:00
-draft: true
+draft: false
 featured: false
 showHero: false  # ヒーロー画像を表示するか
 heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
