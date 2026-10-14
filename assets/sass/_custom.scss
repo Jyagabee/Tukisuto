@@ -21,3 +21,53 @@ select {
     max-width: 960px;
   }
 }
+
+// スマホスクショ等の並列表示用スタイル
+.screenshot-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 1.75rem 0;
+  flex-wrap: wrap;
+
+  figure {
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    img {
+      height: 480px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1px solid rgba(128, 128, 128, 0.2);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      display: inline-block;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+      opacity: 0.85;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screenshot-row {
+    gap: 1rem;
+
+    figure img {
+      height: 380px;
+    }
+  }
+}
+
+// 本文が左揃えなので、表の見出しもテーマ既定の中央揃えから左揃えに統一する
+th {
+  text-align: left;
+}
