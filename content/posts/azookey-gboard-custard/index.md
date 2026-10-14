@@ -1,6 +1,6 @@
 ---
 title: "azooKeyでGboard風のキーボードを作った話"
-date: 2026-10-09T12:00:00+09:00
+date: 2026-10-14T15:52:00+09:00
 draft: false
 featured: false
 showHero: false  # ヒーロー画像を表示するか
