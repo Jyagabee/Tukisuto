@@ -25,15 +25,17 @@ description: "じゃがびぃが所持している端末一覧"
 - Xperia ace ii SO-41B
 - Xperia XZ2 H8296
 - Panasonic FZ-N1
+- iPhone 12 mini
+- iPhone 14
 
 ## タブレット
 - iPad(9世代)
 
 ## PC
 - ThinkPad E16 Gen1
-- Macbook air 14inch M4 2025
+- Macbook air M4 2025
 - デスクトップ: 自作　ryzen7 5800x, AMD HD2000, 32/256GB+2TB
+- Surface Go 2 (Windows 11 Pro, LTE, Core m3-8100Y, 8/128GB)
 
 ## その他
 - NEC Endeavor ST170E 3-4100M, 8/128GB
-- 
