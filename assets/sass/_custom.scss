@@ -71,3 +71,26 @@ select {
 th {
   text-align: left;
 }
+
+// 広い画面では目次を本文の右側に固定表示する(狭い画面はテーマ既定の折りたたみのまま)
+@media screen and (min-width: 1280px) {
+  .toc {
+    position: fixed;
+    top: 6rem;
+    left: calc(50% + 420px + 2rem); // 本文(.wrapper の max-width 840px)の右端 + 余白
+    width: 220px;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    margin: 0;
+
+    // open 属性がなくても中身を表示する
+    &::details-content {
+      content-visibility: visible;
+      display: block;
+    }
+
+    summary {
+      pointer-events: none;
+    }
+  }
+}
