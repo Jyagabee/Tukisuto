@@ -2,11 +2,6 @@
 title: "Buffaloのwifiルーター使ってて痛い目を見た話"
 date: 2026-06-02T15:03:40+09:00
 draft: false
-featured: false
-showHero: true  # ヒーロー画像を表示するか
-heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
-heroImage: "hero.jpg"  # 記事のメイン画像
-thumbnail: "thumbnail.jpg"  # 一覧表示用画像
 categories: []
 tags: []
 summary: ""

@@ -2,11 +2,6 @@
 title: "Figmaを使用してandoroid向けアプリUIを作成する"
 date: 2026-03-25T19:02:07+09:00
 draft: false
-featured: false
-showHero: true  # ヒーロー画像を表示するか
-heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
-heroImage: "hero.jpg"  # 記事のメイン画像
-thumbnail: "thumbnail.jpg"  # 一覧表示用画像
 categories: []
 tags: []
 summary: ""

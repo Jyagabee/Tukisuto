@@ -2,11 +2,6 @@
 title: "20250328"
 date: 2025-03-28T14:58:23+09:00
 draft: false
-featured: false
-showHero: false  # ヒーロー画像を表示するか
-heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
-heroImage: "hero.jpg"  # 記事のメイン画像
-thumbnail: "thumbnail.jpg"  # 一覧表示用画像
 categories: ["週報"]
 tags: []
 summary: ""

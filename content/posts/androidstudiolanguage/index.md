@@ -2,9 +2,6 @@
 title: "Android Studio Meerkat | 2024.3.1 を日本語化した話"
 date: 2025-03-17T10:34:08+09:00
 draft: false
-featured: false
-showHero: false  # ヒーロー画像を表示するか
-heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
 categories: []
 tags: []
 summary: ""

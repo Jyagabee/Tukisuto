@@ -2,11 +2,6 @@
 title: "Xperableを使ってXZ1をBLUする"
 date: 2026-03-23T20:02:19+09:00
 draft: false
-featured: false
-showHero: true
-heroStyle: "basic"
-heroImage: "hero.jpg"
-thumbnail: "thumbnail.jpg"
 categories: []
 tags: ["xperia", "root", "BLU"]
 summary: "Sony Xperia XZ1 (SO-01K) のブートローダーをXperibleを使ってアンロックする手順まとめ。"

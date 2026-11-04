@@ -2,7 +2,6 @@
 title: "20250307"
 date: 2025-03-07T11:24:00+09:00
 draft: false
-featured: false
 categories: ["週報"]
 tags: []
 summary: ""

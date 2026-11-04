@@ -2,11 +2,6 @@
 title: "1週間に1回くらいDDS通信ができなくなる対策のめも"
 date: 2026-03-10T14:43:43+09:00
 draft: false
-featured: false
-showHero: true  # ヒーロー画像を表示するか
-heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
-heroImage: "hero.jpg"  # 記事のメイン画像
-thumbnail: "thumbnail.jpg"  # 一覧表示用画像
 categories: []
 tags: []
 summary: ""

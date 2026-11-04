@@ -2,8 +2,6 @@
 title: "あんどろいどのお話"
 date: 2026-02-13T16:02:27+09:00
 draft: false
-featured: false
-showHero: false
 categories: ["Android", "技術解説"]
 tags: ["Android", "iOS", "アプリ開発", "Kotlin", "Activity", "Fragment", "カスタムROM", "Pixel", "HyperOS", "Bootloader Unlock"]
 summary: "iOS開発者向けAndroid入門ガイド。AndroidとiOSの違い、アプリ構造、ライフサイクル、バージョン別の変更点、特有の「癖」について詳しく解説。"

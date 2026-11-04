@@ -2,8 +2,6 @@
 title: "Redmi Note 11について"
 date: 2026-02-13T15:50:00+09:00
 draft: false
-featured: false
-showHero: false
 categories: ["Android", "スマートフォン"]
 tags: ["Redmi Note 11", "カスタムROM", "crDroid", "Bootloader Unlock", "LineageOS", "Xiaomi", "MIUI", "HyperOS"]
 summary: "Redmi Note 11にカスタムROM（crDroid）を焼いた話。MIUIの問題点、Bootloader Unlockの手順、カスタムROMの選び方と注意点について解説。"

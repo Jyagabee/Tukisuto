@@ -2,11 +2,6 @@
 title: "azooKeyでGboard風のキーボードを作った話"
 date: 2026-10-14T15:52:00+09:00
 draft: false
-featured: false
-showHero: false  # ヒーロー画像を表示するか
-heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
-heroImage: "hero.jpg"  # 記事のメイン画像
-thumbnail: "thumbnail.jpg"  # 一覧表示用画像
 tags: ["azooKey", "Custard", "iPhone", "Gboard"]
 summary: "azooKeyのカスタムタブ(Custard)で、Gboard風のフリック入力とQWERTYを再現した。導入手順とつまずきやすい点のメモ。"
 ---

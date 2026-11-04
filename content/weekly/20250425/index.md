@@ -2,7 +2,6 @@
 title: "20250425"
 date: 2025-04-25
 draft: false 
-featured: false 
 categories: ["週報"]  
 summary: "" 
 caption: ""

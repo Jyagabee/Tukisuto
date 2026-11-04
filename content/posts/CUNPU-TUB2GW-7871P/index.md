@@ -2,11 +2,6 @@
 title: "amazonで買ったCUNPUの激安27インチモニターを買ってみた話"
 date: 2026-10-29T01:55:30+09:00
 draft: false
-featured: false
-showHero: true  # ヒーロー画像を表示するか
-heroStyle: "basic"  # ヒーロー画像のスタイル（basic, background, thumbなど）
-heroImage: "hero.jpg"  # 記事のメイン画像
-thumbnail: "thumbnail.jpg"  # 一覧表示用画像
 categories: ["レビュー", "モニター"]
 tags: ["モニター", "CUNPU", "レビュー"]
 summary: "AmazonセールでCUNPUの27インチQHD 120Hzモニター(TUB2GW-7871P)を2万円で買ってみた話。"
