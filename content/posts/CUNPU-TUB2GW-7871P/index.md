@@ -1,5 +1,5 @@
 ---
-title: "amazonで買ったCUNPUの激安27インチモニターを買ってみた話"
+title: "amazonでCUNPUの激安27インチモニターを買ってみた話"
 date: 2026-10-29T01:55:30+09:00
 draft: false
 categories: ["レビュー", "モニター"]
