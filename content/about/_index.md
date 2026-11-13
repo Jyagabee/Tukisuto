@@ -28,4 +28,5 @@ twitterに居たりmisskeyに居たりbskyに居たりmixi2でコーヒー垂れ
 持ってる端末は[こちら](devices/)
 
 干し芋のリストは[こちら](https://www.amazon.co.jp/hz/wishlist/dl/invite/AQICAHhDBWrEJWth7k-AcrISvDKHpy2ebo4D1ABU2NvF1pg_ZQFrL33poDjh8ci2ka4_UE6LAAAAkTCBjgYJKoZIhvcNAQcGoIGAMH4CAQAweQYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAxrCvDqzrVWGUYh8CQCARCATOyyuaflRE79Jn01P4tNeA4BK4V37JJ9CaQ5xL4RjFG5qrAW2NkAq97dkf-1wJcMGPtOIggTZEKYRLjYSWmsjPjwafZcIzrG8qEAL2Y?ref_=wl_share)
+
 おわり。
